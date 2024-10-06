@@ -7,6 +7,7 @@ Hello, il y a une extension dans vscode pour UMLet. Le document .uxf.
 
 ## 1. Singleton:
     Facture(Vert)
+    Menu, puisqu'il y a seulement un menu
 
 ## 2. Factory:
     
@@ -17,7 +18,7 @@ Hello, il y a une extension dans vscode pour UMLet. Le document .uxf.
 
 ## 4. State:
     FactureEtat(Orange)
-    Ingredient(Orange) Lui ca serait preferable de le mettre en state
+    Ingredient(Orange) Lui ca serait preferable de le mettre en state?
 
 ## 5. MVC:
     Ca pourrait etre pour la facture, a cause du generateFacture.(Vert)
