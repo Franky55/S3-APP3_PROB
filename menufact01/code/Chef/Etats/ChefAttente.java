@@ -26,7 +26,8 @@ public class ChefAttente implements IEtatChef{
         PlatChoisi prochainPlat = chefReference.GetPlatAFaire();
         if (prochainPlat == null) return true;
 
-        return false;
+        chefReference.SetEtat(EtatsChef.TRAVAILLE);
+        return true;
     }
 
     @Override
