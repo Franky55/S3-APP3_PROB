@@ -17,8 +17,8 @@ public class ChefAttente implements IEtatChef{
     }
 
     @Override
-    public void Update(PlatChoisi platChoisi, int quantite){
-
+    public void Update(PlatChoisi platChoisi){
+        Execute();
     }
 
     @Override

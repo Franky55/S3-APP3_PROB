@@ -37,11 +37,14 @@ public class Chef implements IFactureSubscriber {
      * Methode appeller lorsque la facture change et que des plats
      * son ajoutee, que le chef doit faire.
      * @param platChoisi
-     * @param nombreFois
      */
     @Override
-    public void Update(PlatChoisi platChoisi, int nombreFois) {
-        vraiChef.Update(platChoisi, nombreFois);
+    public void Update(PlatChoisi platChoisi) {
+
+        // Ajouter le plat a sa liste de plats a faire
+        plats.add(platChoisi);
+
+        vraiChef.Update(platChoisi);
     }
 
     /**
