@@ -17,8 +17,7 @@ Hello, il y a une extension dans vscode pour UMLet. Le document .uxf.
 ## 6. Iterator:
     Menu, itéré les plats
 ## 7. Facade
-    Entre client et facture.
-    Vraiment pas certain
+    Entre PlatChoisi et facture.
 
 # Classe
 ## - Menu

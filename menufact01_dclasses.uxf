@@ -1,4 +1,4 @@
-<diagram program="umletino" version="15.1"><zoom_level>8</zoom_level><help_text>Space for diagram notes</help_text><element><id>UMLClass</id><coordinates><x>2520</x><y>816</y><w>216</w><h>176</h></coordinates><panel_attributes>Menu
+<diagram program="umletino" version="15.1"><zoom_level>5</zoom_level><help_text>Space for diagram notes</help_text><element><id>UMLClass</id><coordinates><x>1575</x><y>496</y><w>135</w><h>110</h></coordinates><panel_attributes>Menu
 --
 -description:String
 -courant:ing
@@ -11,7 +11,7 @@
 +platCourant():PlatAuMenu
 +positionSuivante():void
 +positionPrecedente():void
-+toString(String)</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>2456</x><y>408</y><w>200</w><h>304</h></coordinates><panel_attributes>Facture
++toString(String)</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>1535</x><y>241</y><w>125</w><h>190</h></coordinates><panel_attributes>Facture
 --
 -date:Date
 -description:String
@@ -38,17 +38,17 @@
 +toString():String
 +genererFacture():String
 
-fg=GREEN</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>2528</x><y>288</y><w>120</w><h>72</h></coordinates><panel_attributes>&lt;&lt;enum&gt;&gt;FactureEtat
+fg=GREEN</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>1580</x><y>166</y><w>75</w><h>45</h></coordinates><panel_attributes>&lt;&lt;enum&gt;&gt;FactureEtat
 --
 OUVERTE
 FERMEE
 PAYEE
-fg=ORANGE</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>2584</x><y>736</y><w>120</w><h>24</h></coordinates><panel_attributes>FactureException
+fg=ORANGE</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>1615</x><y>446</y><w>75</w><h>15</h></coordinates><panel_attributes>FactureException
 --
---</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>2800</x><y>664</y><w>120</w><h>32</h></coordinates><panel_attributes>java.lang.Exception
+--</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>1750</x><y>401</y><w>75</w><h>20</h></coordinates><panel_attributes>java.lang.Exception
 --
---</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>2640</x><y>688</y><w>240</w><h>64</h></coordinates><panel_attributes>lt=&lt;&lt;-</panel_attributes><additional_attributes>280;10;10;60</additional_attributes></element><element><id>Relation</id><coordinates><x>2584</x><y>704</y><w>56</w><h>48</h></coordinates><panel_attributes>&lt;&lt;throws&gt;&gt;
-lt=&lt;.</panel_attributes><additional_attributes>50;40;10;10</additional_attributes></element><element><id>UMLClass</id><coordinates><x>2096</x><y>472</y><w>216</w><h>184</h></coordinates><panel_attributes>PlatAuMenu
+--</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>1650</x><y>416</y><w>150</w><h>40</h></coordinates><panel_attributes>lt=&lt;&lt;-</panel_attributes><additional_attributes>280;10;10;60</additional_attributes></element><element><id>Relation</id><coordinates><x>1615</x><y>426</y><w>35</w><h>30</h></coordinates><panel_attributes>&lt;&lt;throws&gt;&gt;
+lt=&lt;.</panel_attributes><additional_attributes>50;40;10;10</additional_attributes></element><element><id>UMLClass</id><coordinates><x>1310</x><y>281</y><w>135</w><h>115</h></coordinates><panel_attributes>PlatAuMenu
 --
 -code:int
 -description:String
@@ -62,10 +62,10 @@ lt=&lt;.</panel_attributes><additional_attributes>50;40;10;10</additional_attrib
 +setDescription(String):void
 +getPrix():double
 +setPrix(double):void
-+toString():String</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>2648</x><y>440</y><w>240</w><h>48</h></coordinates><panel_attributes>lt=&lt;&lt;&lt;&lt;-</panel_attributes><additional_attributes>10;40;280;10</additional_attributes></element><element><id>Relation</id><coordinates><x>2544</x><y>352</y><w>56</w><h>72</h></coordinates><panel_attributes>lt=&lt;.</panel_attributes><additional_attributes>50;10;10;70</additional_attributes></element><element><id>UMLClass</id><coordinates><x>2832</x><y>840</y><w>120</w><h>40</h></coordinates><panel_attributes>MenuException
++toString():String</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>1655</x><y>261</y><w>150</w><h>30</h></coordinates><panel_attributes>lt=&lt;&lt;&lt;&lt;-</panel_attributes><additional_attributes>10;40;280;10</additional_attributes></element><element><id>Relation</id><coordinates><x>1590</x><y>206</y><w>35</w><h>45</h></coordinates><panel_attributes>lt=&lt;.</panel_attributes><additional_attributes>50;10;10;70</additional_attributes></element><element><id>UMLClass</id><coordinates><x>1770</x><y>511</y><w>75</w><h>25</h></coordinates><panel_attributes>MenuException
 --
---</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>2856</x><y>688</y><w>56</w><h>168</h></coordinates><panel_attributes>lt=&lt;&lt;-</panel_attributes><additional_attributes>10;10;50;190</additional_attributes></element><element><id>Relation</id><coordinates><x>2728</x><y>872</y><w>184</w><h>56</h></coordinates><panel_attributes>&lt;&lt;throws&gt;&gt;
-lt=&lt;.</panel_attributes><additional_attributes>210;10;10;50</additional_attributes></element><element><id>Relation</id><coordinates><x>2544</x><y>704</y><w>32</w><h>128</h></coordinates><panel_attributes>lt=&lt;.</panel_attributes><additional_attributes>20;140;10;10</additional_attributes></element><element><id>UMLClass</id><coordinates><x>2760</x><y>272</y><w>216</w><h>176</h></coordinates><panel_attributes>Client
+--</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>1785</x><y>416</y><w>35</w><h>105</h></coordinates><panel_attributes>lt=&lt;&lt;-</panel_attributes><additional_attributes>10;10;50;190</additional_attributes></element><element><id>Relation</id><coordinates><x>1705</x><y>531</y><w>115</w><h>35</h></coordinates><panel_attributes>&lt;&lt;throws&gt;&gt;
+lt=&lt;.</panel_attributes><additional_attributes>210;10;10;50</additional_attributes></element><element><id>Relation</id><coordinates><x>1590</x><y>426</y><w>20</w><h>80</h></coordinates><panel_attributes>lt=&lt;.</panel_attributes><additional_attributes>20;140;10;10</additional_attributes></element><element><id>UMLClass</id><coordinates><x>1725</x><y>156</y><w>135</w><h>110</h></coordinates><panel_attributes>Client
 --
 -idClient:int
 -nom:String
@@ -78,7 +78,7 @@ lt=&lt;.</panel_attributes><additional_attributes>210;10;10;50</additional_attri
 +setNom(String):void
 +getNumeroCarteCredit():String
 +setNumeroCarteCredit(String):void
-+toString():String</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>2192</x><y>720</y><w>216</w><h>184</h></coordinates><panel_attributes>PlatSante
++toString():String</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>1370</x><y>436</y><w>135</w><h>115</h></coordinates><panel_attributes>PlatSante
 --
 -kcal:double
 -chol:double
@@ -92,7 +92,7 @@ lt=&lt;.</panel_attributes><additional_attributes>210;10;10;50</additional_attri
 +setChol(double):void
 +getGras():double
 +setGras(double):void
-+toString():String</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>2184</x><y>648</y><w>120</w><h>88</h></coordinates><panel_attributes>lt=&lt;&lt;-</panel_attributes><additional_attributes>10;10;130;90</additional_attributes></element><element><id>UMLClass</id><coordinates><x>2104</x><y>296</y><w>216</w><h>120</h></coordinates><panel_attributes>PlatChoisi
++toString():String</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>1365</x><y>391</y><w>75</w><h>55</h></coordinates><panel_attributes>lt=&lt;&lt;-</panel_attributes><additional_attributes>10;10;130;90</additional_attributes></element><element><id>UMLClass</id><coordinates><x>1315</x><y>171</y><w>135</w><h>75</h></coordinates><panel_attributes>PlatChoisi
 --
 -plat:PlatAuMenu
 -quantite:int
@@ -101,18 +101,18 @@ lt=&lt;.</panel_attributes><additional_attributes>210;10;10;50</additional_attri
 +getQuantite():int
 +setQuantite(int):void
 +getPlat():PlatAuMenu
-+toString():String</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>2184</x><y>408</y><w>40</w><h>80</h></coordinates><panel_attributes>lt=&lt;.</panel_attributes><additional_attributes>30;80;10;10</additional_attributes></element><element><id>Relation</id><coordinates><x>2312</x><y>376</y><w>160</w><h>136</h></coordinates><panel_attributes>lt=&lt;.</panel_attributes><additional_attributes>10;10;180;150</additional_attributes></element><element><id>UMLClass</id><coordinates><x>2800</x><y>496</y><w>216</w><h>72</h></coordinates><panel_attributes>tests
++toString():String</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>1365</x><y>241</y><w>25</w><h>50</h></coordinates><panel_attributes>lt=&lt;.</panel_attributes><additional_attributes>30;80;10;10</additional_attributes></element><element><id>Relation</id><coordinates><x>1445</x><y>221</y><w>100</w><h>85</h></coordinates><panel_attributes>lt=&lt;.</panel_attributes><additional_attributes>10;10;180;150</additional_attributes></element><element><id>UMLClass</id><coordinates><x>1750</x><y>296</y><w>135</w><h>45</h></coordinates><panel_attributes>tests
 --
 
 --
--methodesTests</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>2648</x><y>528</y><w>168</w><h>96</h></coordinates><panel_attributes>lt=&lt;.</panel_attributes><additional_attributes>10;100;190;10</additional_attributes></element><element><id>Relation</id><coordinates><x>2304</x><y>568</y><w>232</w><h>328</h></coordinates><panel_attributes>lt=&lt;.</panel_attributes><additional_attributes>10;10;270;390</additional_attributes></element><element><id>UMLPackage</id><coordinates><x>1944</x><y>240</y><w>472</w><h>680</h></coordinates><panel_attributes>Plats</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLPackage</id><coordinates><x>2440</x><y>256</y><w>264</w><h>512</h></coordinates><panel_attributes>facture</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLPackage</id><coordinates><x>2512</x><y>784</y><w>472</w><h>224</h></coordinates><panel_attributes>menuFact</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>1960</x><y>720</y><w>216</w><h>144</h></coordinates><panel_attributes>PlatEnfant
+-methodesTests</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>1655</x><y>316</y><w>105</w><h>60</h></coordinates><panel_attributes>lt=&lt;.</panel_attributes><additional_attributes>10;100;190;10</additional_attributes></element><element><id>Relation</id><coordinates><x>1440</x><y>341</y><w>145</w><h>205</h></coordinates><panel_attributes>lt=&lt;.</panel_attributes><additional_attributes>10;10;270;390</additional_attributes></element><element><id>UMLPackage</id><coordinates><x>1215</x><y>136</y><w>295</w><h>425</h></coordinates><panel_attributes>Plats</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLPackage</id><coordinates><x>1525</x><y>146</y><w>165</w><h>320</h></coordinates><panel_attributes>facture</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLPackage</id><coordinates><x>1570</x><y>476</y><w>295</w><h>140</h></coordinates><panel_attributes>menuFact</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>1225</x><y>436</y><w>135</w><h>90</h></coordinates><panel_attributes>PlatEnfant
 --
 -proportion:double
 --
 +PlatEnfant()
 +PlatEnfant(int,String,double,double)
 +getProportion():double
-+toString():String</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>2072</x><y>648</y><w>128</w><h>88</h></coordinates><panel_attributes>lt=&lt;&lt;-</panel_attributes><additional_attributes>140;10;10;90</additional_attributes></element><element><id>UMLPackage</id><coordinates><x>1384</x><y>232</y><w>472</w><h>680</h></coordinates><panel_attributes>Cuisine</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>976</x><y>352</y><w>120</w><h>96</h></coordinates><panel_attributes>&lt;&lt;enum&gt;&gt;
++toString():String</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>1295</x><y>391</y><w>80</w><h>55</h></coordinates><panel_attributes>lt=&lt;&lt;-</panel_attributes><additional_attributes>140;10;10;90</additional_attributes></element><element><id>UMLPackage</id><coordinates><x>865</x><y>131</y><w>295</w><h>425</h></coordinates><panel_attributes>Cuisine</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>610</x><y>206</y><w>75</w><h>60</h></coordinates><panel_attributes>&lt;&lt;enum&gt;&gt;
 TypeIngredient
 --
 FRUITS
@@ -122,7 +122,7 @@ LAITIER
 EPICE
 fg=#FF8000
 
-</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>344</x><y>776</y><w>256</w><h>120</h></coordinates><panel_attributes>Chef
+</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>215</x><y>471</y><w>160</w><h>75</h></coordinates><panel_attributes>Chef
 --
 #plat:ArrayList&lt;PlatChoisi&gt;
 -etatChef:EtatChef
@@ -131,16 +131,16 @@ fg=#FF8000
 +GetInstance():Chef
 +Update(platChoisi:PlatChoisi, nombreFois:Int):void
 +SetEtatChef():bool
-+toString():String</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>944</x><y>784</y><w>120</w><h>96</h></coordinates><panel_attributes>&lt;&lt;enum&gt;&gt;
++toString():String</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>590</x><y>476</y><w>75</w><h>60</h></coordinates><panel_attributes>&lt;&lt;enum&gt;&gt;
 EtatsPlat
 --
 COMMANDER
 PREPARATION
 TERMINER
 SERVI
-IMPOSSIBLE</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>1424</x><y>528</y><w>120</w><h>24</h></coordinates><panel_attributes>ChefException
+IMPOSSIBLE</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>890</x><y>316</y><w>75</w><h>15</h></coordinates><panel_attributes>ChefException
 --
---</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>352</x><y>544</y><w>176</w><h>112</h></coordinates><panel_attributes>IngredientFruits
+--</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>220</x><y>326</y><w>110</w><h>70</h></coordinates><panel_attributes>IngredientFruits
 --
 -Ingredient:TypeIngredient.FRUITS
 -QuantiteRestant:Int
@@ -149,7 +149,7 @@ IMPOSSIBLE</panel_attributes><additional_attributes></additional_attributes></el
 +GetQuantiteRestant():Int
 +Add(quantite:Int):bool
 +Remove(quantite:Int):bool
-+toString():String</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>536</x><y>544</y><w>176</w><h>112</h></coordinates><panel_attributes>IngredientLegumes
++toString():String</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>335</x><y>326</y><w>110</w><h>70</h></coordinates><panel_attributes>IngredientLegumes
 --
 -Ingredient:TypeIngredient.LEGUMES
 -QuantiteRestant:Int
@@ -158,7 +158,7 @@ IMPOSSIBLE</panel_attributes><additional_attributes></additional_attributes></el
 +GetQuantiteRestant():Int
 +Add(quantite:Int):bool
 +Remove(quantite:Int):bool
-+toString():String</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>720</x><y>544</y><w>168</w><h>112</h></coordinates><panel_attributes>IngredientViande
++toString():String</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>450</x><y>326</y><w>105</w><h>70</h></coordinates><panel_attributes>IngredientViande
 --
 -Ingredient:TypeIngredient.VIANDE
 -QuantiteRestant:Int
@@ -167,7 +167,7 @@ IMPOSSIBLE</panel_attributes><additional_attributes></additional_attributes></el
 +GetQuantiteRestant():Int
 +Add(quantite:Int):bool
 +Remove(quantite:Int):bool
-+toString():String</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>896</x><y>544</y><w>160</w><h>112</h></coordinates><panel_attributes>IngredientLaitier
++toString():String</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>560</x><y>326</y><w>100</w><h>70</h></coordinates><panel_attributes>IngredientLaitier
 --
 -Ingredient:TypeIngredient.Laitier
 -QuantiteRestant:Int
@@ -176,7 +176,7 @@ IMPOSSIBLE</panel_attributes><additional_attributes></additional_attributes></el
 +GetQuantiteRestant():Int
 +Add(quantite:Int):bool
 +Remove(quantite:Int):bool
-+toString():String</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>1064</x><y>544</y><w>160</w><h>112</h></coordinates><panel_attributes>IngredientEpice
++toString():String</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>665</x><y>326</y><w>100</w><h>70</h></coordinates><panel_attributes>IngredientEpice
 --
 -Ingredient:TypeIngredient.EPICE
 -QuantiteRestant:Int
@@ -185,18 +185,18 @@ IMPOSSIBLE</panel_attributes><additional_attributes></additional_attributes></el
 +GetQuantiteRestant():Int
 +Add(quantite:Int):bool
 +Remove(quantite:Int):bool
-+toString():String</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>720</x><y>352</y><w>160</w><h>88</h></coordinates><panel_attributes>&lt;&lt;Interface&gt;&gt;
++toString():String</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>450</x><y>206</y><w>100</w><h>55</h></coordinates><panel_attributes>&lt;&lt;Interface&gt;&gt;
 IIngredient
 --
 +GetQuantiteRestant():Int
 +Add(quantite:Int):bool
 +Remove(quantite:Int):bool
-+toString():String</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>656</x><y>776</y><w>216</w><h>120</h></coordinates><panel_attributes>&lt;&lt;Interface&gt;&gt;
++toString():String</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>410</x><y>471</y><w>135</w><h>75</h></coordinates><panel_attributes>&lt;&lt;Interface&gt;&gt;
 IEtatChef
 --
 +ChangerEtat():
 +GetEtatPlat():EtatsPlat
-+toString():String</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>424</x><y>968</y><w>160</w><h>112</h></coordinates><panel_attributes>ChefCommander
++toString():String</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>265</x><y>591</y><w>100</w><h>70</h></coordinates><panel_attributes>ChefCommander
 --
 -EtatsPlat:EtatsPlat.COMMANDER
 -chef:Chef
@@ -204,7 +204,7 @@ IEtatChef
 +SetChef(chef:Chef):bool
 +ChangerEtat()
 +GetEtatPlat():EtatsPlat
-+toString():String</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>592</x><y>968</y><w>160</w><h>112</h></coordinates><panel_attributes>ChefPreparation
++toString():String</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>370</x><y>591</y><w>100</w><h>70</h></coordinates><panel_attributes>ChefPreparation
 --
 -EtatsPlat:EtatsPlat.PREPARATION
 -chef:Chef
@@ -213,7 +213,7 @@ IEtatChef
 +ChangerEtat()
 +GetEtatPlat():EtatsPlat
 +AjouterIngredient(PlatChoisi
-+toString():String</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>760</x><y>968</y><w>152</w><h>112</h></coordinates><panel_attributes>ChefTerminer
++toString():String</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>475</x><y>591</y><w>95</w><h>70</h></coordinates><panel_attributes>ChefTerminer
 --
 -EtatsPlat:EtatsPlat.TERMINER
 -chef:Chef
@@ -221,7 +221,7 @@ IEtatChef
 +SetChef(chef:Chef):bool
 +ChangerEtat()
 +GetEtatPlat():EtatsPlat
-+toString():String</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>920</x><y>968</y><w>152</w><h>112</h></coordinates><panel_attributes>ChefImpossible
++toString():String</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>575</x><y>591</y><w>95</w><h>70</h></coordinates><panel_attributes>ChefImpossible
 --
 -EtatsPlat:EtatsPlat.IMPOSSIBLE
 -chef:Chef
@@ -229,35 +229,35 @@ IEtatChef
 +SetChef(chef:Chef):bool
 +ChangerEtat()
 +GetEtatPlat():EtatsPlat
-+toString():String</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>520</x><y>888</y><w>256</w><h>96</h></coordinates><panel_attributes>lt=&lt;&lt;-</panel_attributes><additional_attributes>300;10;300;60;10;60;10;100</additional_attributes></element><element><id>Relation</id><coordinates><x>688</x><y>888</y><w>88</w><h>96</h></coordinates><panel_attributes>lt=&lt;&lt;-</panel_attributes><additional_attributes>90;10;90;60;10;60;10;100</additional_attributes></element><element><id>Relation</id><coordinates><x>752</x><y>888</y><w>80</w><h>96</h></coordinates><panel_attributes>lt=&lt;&lt;-</panel_attributes><additional_attributes>10;10;10;60;80;60;80;100</additional_attributes></element><element><id>Relation</id><coordinates><x>752</x><y>888</y><w>240</w><h>96</h></coordinates><panel_attributes>lt=&lt;&lt;-</panel_attributes><additional_attributes>10;10;10;60;280;60;280;100</additional_attributes></element><element><id>Relation</id><coordinates><x>592</x><y>840</y><w>80</w><h>24</h></coordinates><panel_attributes>lt=&lt;&lt;&lt;&lt;-
++toString():String</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>325</x><y>541</y><w>160</w><h>60</h></coordinates><panel_attributes>lt=&lt;&lt;-</panel_attributes><additional_attributes>300;10;300;60;10;60;10;100</additional_attributes></element><element><id>Relation</id><coordinates><x>430</x><y>541</y><w>55</w><h>60</h></coordinates><panel_attributes>lt=&lt;&lt;-</panel_attributes><additional_attributes>90;10;90;60;10;60;10;100</additional_attributes></element><element><id>Relation</id><coordinates><x>470</x><y>541</y><w>50</w><h>60</h></coordinates><panel_attributes>lt=&lt;&lt;-</panel_attributes><additional_attributes>10;10;10;60;80;60;80;100</additional_attributes></element><element><id>Relation</id><coordinates><x>470</x><y>541</y><w>150</w><h>60</h></coordinates><panel_attributes>lt=&lt;&lt;-</panel_attributes><additional_attributes>10;10;10;60;280;60;280;100</additional_attributes></element><element><id>Relation</id><coordinates><x>370</x><y>511</y><w>50</w><h>15</h></coordinates><panel_attributes>lt=&lt;&lt;&lt;&lt;-
 fg=BLACK
-bg=BLACK</panel_attributes><additional_attributes>80;10;10;10</additional_attributes></element><element><id>Relation</id><coordinates><x>864</x><y>840</y><w>96</w><h>24</h></coordinates><panel_attributes>lt=&lt;-</panel_attributes><additional_attributes>100;10;10;10</additional_attributes></element><element><id>UMLClass</id><coordinates><x>0</x><y>776</y><w>248</w><h>120</h></coordinates><panel_attributes>&lt;&lt;Interface&gt;&gt;
+bg=BLACK</panel_attributes><additional_attributes>80;10;10;10</additional_attributes></element><element><id>Relation</id><coordinates><x>540</x><y>511</y><w>60</w><h>15</h></coordinates><panel_attributes>lt=&lt;-</panel_attributes><additional_attributes>100;10;10;10</additional_attributes></element><element><id>UMLClass</id><coordinates><x>0</x><y>471</y><w>155</w><h>75</h></coordinates><panel_attributes>&lt;&lt;Interface&gt;&gt;
 Subscriber
 --
 
 --
-+Update(platChoisi:PlatChoisi, nombreFois:Int):void</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>240</x><y>840</y><w>120</w><h>24</h></coordinates><panel_attributes>lt=&lt;&lt;&lt;-</panel_attributes><additional_attributes>10;10;130;10</additional_attributes></element><element><id>Relation</id><coordinates><x>464</x><y>888</y><w>56</w><h>96</h></coordinates><panel_attributes>lt=&lt;-</panel_attributes><additional_attributes>10;10;50;100</additional_attributes></element><element><id>Relation</id><coordinates><x>464</x><y>888</y><w>224</w><h>96</h></coordinates><panel_attributes>lt=&lt;-</panel_attributes><additional_attributes>10;10;260;100</additional_attributes></element><element><id>Relation</id><coordinates><x>464</x><y>888</y><w>392</w><h>96</h></coordinates><panel_attributes>lt=&lt;-</panel_attributes><additional_attributes>10;10;470;100</additional_attributes></element><element><id>Relation</id><coordinates><x>464</x><y>888</y><w>544</w><h>96</h></coordinates><panel_attributes>lt=&lt;-</panel_attributes><additional_attributes>10;10;660;100</additional_attributes></element><element><id>Relation</id><coordinates><x>432</x><y>432</y><w>384</w><h>128</h></coordinates><panel_attributes>lt=&lt;&lt;&lt;-</panel_attributes><additional_attributes>460;10;460;70;10;70;10;140</additional_attributes></element><element><id>Relation</id><coordinates><x>616</x><y>432</y><w>200</w><h>128</h></coordinates><panel_attributes>lt=&lt;&lt;&lt;-</panel_attributes><additional_attributes>230;10;230;70;10;70;10;140</additional_attributes></element><element><id>Relation</id><coordinates><x>792</x><y>432</y><w>24</w><h>128</h></coordinates><panel_attributes>lt=&lt;&lt;&lt;-</panel_attributes><additional_attributes>10;10;10;140</additional_attributes></element><element><id>Relation</id><coordinates><x>792</x><y>432</y><w>200</w><h>128</h></coordinates><panel_attributes>lt=&lt;&lt;&lt;-</panel_attributes><additional_attributes>10;10;10;70;230;70;230;140</additional_attributes></element><element><id>Relation</id><coordinates><x>792</x><y>432</y><w>368</w><h>128</h></coordinates><panel_attributes>lt=&lt;&lt;&lt;-</panel_attributes><additional_attributes>10;10;10;70;440;70;440;140</additional_attributes></element><element><id>Relation</id><coordinates><x>872</x><y>392</y><w>120</w><h>24</h></coordinates><panel_attributes>lt=&lt;-</panel_attributes><additional_attributes>130;10;10;10</additional_attributes></element><element><id>UMLClass</id><coordinates><x>344</x><y>24</y><w>176</w><h>56</h></coordinates><panel_attributes>CreatorFruits
++Update(platChoisi:PlatChoisi, nombreFois:Int):void</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>150</x><y>511</y><w>75</w><h>15</h></coordinates><panel_attributes>lt=&lt;&lt;&lt;-</panel_attributes><additional_attributes>10;10;130;10</additional_attributes></element><element><id>Relation</id><coordinates><x>290</x><y>541</y><w>35</w><h>60</h></coordinates><panel_attributes>lt=&lt;-</panel_attributes><additional_attributes>10;10;50;100</additional_attributes></element><element><id>Relation</id><coordinates><x>290</x><y>541</y><w>140</w><h>60</h></coordinates><panel_attributes>lt=&lt;-</panel_attributes><additional_attributes>10;10;260;100</additional_attributes></element><element><id>Relation</id><coordinates><x>290</x><y>541</y><w>245</w><h>60</h></coordinates><panel_attributes>lt=&lt;-</panel_attributes><additional_attributes>10;10;470;100</additional_attributes></element><element><id>Relation</id><coordinates><x>290</x><y>541</y><w>340</w><h>60</h></coordinates><panel_attributes>lt=&lt;-</panel_attributes><additional_attributes>10;10;660;100</additional_attributes></element><element><id>Relation</id><coordinates><x>270</x><y>256</y><w>240</w><h>80</h></coordinates><panel_attributes>lt=&lt;&lt;&lt;-</panel_attributes><additional_attributes>460;10;460;70;10;70;10;140</additional_attributes></element><element><id>Relation</id><coordinates><x>385</x><y>256</y><w>125</w><h>80</h></coordinates><panel_attributes>lt=&lt;&lt;&lt;-</panel_attributes><additional_attributes>230;10;230;70;10;70;10;140</additional_attributes></element><element><id>Relation</id><coordinates><x>495</x><y>256</y><w>15</w><h>80</h></coordinates><panel_attributes>lt=&lt;&lt;&lt;-</panel_attributes><additional_attributes>10;10;10;140</additional_attributes></element><element><id>Relation</id><coordinates><x>495</x><y>256</y><w>125</w><h>80</h></coordinates><panel_attributes>lt=&lt;&lt;&lt;-</panel_attributes><additional_attributes>10;10;10;70;230;70;230;140</additional_attributes></element><element><id>Relation</id><coordinates><x>495</x><y>256</y><w>230</w><h>80</h></coordinates><panel_attributes>lt=&lt;&lt;&lt;-</panel_attributes><additional_attributes>10;10;10;70;440;70;440;140</additional_attributes></element><element><id>Relation</id><coordinates><x>545</x><y>231</y><w>75</w><h>15</h></coordinates><panel_attributes>lt=&lt;-</panel_attributes><additional_attributes>130;10;10;10</additional_attributes></element><element><id>UMLClass</id><coordinates><x>215</x><y>1</y><w>110</w><h>35</h></coordinates><panel_attributes>CreatorFruits
 --
 
 --
-+CreateProduct():IIngredient</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>528</x><y>24</y><w>176</w><h>56</h></coordinates><panel_attributes>CreatorLegumes
++CreateProduct():IIngredient</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>330</x><y>1</y><w>110</w><h>35</h></coordinates><panel_attributes>CreatorLegumes
 --
 
 --
-+CreateProduct():IIngredient</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>712</x><y>24</y><w>168</w><h>56</h></coordinates><panel_attributes>CreatorViande
++CreateProduct():IIngredient</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>445</x><y>1</y><w>105</w><h>35</h></coordinates><panel_attributes>CreatorViande
 --
 
 --
-+CreateProduct():IIngredient</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>888</x><y>24</y><w>160</w><h>56</h></coordinates><panel_attributes>CreatorLaitier
++CreateProduct():IIngredient</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>555</x><y>1</y><w>100</w><h>35</h></coordinates><panel_attributes>CreatorLaitier
 --
 
 --
-+CreateProduct():IIngredient</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>1056</x><y>24</y><w>160</w><h>56</h></coordinates><panel_attributes>CreatorEpice
++CreateProduct():IIngredient</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>660</x><y>1</y><w>100</w><h>35</h></coordinates><panel_attributes>CreatorEpice
 --
 
 --
-+CreateProduct():IIngredient</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>656</x><y>208</y><w>288</w><h>64</h></coordinates><panel_attributes>IngredientCreator
++CreateProduct():IIngredient</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>410</x><y>116</y><w>180</w><h>40</h></coordinates><panel_attributes>IngredientCreator
 --
 
 --
-+CreateProduct(typeIngredient:TypeIngredient):IIngredient</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>792</x><y>72</y><w>24</w><h>152</h></coordinates><panel_attributes>lt=&lt;&lt;&lt;-</panel_attributes><additional_attributes>10;170;10;10</additional_attributes></element><element><id>Relation</id><coordinates><x>616</x><y>72</y><w>200</w><h>152</h></coordinates><panel_attributes>lt=&lt;&lt;&lt;-</panel_attributes><additional_attributes>230;170;230;100;10;100;10;10</additional_attributes></element><element><id>Relation</id><coordinates><x>432</x><y>72</y><w>384</w><h>152</h></coordinates><panel_attributes>lt=&lt;&lt;&lt;-</panel_attributes><additional_attributes>460;170;460;100;10;100;10;10</additional_attributes></element><element><id>Relation</id><coordinates><x>792</x><y>72</y><w>200</w><h>152</h></coordinates><panel_attributes>lt=&lt;&lt;&lt;-</panel_attributes><additional_attributes>10;170;10;100;230;100;230;10</additional_attributes></element><element><id>Relation</id><coordinates><x>792</x><y>72</y><w>368</w><h>152</h></coordinates><panel_attributes>lt=&lt;&lt;&lt;-</panel_attributes><additional_attributes>10;170;10;100;440;100;440;10</additional_attributes></element><element><id>Relation</id><coordinates><x>792</x><y>264</y><w>24</w><h>104</h></coordinates><panel_attributes>lt=&lt;-</panel_attributes><additional_attributes>10;110;10;10</additional_attributes></element></diagram>
++CreateProduct(typeIngredient:TypeIngredient):IIngredient</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>495</x><y>31</y><w>15</w><h>95</h></coordinates><panel_attributes>lt=&lt;&lt;&lt;-</panel_attributes><additional_attributes>10;170;10;10</additional_attributes></element><element><id>Relation</id><coordinates><x>385</x><y>31</y><w>125</w><h>95</h></coordinates><panel_attributes>lt=&lt;&lt;&lt;-</panel_attributes><additional_attributes>230;170;230;100;10;100;10;10</additional_attributes></element><element><id>Relation</id><coordinates><x>270</x><y>31</y><w>240</w><h>95</h></coordinates><panel_attributes>lt=&lt;&lt;&lt;-</panel_attributes><additional_attributes>460;170;460;100;10;100;10;10</additional_attributes></element><element><id>Relation</id><coordinates><x>495</x><y>31</y><w>125</w><h>95</h></coordinates><panel_attributes>lt=&lt;&lt;&lt;-</panel_attributes><additional_attributes>10;170;10;100;230;100;230;10</additional_attributes></element><element><id>Relation</id><coordinates><x>495</x><y>31</y><w>230</w><h>95</h></coordinates><panel_attributes>lt=&lt;&lt;&lt;-</panel_attributes><additional_attributes>10;170;10;100;440;100;440;10</additional_attributes></element><element><id>Relation</id><coordinates><x>495</x><y>151</y><w>15</w><h>65</h></coordinates><panel_attributes>lt=&lt;-</panel_attributes><additional_attributes>10;110;10;10</additional_attributes></element></diagram>
