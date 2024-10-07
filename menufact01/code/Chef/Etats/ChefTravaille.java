@@ -1,6 +1,7 @@
 package Chef.Etats;
 
 import Chef.Chef;
+import menufact.plats.EtatsPlat;
 import menufact.plats.PlatChoisi;
 
 public class ChefTravaille implements IEtatChef {
@@ -18,20 +19,23 @@ public class ChefTravaille implements IEtatChef {
 
     @Override
     public void Update(PlatChoisi platChoisi, int quantite){
-
+        Execute();
     }
 
     @Override
     public boolean Execute() {
-        return false;
+        PlatChoisi platAFaire = chefReference.GetPlatAFaire();
+        if(platAFaire == null){
+            // Il n'y a plus rien a faire, faut aller en attente
+            chefReference.SetEtat(EtatsChef.ATTENTE);
+            return true;
+        }
+        platAFaire.setEtatsPlat(EtatsPlat.TERMINER);
+        return true;
     }
 
     @Override
     public String toString(){
         return "";
-    }
-
-    public void AjouterIngredient(PlatChoisi platChoisi){
-
     }
 }
