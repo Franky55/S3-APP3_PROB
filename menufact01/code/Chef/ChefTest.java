@@ -19,6 +19,20 @@ class ChefTest {
     }
 
     @Test
+    @DisplayName("Fire un chef")
+    @Description("test du reset d'un chef")
+    void Fire() {
+        Chef chef = Chef.GetInstance();
+        chef.SetEtat(EtatsChef.TRAVAILLE);
+
+        boolean result = Chef.Fire();
+        assertEquals(true, result);
+
+        chef = Chef.GetInstance();
+        assertEquals(chef.GetEtat(), EtatsChef.ATTENTE);
+    }
+
+    @Test
     @DisplayName("getInstance null check")
     void getInstanceNullCheck() {
         Chef chef = Chef.GetInstance();
@@ -47,6 +61,25 @@ class ChefTest {
     void GetPlatAFaireInitial() {
         Chef chef = Chef.GetInstance();
         assertNull(chef.GetPlatAFaire());
+    }
+
+    @Test
+    @DisplayName("PlatFini - y'avait un plan")
+    @Description("Tester que le handling de terminer un plat ajouter au chef")
+    void PlatFini() {
+        Chef chef = Chef.GetInstance();
+        boolean result = chef.PlatFini();
+        assertEquals(false, result);
+
+        PlatAuMenu platAuMenu = new PlatAuMenu(0, "Bruh", 20);
+        PlatChoisi plat = new PlatChoisi(platAuMenu, 2);
+        chef.Update(plat);
+
+        result = chef.PlatFini();
+        assertEquals(true, result);
+
+        result = chef.PlatFini();
+        assertEquals(false, result);
     }
 
     @Test
@@ -94,7 +127,7 @@ class ChefTest {
 
     @Test
     @DisplayName("Execute - Retour a l'attente")
-    @Description("Tester que le chef vas en attente")
+    @Description("Tester que le chef vas en attente apres avoir travailler son plat.")
     void ExecuteApresApresAjout() {
         Chef chef = Chef.GetInstance();
         assertEquals(EtatsChef.ATTENTE, chef.GetEtat());
