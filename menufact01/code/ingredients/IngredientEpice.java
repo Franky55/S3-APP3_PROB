@@ -14,6 +14,9 @@ public class IngredientEpice implements IIngredients {
     }
 
     public Boolean RemoveIngredient(int quantite){
+        if(quantiteRestant-quantite < 0){
+            throw new IllegalArgumentException("Quantite Restant cannot be negative");
+        }
         quantiteRestant -= quantite;
         return true;
     }
