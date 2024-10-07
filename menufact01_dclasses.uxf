@@ -275,6 +275,7 @@ bg=BLACK</panel_attributes><additional_attributes>10;10;140;80</additional_attri
 fg=GREEN</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>2826</x><y>1260</y><w>144</w><h>117</h></coordinates><panel_attributes>PlatsCollection
 --
 -plats:ArrayList&lt;PlatAuMenu&gt;
+-position:int
 --
 +PlatsCollection()
 +ajoute(PlatAuMenu):void
