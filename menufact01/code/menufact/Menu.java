@@ -2,33 +2,39 @@ package menufact;
 
 import menufact.exceptions.MenuException;
 import menufact.plats.PlatAuMenu;
+import menufact.plats.collection.IIteratorPlatsMenu;
+import menufact.plats.collection.PlatsCollection;
 
 import java.util.ArrayList;
 
 public class Menu {
     private String description;
-    private int courant;
-    private ArrayList<PlatAuMenu> plat = new ArrayList<PlatAuMenu>();
+    private IIteratorPlatsMenu platsMenu;
+    //private int courant;
+    //private ArrayList<PlatAuMenu> plat = new ArrayList<PlatAuMenu>();
     private static Menu menu;
 
     private Menu(String description) {
         this.description = description;
+        this.platsMenu = new PlatsCollection();
     }
 
     public static Menu GetInstance(String description) {
-        if(menu == null)
+        if(menu == null) {
             menu = new Menu(description);
-
+        }
         return menu;
     }
 
-    void ajoute (PlatAuMenu p)
-    {
-        plat.add(p);
+    public IIteratorPlatsMenu GetPlatsMenu() {
+        return platsMenu;
     }
 
-    public void position(int i)
-    {
+    void ajoute (PlatAuMenu p) {
+        GetPlatsMenu().ajoute(p);
+    }
+
+    public void position(int i) {
         courant = i;
     }
 

@@ -272,7 +272,7 @@ bg=BLACK</panel_attributes><additional_attributes>10;10;140;80</additional_attri
 +toString():String
 +genererFacture():String
 
-fg=GREEN</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>2826</x><y>1260</y><w>144</w><h>117</h></coordinates><panel_attributes>PlatsCollection
+fg=GREEN</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>2826</x><y>1260</y><w>144</w><h>144</h></coordinates><panel_attributes>PlatsCollection
 --
 -plats:ArrayList&lt;PlatAuMenu&gt;
 -position:int
@@ -282,15 +282,17 @@ fg=GREEN</panel_attributes><additional_attributes></additional_attributes></elem
 +getActuel():PlatAuMenu
 +Suivante():bool
 +Precedente():bool
++ SetPosition(position: int) bool
 
-fg=#ff0080</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>2826</x><y>1395</y><w>144</w><h>99</h></coordinates><panel_attributes>&lt;&lt;interface&gt;&gt;
+fg=#ff0080</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>3042</x><y>1260</y><w>144</w><h>117</h></coordinates><panel_attributes>&lt;&lt;interface&gt;&gt;
 IIteratorPlatsMenu
 --
 +ajoute(PlatAuMenu):void
 +getActuel():PlatAuMenu
 +Suivante():bool
 +Precedente():bool
++SetPosition(pos:int): bool
 
-fg=#ff0080</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>2961</x><y>1206</y><w>90</w><h>252</h></coordinates><panel_attributes>lt=&lt;&lt;&lt;&lt;-
+fg=#ff0080</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>2970</x><y>1206</y><w>90</w><h>117</h></coordinates><panel_attributes>lt=&lt;&lt;&lt;&lt;-
 fg=BLACK
-bg=BLACK</panel_attributes><additional_attributes>80;10;80;260;10;260</additional_attributes></element><element><id>Relation</id><coordinates><x>2889</x><y>1206</y><w>27</w><h>72</h></coordinates><panel_attributes>lt=&lt;.</panel_attributes><additional_attributes>10;10;10;60</additional_attributes></element></diagram>
+bg=BLACK</panel_attributes><additional_attributes>10;10;70;110;80;110</additional_attributes></element><element><id>Relation</id><coordinates><x>2889</x><y>1206</y><w>27</w><h>72</h></coordinates><panel_attributes>lt=&lt;.</panel_attributes><additional_attributes>10;10;10;60</additional_attributes></element><element><id>Relation</id><coordinates><x>2961</x><y>1332</y><w>99</w><h>27</h></coordinates><panel_attributes>lt=&lt;&lt;-</panel_attributes><additional_attributes>90;10;10;10</additional_attributes></element></diagram>
