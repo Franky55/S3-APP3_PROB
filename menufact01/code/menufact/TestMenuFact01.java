@@ -50,13 +50,13 @@ public class TestMenuFact01 {
             System.out.println(facture);
 
             System.out.println("== Ajout d'un plat choisie à la facture");
-            facture.ajoutePlat(pch1, 1);
+            facture.ajoutePlat(pch1);
             System.out.println(facture);
             System.out.println(facture.sousTotal());
 
             System.out.println("== Ajout d'un plat choisie à la facture");
             PlatChoisi pch2 = new PlatChoisi(p2, 10);
-            facture.ajoutePlat(pch2, 1);
+            facture.ajoutePlat(pch2);
             System.out.println(facture);
             System.out.println(facture.sousTotal());
 
