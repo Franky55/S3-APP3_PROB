@@ -272,7 +272,7 @@ bg=BLACK</panel_attributes><additional_attributes>10;10;140;80</additional_attri
 +toString():String
 +genererFacture():String
 
-fg=GREEN</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>2826</x><y>1260</y><w>144</w><h>144</h></coordinates><panel_attributes>PlatsCollection
+fg=GREEN</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>2826</x><y>1260</y><w>144</w><h>153</h></coordinates><panel_attributes>PlatsCollection
 --
 -plats:ArrayList&lt;PlatAuMenu&gt;
 -position:int
@@ -283,6 +283,7 @@ fg=GREEN</panel_attributes><additional_attributes></additional_attributes></elem
 +Suivante():bool
 +Precedente():bool
 + SetPosition(position: int) bool
++GetPosition(): int
 
 fg=#ff0080</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>3042</x><y>1260</y><w>144</w><h>117</h></coordinates><panel_attributes>&lt;&lt;interface&gt;&gt;
 IIteratorPlatsMenu
@@ -292,6 +293,7 @@ IIteratorPlatsMenu
 +Suivante():bool
 +Precedente():bool
 +SetPosition(pos:int): bool
++GetPosition(): int
 
 fg=#ff0080</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>2970</x><y>1206</y><w>90</w><h>117</h></coordinates><panel_attributes>lt=&lt;&lt;&lt;&lt;-
 fg=BLACK
