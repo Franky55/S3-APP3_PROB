@@ -92,7 +92,7 @@ lt=&lt;.</panel_attributes><additional_attributes>210;10;10;50</additional_attri
 +setChol(double):void
 +getGras():double
 +setGras(double):void
-+toString():String</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>3003</x><y>605</y><w>165</w><h>121</h></coordinates><panel_attributes>lt=&lt;&lt;-</panel_attributes><additional_attributes>10;10;130;90</additional_attributes></element><element><id>UMLClass</id><coordinates><x>2893</x><y>121</y><w>297</w><h>165</h></coordinates><panel_attributes>PlatChoisi
++toString():String</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>3003</x><y>605</y><w>165</w><h>121</h></coordinates><panel_attributes>lt=&lt;&lt;-</panel_attributes><additional_attributes>10;10;130;90</additional_attributes></element><element><id>UMLClass</id><coordinates><x>2893</x><y>121</y><w>297</w><h>209</h></coordinates><panel_attributes>PlatChoisi
 --
 -plat:PlatAuMenu
 -quantite:int
@@ -104,7 +104,7 @@ lt=&lt;.</panel_attributes><additional_attributes>210;10;10;50</additional_attri
 +getQuantite():int
 +setQuantite(int):void
 +getPlat():PlatAuMenu
-+toString():String</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>3003</x><y>275</y><w>55</w><h>110</h></coordinates><panel_attributes>lt=&lt;.</panel_attributes><additional_attributes>30;80;10;10</additional_attributes></element><element><id>Relation</id><coordinates><x>3179</x><y>231</y><w>220</w><h>187</h></coordinates><panel_attributes>lt=&lt;.</panel_attributes><additional_attributes>10;10;180;150</additional_attributes></element><element><id>UMLClass</id><coordinates><x>3850</x><y>396</y><w>297</w><h>99</h></coordinates><panel_attributes>tests
++toString():String</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>3003</x><y>319</y><w>55</w><h>66</h></coordinates><panel_attributes>lt=&lt;.</panel_attributes><additional_attributes>30;40;10;10</additional_attributes></element><element><id>Relation</id><coordinates><x>3179</x><y>231</y><w>220</w><h>187</h></coordinates><panel_attributes>lt=&lt;.</panel_attributes><additional_attributes>10;10;180;150</additional_attributes></element><element><id>UMLClass</id><coordinates><x>3850</x><y>396</y><w>297</w><h>99</h></coordinates><panel_attributes>tests
 --
 
 --

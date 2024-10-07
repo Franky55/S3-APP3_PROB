@@ -31,4 +31,12 @@ public class PlatChoisi {
     public PlatAuMenu getPlat() {
         return plat;
     }
+
+    public EtatsPlat getEtatsPlat() {
+        return etatsPlat;
+    }
+
+    public void setEtatsPlat(EtatsPlat etatsPlat) {
+        this.etatsPlat = etatsPlat;
+    }
 }
