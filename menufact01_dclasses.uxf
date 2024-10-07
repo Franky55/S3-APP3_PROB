@@ -215,6 +215,7 @@ IMPOSSIBLE</panel_attributes><additional_attributes></additional_attributes></el
 +toString():String</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>1080</x><y>360</y><w>240</w><h>168</h></coordinates><panel_attributes>&lt;&lt;Interface&gt;&gt;
 IIngredient
 --
++getTypeIngredient():TypeIngredient
 +GetQuantiteRestant():Int
 +Add(quantite:Int):bool
 +Remove(quantite:Int):bool
