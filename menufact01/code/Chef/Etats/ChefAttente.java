@@ -3,11 +3,11 @@ package Chef.Etats;
 import Chef.Chef;
 import menufact.plats.PlatChoisi;
 
-public class ChefTravaille implements IEtatChef {
+public class ChefAttente implements IEtatChef{
     private Chef chefReference;
 
-    public ChefTravaille(Chef chef) {
-        this.SetChef(chef);
+    public ChefAttente(Chef chefReference) {
+        this.SetChef(chefReference);
     }
 
     @Override
@@ -25,6 +25,4 @@ public class ChefTravaille implements IEtatChef {
     public String toString(){
         return "";
     }
-
-    public
 }
