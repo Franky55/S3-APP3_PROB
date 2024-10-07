@@ -2,14 +2,14 @@ Hello, il y a une extension dans vscode pour UMLet. Le document .uxf.
 
 # UML
 ## 1. Singleton:
-    Menu, puisqu'il y a seulement un menu
+    --- Menu, puisqu'il y a seulement un menu
+    --- Chef, puisque plus facile avec un chef
 ## 2. Factory:
-    ingéridents psq y'en a plusieurs.
+    --- ingrédients pcq y'en a plusieurs.
 ## 3. Observer:
-    //Facture Subscribe a plat choisi. (Magenta)
-    Chef avec facture
+    --- Chef avec facture
 ## 4. State:
-    Chef(Orange)
+    --- Chef
 ## 5. MVC:
     Ca pourrait etre pour la facture, a cause du generateFacture.(Vert)
     Et le menu
@@ -18,6 +18,7 @@ Hello, il y a une extension dans vscode pour UMLet. Le document .uxf.
     Menu, itéré les plats
 ## 7. Facade
     Entre client et facture.
+    Vraiment pas certain
 
 # Classe
 ## - Menu
