@@ -49,15 +49,21 @@ public class ChefTravaille implements IEtatChef {
      */
     @Override
     public boolean Execute() {
-        PlatChoisi platAFaire = chefReference.GetPlatAFaire();
-        if(platAFaire == null) {
+        if(doitEtreEnAttente()) {
             // Il n'y a plus rien a faire, faut aller en attente
-            System.out.println("Le chef a fini, il retourne en attente");
             chefReference.SetEtat(EtatsChef.ATTENTE);
             return true;
         }
+        PlatChoisi platAFaire = chefReference.GetPlatAFaire();
         platAFaire.setEtatsPlat(EtatsPlat.TERMINER);
         chefReference.PlatFini();
+
+        if(doitEtreEnAttente()) {
+            // Il n'y a plus rien a faire, faut aller en attente
+            chefReference.SetEtat(EtatsChef.ATTENTE);
+            return true;
+        }
+
         return true;
     }
 

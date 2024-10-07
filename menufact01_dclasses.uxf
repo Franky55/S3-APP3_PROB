@@ -222,6 +222,7 @@ IEtatChef
 +toString():String
 +Update(PlatChoisi platChoisi, int quantite): void
 +Execute(): bool
++GetEtat(): EtatChef
 
 fg=#80fffff</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>636</x><y>1308</y><w>240</w><h>168</h></coordinates><panel_attributes>ChefCommander
 --
@@ -231,6 +232,7 @@ fg=#80fffff</panel_attributes><additional_attributes></additional_attributes></e
 +SetChef(chef:Chef):bool
 +toString():String
 +Execute(): bool
++GetEtat(): EtatChef
 
 fg=#80fffff</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>888</x><y>1308</y><w>240</w><h>168</h></coordinates><panel_attributes>ChefTravaille
 --
@@ -241,6 +243,7 @@ fg=#80fffff</panel_attributes><additional_attributes></additional_attributes></e
 +toString():String
 +Execute(): bool
 -doitEtreEnAttente(): bool
++GetEtat(): EtatChef
 
 fg=#80fffff</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>780</x><y>1188</y><w>384</w><h>144</h></coordinates><panel_attributes>lt=&lt;&lt;-</panel_attributes><additional_attributes>300;10;300;60;10;60;10;100</additional_attributes></element><element><id>Relation</id><coordinates><x>1032</x><y>1188</y><w>132</w><h>144</h></coordinates><panel_attributes>lt=&lt;&lt;-</panel_attributes><additional_attributes>90;10;90;60;10;60;10;100</additional_attributes></element><element><id>Relation</id><coordinates><x>888</x><y>1104</y><w>120</w><h>72</h></coordinates><panel_attributes>lt=&lt;&lt;&lt;&lt;-
 fg=BLACK
