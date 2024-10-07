@@ -27,19 +27,25 @@ public class TestMenuFact01 {
 
             System.out.println("===menufact.Menu ajout avec 4 plats");
             Menu menu = Menu.GetInstance("Menu1");
-            menu.GetPlatsMenu().ajoute(p1);
-            menu.GetPlatsMenu().ajoute(p2);
-            menu.GetPlatsMenu().ajoute(ps1);
-            menu.GetPlatsMenu().ajoute(ps2);
-            System.out.println(menu);
+            MenuView menuView = new MenuView();
+            MenuController menuController = new MenuController(menu, menuView);
+
+            menuController.GetMenu().GetPlatsMenu().ajoute(p1);
+            menuController.GetMenu().GetPlatsMenu().ajoute(p2);
+            menuController.GetMenu().GetPlatsMenu().ajoute(ps1);
+            menuController.GetMenu().GetPlatsMenu().ajoute(ps2);
+            menuController.UpdateAffichage();
+            System.out.println(menuView);
 
             System.out.println("===menufact.Menu position 1, plat à la position 0");
-            menu.GetPlatsMenu().SetPosition(0);
-            System.out.println(menu.GetPlatsMenu().getActuel());
+            menuController.GetMenu().GetPlatsMenu().SetPosition(0);
+            menuController.UpdateAffichage();
+            System.out.println(menuController.GetMenu().GetPlatsMenu().getActuel());
 
             System.out.println("===menufact.Menu position 1, plat à la position suivante 1");
-            menu.GetPlatsMenu().Suivant();
-            System.out.println(menu.GetPlatsMenu().getActuel());
+            menuController.GetMenu().GetPlatsMenu().Suivant();
+            menuController.UpdateAffichage();
+            System.out.println(menuController.GetMenu().GetPlatsMenu().getActuel());
 
             System.out.println("== Plat choisi");
             PlatChoisi pch1 = new PlatChoisi(p1, 5);
