@@ -123,10 +123,12 @@ public class Facture {
      * @param p un plat choisi
      * @throws FactureException Seulement si la facture est OUVERTE
      */
-    public void ajoutePlat(PlatChoisi p) throws FactureException
+    public void ajoutePlat(PlatChoisi p, int quantite) throws FactureException
     {
-        if (etat == FactureEtat.OUVERTE)
+        if (etat == FactureEtat.OUVERTE){
             platchoisi.add(p);
+            this.Notify(p, quantite);
+        }
         else
             throw new FactureException("On peut ajouter un plat seulement sur une facture OUVERTE.");
     }
@@ -191,9 +193,11 @@ public class Facture {
         return true;
     }
 
-    public Boolean Notify(){
+    private Boolean Notify(PlatChoisi platChoisi, int quantite){
         for (IFactureSubscriber subscriber : subscribers){
-            subscriber.notify();
+            subscriber.Update(platChoisi, quantite);
         }
+
+        return true;
     }
 }

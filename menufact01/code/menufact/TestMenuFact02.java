@@ -241,7 +241,7 @@ public class TestMenuFact02 {
         PlatChoisi platChoisi = new PlatChoisi(m1.platCourant(),5);
         try
         {
-            f1.ajoutePlat(platChoisi);
+            f1.ajoutePlat(platChoisi, 1);
         }
         catch (FactureException fe)
         {
@@ -272,7 +272,7 @@ public class TestMenuFact02 {
         PlatChoisi platChoisi = new PlatChoisi(m1.platCourant(),5);
         try
         {
-            f1.ajoutePlat(platChoisi);
+            f1.ajoutePlat(platChoisi, 1);
         }
         catch (FactureException fe)
         {
