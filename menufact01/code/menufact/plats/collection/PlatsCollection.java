@@ -25,6 +25,7 @@ public class PlatsCollection implements IIteratorPlatsMenu{
     @Override
     public boolean Suivant() {
         if(position >= plats.size()-1) {
+            throw new MenuException("On depasse le nombre maximale de plats.");
             return false;
         }
         position++;
@@ -34,6 +35,7 @@ public class PlatsCollection implements IIteratorPlatsMenu{
     @Override
     public boolean Precedent() {
         if(position <= 0) {
+            throw new MenuException("On depasse le nombre minimale de plats");
             return false;
         };
         position--;

@@ -27,19 +27,19 @@ public class TestMenuFact01 {
 
             System.out.println("===menufact.Menu ajout avec 4 plats");
             Menu menu = Menu.GetInstance("Menu1");
-            menu.ajoute(p1);
-            menu.ajoute(p2);
-            menu.ajoute(ps1);
-            menu.ajoute(ps2);
+            menu.GetPlatsMenu().ajoute(p1);
+            menu.GetPlatsMenu().ajoute(p2);
+            menu.GetPlatsMenu().ajoute(ps1);
+            menu.GetPlatsMenu().ajoute(ps2);
             System.out.println(menu);
 
             System.out.println("===menufact.Menu position 1, plat à la position 0");
-            menu.position(0);
-            System.out.println(menu.platCourant());
+            menu.GetPlatsMenu().SetPosition(0);
+            System.out.println(menu.GetPlatsMenu().getActuel());
 
             System.out.println("===menufact.Menu position 1, plat à la position suivante 1");
-            menu.positionSuivante();
-            System.out.println(menu.platCourant());
+            menu.GetPlatsMenu().Suivant();
+            System.out.println(menu.GetPlatsMenu().getActuel());
 
             System.out.println("== Plat choisi");
             PlatChoisi pch1 = new PlatChoisi(p1, 5);

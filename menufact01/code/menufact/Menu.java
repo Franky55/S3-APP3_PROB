@@ -39,50 +39,30 @@ public class Menu {
         return platsMenu;
     }
 
-    /**
-     * Ajoute un plat au menu
-     * @param p
-     */
-    void ajoute (PlatAuMenu p) {
-        GetPlatsMenu().ajoute(p);
-    }
+    //void ajoute (PlatAuMenu p) {
+    //    GetPlatsMenu().ajoute(p);
+    //}
 
-    /**
-     * Met la position du curseur dans le menu
-     * @param i
-     */
-    public void position(int i) {
-        GetPlatsMenu().SetPosition(i);
-    }
+    //public void position(int i) {
+    //    GetPlatsMenu().SetPosition(i);
+    //}
 
-    /**
-     * Donne le plat courant, a la position du curseur de l'iterateur.
-     * @return
-     */
-    public PlatAuMenu platCourant()
-    {
-        return GetPlatsMenu().getActuel();
-    }
+    //public PlatAuMenu platCourant()
+    //{
+    //    //return GetPlatsMenu().getActuel();
+    //}
 
-    /**
-     * Vas au prochain plat.
-     * @throws MenuException
-     */
-    public void positionSuivante() throws MenuException
-    {
-        if (GetPlatsMenu().Suivant() == false)
-            throw new MenuException("On depasse le nombre maximale de plats.");
-    }
+    //public void positionSuivante() throws MenuException
+    //{
+    //   if (GetPlatsMenu().Suivant() == false)
+    //        throw new MenuException("On depasse le nombre maximale de plats.");
+    //}
 
-    /**
-     * Retourne au plat precedent
-     * @throws MenuException
-     */
-    public void positionPrecedente() throws MenuException
-    {
-        if (GetPlatsMenu().Precedent() == false)
-            throw new MenuException("On depasse le nombre minimale de plats");
-    }
+    //public void positionPrecedente() throws MenuException
+    //{
+    //    if (GetPlatsMenu().Precedent() == false)
+    //        throw new MenuException("On depasse le nombre minimale de plats");
+    //}
 
     @Override
     public String toString() {

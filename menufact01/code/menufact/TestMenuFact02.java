@@ -156,17 +156,17 @@ public class TestMenuFact02 {
     {
         System.out.println("=== test4_AjoutPlatsAuMenu");
         System.out.println("=== Ajout de plats au menu 1");
-        m1.ajoute(p1);
-        m1.ajoute(p2);
-        m1.ajoute(ps1);
-        m1.ajoute(ps2);
+        m1.GetPlatsMenu().ajoute(p1);
+        m1.GetPlatsMenu().ajoute(p2);
+        m1.GetPlatsMenu().ajoute(ps1);
+        m1.GetPlatsMenu().ajoute(ps2);
 
 
         System.out.println("=== Ajout de plats au menu 2");
-        m2.ajoute(p3);
-        m2.ajoute(p4);
-        m2.ajoute(ps3);
-        m2.ajoute(ps4);
+        m2.GetPlatsMenu().ajoute(p3);
+        m2.GetPlatsMenu().ajoute(p4);
+        m2.GetPlatsMenu().ajoute(ps3);
+        m2.GetPlatsMenu().ajoute(ps4);
 
         if(trace) {
             System.out.println(m1);
@@ -180,23 +180,22 @@ public class TestMenuFact02 {
         System.out.println("=== test5_DeplacementMenuAvancer");
 
         System.out.println("===Selectionner un plat du menu 0");
-        m1.position(0);
+        m1.GetPlatsMenu().SetPosition(0);
 
         System.out.println("=== Afficher le plat courant");
-        System.out.println(m1.platCourant());
+        System.out.println(m1.GetPlatsMenu().getActuel());
         try {
-
             System.out.println("=== Avancer le plat courant");
             System.out.println("1.");
-            m1.positionSuivante();
+            m1.GetPlatsMenu().Suivant();
             System.out.println("2.");
-            m1.positionSuivante();
+            m1.GetPlatsMenu().Suivant();
             System.out.println("3.");
-            m1.positionSuivante();
+            m1.GetPlatsMenu().Suivant();
             System.out.println("4.");
-            m1.positionSuivante();
+            m1.GetPlatsMenu().Suivant();
             System.out.println("5.");
-            m1.positionSuivante();
+            m1.GetPlatsMenu().Suivant();
         }
         catch (MenuException me)
         {
@@ -210,23 +209,22 @@ public class TestMenuFact02 {
         System.out.println("===test6_DeplacementMenuReculer");
 
         System.out.println("===Selectionner un plat du menu 3");
-        m1.position(3);
+        m1.GetPlatsMenu().SetPosition(3);
 
         System.out.println("=== Afficher le plat courant");
-        System.out.println(m1.platCourant());
+        System.out.println(m1.GetPlatsMenu().getActuel());
         try {
-
             System.out.println("=== Reculer le plat courant");
             System.out.println("2.");
-            m1.positionPrecedente();
+            m1.GetPlatsMenu().Precedent();
             System.out.println("1.");
-            m1.positionPrecedente();
+            m1.GetPlatsMenu().Precedent();
             System.out.println("0.");
-            m1.positionPrecedente();
+            m1.GetPlatsMenu().Precedent();
             System.out.println("-1.");
-            m1.positionPrecedente();
+            m1.GetPlatsMenu().Precedent();
             System.out.println("-2.");
-            m1.positionPrecedente();
+            m1.GetPlatsMenu().Precedent();
         }
         catch (MenuException me)
         {
@@ -238,7 +236,7 @@ public class TestMenuFact02 {
     {
         System.out.println("===test7_CreerFacture");
 
-        PlatChoisi platChoisi = new PlatChoisi(m1.platCourant(),5);
+        PlatChoisi platChoisi = new PlatChoisi(m1.GetPlatsMenu().getActuel(),5);
         try
         {
             f1.ajoutePlat(platChoisi);
@@ -262,14 +260,14 @@ public class TestMenuFact02 {
 
         try{
             for (int i=0; i< pos; i++)
-                m1.positionSuivante();
+                m1.GetPlatsMenu().Precedent();
         }
         catch (MenuException me)
         {
             throw me;
         }
 
-        PlatChoisi platChoisi = new PlatChoisi(m1.platCourant(),5);
+        PlatChoisi platChoisi = new PlatChoisi(m1.GetPlatsMenu().getActuel(),5);
         try
         {
             f1.ajoutePlat(platChoisi);
