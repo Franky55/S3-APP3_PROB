@@ -1,5 +1,6 @@
 package menufact.plats.collection;
 
+import menufact.exceptions.MenuException;
 import menufact.plats.PlatAuMenu;
 
 import java.util.ArrayList;
@@ -37,5 +38,21 @@ public class PlatsCollection implements IIteratorPlatsMenu{
         };
         position--;
         return true;
+    }
+
+    @Override
+    public boolean SetPosition(int position) {
+        if(position >= plats.size()-1) {
+            return false;
+        }
+        if(position < 0) {
+            return false;
+        }
+        this.position = position;
+    }
+
+    @Override
+    public int GetPosition() {
+        return position;
     }
 }
