@@ -1,9 +1,9 @@
 package Chef.Etats;
 
-import Chef.EtatsPlat;
+import Chef.Chef;
+import menufact.plats.EtatsPlat;
 
 public interface IEtatChef {
-    public void ChangerEtat();
-    public EtatsPlat GetEtatPlat();
+    public boolean SetChef(Chef chef);
     public String toString();
 }

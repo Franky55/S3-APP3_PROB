@@ -1,4 +1,4 @@
-package Chef;
+package menufact.plats;
 
 public enum EtatsPlat {
     COMMANDER,
