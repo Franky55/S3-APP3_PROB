@@ -19,6 +19,7 @@ public class Facture {
     private ArrayList<PlatChoisi> platchoisi = new ArrayList<PlatChoisi>();
     private int courant;
     private Client client;
+    private ArrayList<IFactureSubscriber> subscribers = new ArrayList<>();
 
 
     /**********************Constantes ************/
@@ -178,5 +179,21 @@ public class Facture {
         factureGenere += "          Le total est de:   " + total() + "\n";
 
         return factureGenere;
+    }
+
+    public Boolean Attach(IFactureSubscriber subscriber){
+        subscribers.add(subscriber);
+        return true;
+    }
+
+    public Boolean Detach(IFactureSubscriber subscriber){
+        subscribers.remove(subscriber);
+        return true;
+    }
+
+    public Boolean Notify(){
+        for (IFactureSubscriber subscriber : subscribers){
+            subscriber.notify();
+        }
     }
 }
