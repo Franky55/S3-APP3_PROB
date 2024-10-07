@@ -15,9 +15,9 @@ Hello, il y a une extension dans vscode pour UMLet. Le document .uxf.
     Et le menu
 ![alt text](./image.png)
 ## 6. Iterator:
-    Menu, itéré les plats
+    --- Menu, itéré les plats
 ## 7. Facade
-    Entre PlatChoisi et facture.
+    --- Entre PlatChoisi et facture.(MAGENTA)
 
 # Classe
 ## - Menu

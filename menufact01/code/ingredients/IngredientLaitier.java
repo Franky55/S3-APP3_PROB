@@ -3,6 +3,7 @@ package ingredients;
 public class IngredientLaitier implements IIngredients {
     private TypeIngredient typeIngredient = TypeIngredient.LAITIER;
     private int quantiteRestant = 0;
+    private String uniter;
 
     public int GetQuantiteRestant() {
         return quantiteRestant;
@@ -32,5 +33,14 @@ public class IngredientLaitier implements IIngredients {
 
     public void setTypeIngredient(TypeIngredient typeIngredient) {
         this.typeIngredient = typeIngredient;
+    }
+
+    public String getUniter() {
+        return uniter;
+    }
+
+    public Boolean setUniter(String uniter) {
+        this.uniter = uniter;
+        return true;
     }
 }
