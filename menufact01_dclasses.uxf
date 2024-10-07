@@ -282,7 +282,7 @@ fg=GREEN</panel_attributes><additional_attributes></additional_attributes></elem
 +Suivante():bool
 +Precedente():bool
 
-fg=#ff0080</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>2826</x><y>1395</y><w>144</w><h>81</h></coordinates><panel_attributes>&lt;&lt;interface&gt;&gt;
+fg=#ff0080</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>2826</x><y>1395</y><w>144</w><h>99</h></coordinates><panel_attributes>&lt;&lt;interface&gt;&gt;
 IIteratorPlatsMenu
 --
 +ajoute(PlatAuMenu):void
