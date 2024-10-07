@@ -107,7 +107,7 @@ public class TestMenuFact02 {
     private void test1_AffichePlatsAuMenu(boolean trace, PlatAuMenu p1, PlatAuMenu p2,
                                                  PlatAuMenu p3, PlatAuMenu p4, PlatAuMenu p5)
     {
-        System.out.println("=== test1_AffichePlatsAuMenu");
+        System.out.println("\n\n\n=== test1_AffichePlatsAuMenu");
         if(trace)
         {
             System.out.println(p1);
@@ -122,7 +122,7 @@ public class TestMenuFact02 {
    private void test2_AffichePlatsSante(boolean trace, PlatSante ps1, PlatSante ps2,
                                                PlatSante ps3, PlatSante ps4, PlatSante ps5)
     {
-        System.out.println("=== test2_AffichePlatsSante");
+        System.out.println("\n\n\n=== test2_AffichePlatsSante");
 
         if(trace)
         {
@@ -137,8 +137,7 @@ public class TestMenuFact02 {
 
     private static void test3_AjoutMenu(boolean trace, Menu m1, Menu m2)
     {
-
-        System.out.println("=== test3_AjoutMenu");
+        System.out.println("\n\n\n=== test3_AjoutMenu");
 
         if(trace) {
             System.out.println(m1);
