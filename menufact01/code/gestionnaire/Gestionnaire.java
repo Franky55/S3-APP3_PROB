@@ -14,6 +14,10 @@ public class Gestionnaire {
     }
 
     public Boolean ajoutePlatAFacture(PlatChoisi platChoisi) {
+//Check inventaire
+        //if good return true
+        //else return false
 
+        return false;
     }
 }
