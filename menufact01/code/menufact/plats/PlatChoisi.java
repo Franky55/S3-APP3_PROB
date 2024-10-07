@@ -5,6 +5,7 @@ import menufact.plats.PlatAuMenu;
 public class PlatChoisi {
     private PlatAuMenu plat;
     private int quantite;
+    private EtatsPlat etatsPlat = EtatsPlat.CHOISI;
 
     public PlatChoisi(PlatAuMenu plat, int quantite) {
         this.plat = plat;
