@@ -23,6 +23,18 @@ public class Chef implements IFactureSubscriber {
     }
 
     /**
+     * Reset le chef completement.
+     * Ca enleve ses plats a faire... ses etats... tout.
+     * Replace le chef par un nouveau.
+     * @return
+     */
+    public static boolean Fire() {
+        if(chefSingleton == null) {return false;}
+        chefSingleton = new Chef();
+        return true;
+    }
+
+    /**
      * Retourne le chef de la cuisine.
      * @return
      */
@@ -52,7 +64,7 @@ public class Chef implements IFactureSubscriber {
      * @return
      */
     public EtatsChef GetEtat() {
-        return etatsChef;
+        return vraiChef.GetEtatsChef();
     }
 
     /**
@@ -84,7 +96,14 @@ public class Chef implements IFactureSubscriber {
      * @return
      */
     public PlatChoisi GetPlatAFaire() {
+        if (plats.size()==0) return null;
         return plats.get(0);
+    }
+
+    public boolean PlatFini() {
+        if (plats.size()==0) return false;
+        plats.remove(0);
+        return true;
     }
 
     /**

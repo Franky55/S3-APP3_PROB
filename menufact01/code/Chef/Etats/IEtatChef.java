@@ -12,4 +12,5 @@ public interface IEtatChef {
     public void Update(PlatChoisi platChoisi);
     public boolean Execute();
     public String toString();
+    public EtatsChef GetEtatsChef();
 }

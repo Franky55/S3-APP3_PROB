@@ -52,4 +52,9 @@ public class ChefAttente implements IEtatChef{
     public String toString(){
         return "Chef en attente";
     }
+
+    @Override
+    public EtatsChef GetEtatsChef() {
+        return EtatsChef.ATTENTE;
+    }
 }
