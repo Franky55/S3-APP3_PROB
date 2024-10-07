@@ -153,7 +153,7 @@ public class TestMenuFact02 {
                                         PlatAuMenu p3, PlatAuMenu p4,
                                         PlatSante ps3, PlatSante ps4)
     {
-        System.out.println("=== test4_AjoutPlatsAuMenu");
+        System.out.println("\n\n\n=== test4_AjoutPlatsAuMenu");
         System.out.println("=== Ajout de plats au menu 1");
         m1.GetPlatsMenu().ajoute(p1);
         m1.GetPlatsMenu().ajoute(p2);
@@ -161,7 +161,7 @@ public class TestMenuFact02 {
         m1.GetPlatsMenu().ajoute(ps2);
 
 
-        System.out.println("=== Ajout de plats au menu 2");
+        System.out.println("\n=== Ajout de plats au menu 2");
         m2.GetPlatsMenu().ajoute(p3);
         m2.GetPlatsMenu().ajoute(p4);
         m2.GetPlatsMenu().ajoute(ps3);
@@ -176,15 +176,15 @@ public class TestMenuFact02 {
 
     private void test5_DeplacementMenuAvancer(Menu m1) throws MenuException
     {
-        System.out.println("=== test5_DeplacementMenuAvancer");
+        System.out.println("\n\n\n=== test5_DeplacementMenuAvancer");
 
         System.out.println("===Selectionner un plat du menu 0");
         m1.GetPlatsMenu().SetPosition(0);
 
-        System.out.println("=== Afficher le plat courant");
+        System.out.println("\n=== Afficher le plat courant");
         System.out.println(m1.GetPlatsMenu().getActuel());
         try {
-            System.out.println("=== Avancer le plat courant");
+            System.out.println("\n=== Avancer le plat courant");
             System.out.println("1.");
             m1.GetPlatsMenu().Suivant();
             System.out.println("2.");
@@ -205,15 +205,15 @@ public class TestMenuFact02 {
 
     private void test6_DeplacementMenuReculer(Menu m1) throws MenuException
     {
-        System.out.println("===test6_DeplacementMenuReculer");
+        System.out.println("\n\n\n===test6_DeplacementMenuReculer");
 
         System.out.println("===Selectionner un plat du menu 3");
         m1.GetPlatsMenu().SetPosition(3);
 
-        System.out.println("=== Afficher le plat courant");
+        System.out.println("\n=== Afficher le plat courant");
         System.out.println(m1.GetPlatsMenu().getActuel());
         try {
-            System.out.println("=== Reculer le plat courant");
+            System.out.println("\n=== Reculer le plat courant");
             System.out.println("2.");
             m1.GetPlatsMenu().Precedent();
             System.out.println("1.");
@@ -233,7 +233,7 @@ public class TestMenuFact02 {
 
     private void test7_CreerFacture(Facture f1, Menu m1) throws FactureException
     {
-        System.out.println("===test7_CreerFacture");
+        System.out.println("\n\n\n===test7_CreerFacture");
 
         PlatChoisi platChoisi = new PlatChoisi(m1.GetPlatsMenu().getActuel(),5);
         try
@@ -249,13 +249,13 @@ public class TestMenuFact02 {
 
 
     private void test8_AjouterClientFacture(Facture f1,Client c1) {
-        System.out.println("===test8_AjouterClientFacture");
+        System.out.println("\n\n\n===test8_AjouterClientFacture");
         f1.associerClient(c1);
         System.out.println(f1);
     }
     private void test8_AjouterPlatsFacture(Facture f1, Menu m1, int pos) throws MenuException,FactureException
     {
-        System.out.println("===test8_AjouterPlatsFacture");
+        System.out.println("\n\n\n===test8_AjouterPlatsFacture");
 
         try{
             for (int i=0; i< pos; i++)
@@ -280,12 +280,12 @@ public class TestMenuFact02 {
 
     private void test9_PayerFacture(Facture f1)
     {
-        System.out.println("===test9_PayerFacture");
+        System.out.println("\n\n\n===test9_PayerFacture");
 
         System.out.println("Avant payer la facture");
         System.out.println(f1);
         f1.payer();
-        System.out.println("Apres avoir paye la facture");
+        System.out.println("\nApres avoir paye la facture");
         System.out.println(f1);
     }
 }
