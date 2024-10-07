@@ -50,6 +50,6 @@ public class ChefAttente implements IEtatChef{
 
     @Override
     public String toString(){
-        return "";
+        return "Chef en attente";
     }
 }
