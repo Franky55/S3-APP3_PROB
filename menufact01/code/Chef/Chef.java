@@ -15,10 +15,17 @@ public class Chef implements IFactureSubscriber {
     private static Chef chefSingleton;
     private EtatsChef etatsChef;
 
+    /**
+     * Constructeur singleton.
+     */
     private Chef() {
         this.SetEtat(EtatsChef.ATTENTE);
     }
 
+    /**
+     * Retourne le chef de la cuisine.
+     * @return
+     */
     public static Chef GetInstance() {
         if(chefSingleton == null){
             chefSingleton = new Chef();
@@ -26,14 +33,31 @@ public class Chef implements IFactureSubscriber {
         return chefSingleton;
     }
 
+    /**
+     * Methode appeller lorsque la facture change et que des plats
+     * son ajoutee, que le chef doit faire.
+     * @param platChoisi
+     * @param nombreFois
+     */
+    @Override
     public void Update(PlatChoisi platChoisi, int nombreFois) {
         vraiChef.Update(platChoisi, nombreFois);
     }
 
+    /**
+     * Retourne l'etat du chef.
+     * @return
+     */
     public EtatsChef GetEtat() {
         return etatsChef;
     }
 
+    /**
+     * Change l'etat du chef.
+     * Pour qu'il commence a travailler ou qu'il aille en attente.
+     * @param nouveauxEtat
+     * @return
+     */
     public boolean SetEtat(EtatsChef nouveauxEtat) {
         etatsChef = nouveauxEtat;
         switch (etatsChef) {
@@ -51,7 +75,20 @@ public class Chef implements IFactureSubscriber {
         return true;
     }
 
+    /**
+     * Retourne le prochain plat a faire.
+     * null si y'a rien a faire.
+     * @return
+     */
     public PlatChoisi GetPlatAFaire() {
         return plats.get(0);
+    }
+
+    /**
+     * Execute ce que le chef doit faire
+     * @return true: aucun probleme.
+     */
+    public boolean Execute() {
+        return vraiChef.Execute();
     }
 }
