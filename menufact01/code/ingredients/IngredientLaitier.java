@@ -24,7 +24,7 @@ public class IngredientLaitier implements IIngredients {
     }
 
     public String toString() {
-        return "Ingredient: " + typeIngredient + " Quantite: " + quantiteRestant;
+        return "Ingredient: " + typeIngredient + " Quantite: " + quantiteRestant+ uniter;
     }
 
     public TypeIngredient getTypeIngredient() {

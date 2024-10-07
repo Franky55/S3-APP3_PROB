@@ -18,11 +18,34 @@ public class Inventaire {
     }
 
     public void addIngredient(IIngredients ingredient){
+        for (IIngredients i : ingredients) {
+            if(i.getTypeIngredient() == ingredient.getTypeIngredient()){
+                i.AddIngredient(ingredient.GetQuantiteRestant());
+                return;
+            }
+        }
+
         ingredients.add(ingredient);
     }
 
     public void removeIngredient(IIngredients ingredient){
-        ingredients.remove(ingredient);
+        for (IIngredients i : ingredients) {
+            if(i.getTypeIngredient() == ingredient.getTypeIngredient()){
+                i.RemoveIngredient(ingredient.GetQuantiteRestant());
+                return;
+            }
+        }
+
+        throw new InventaireException("Ingredient n'existe pas dans l'inventaire: " + ingredient.getTypeIngredient().toString());
+    }
+
+    public String toString(){
+        StringBuilder str = new StringBuilder();
+        for (IIngredients i : ingredients) {
+            str.append(i.toString() + "\n");
+        }
+
+        return str.toString();
     }
 
 }

@@ -23,7 +23,7 @@ public class IngredientEpice implements IIngredients {
     }
 
     public String toString() {
-        return "Ingredient: " + typeIngredient + " Quantite: " + quantiteRestant;
+        return "Ingredient: " + typeIngredient + " Quantite: " + quantiteRestant + uniter;
     }
 
     public TypeIngredient getTypeIngredient() {
@@ -37,6 +37,7 @@ public class IngredientEpice implements IIngredients {
     public String getUniter() {
         return uniter;
     }
+
     public Boolean setUniter(String uniter){
         this.uniter = uniter;
         return true;

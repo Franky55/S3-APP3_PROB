@@ -6,5 +6,6 @@ public interface IIngredients {
     Boolean RemoveIngredient(int quantite);
     String getUniter();
     Boolean setUniter(String uniter);
+    TypeIngredient getTypeIngredient();
     String toString();
 }
