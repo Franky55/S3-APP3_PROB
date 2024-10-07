@@ -1,4 +1,9 @@
 package Chef.Etats;
 
-public class IEtatChef {
+import Chef.EtatsPlat;
+
+public interface IEtatChef {
+    public void ChangerEtat();
+    public EtatsPlat GetEtatPlat();
+    public String toString();
 }

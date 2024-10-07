@@ -1,4 +1,9 @@
 package Chef;
 
-public class EtatsPlat {
+public enum EtatsPlat {
+    COMMANDER,
+    PREPARATION,
+    TERMINER,
+    SERVI,
+    IMPOSSIBLE
 }
