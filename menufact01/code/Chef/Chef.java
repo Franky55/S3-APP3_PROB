@@ -16,6 +16,7 @@ public class Chef implements IFactureSubscriber {
     private EtatsChef etatsChef;
 
     private Chef() {
+        this.SetEtat(EtatsChef.ATTENTE);
     }
 
     public static Chef GetInstance() {
@@ -38,9 +39,11 @@ public class Chef implements IFactureSubscriber {
         switch (etatsChef) {
             case ATTENTE:
                 vraiChef = new ChefAttente(this);
+                etatsChef = EtatsChef.ATTENTE;
                 break;
             case TRAVAILLE:
                 vraiChef = new ChefTravaille(this);
+                etatsChef = EtatsChef.TRAVAILLE;
                 break;
             default:
                 return false;

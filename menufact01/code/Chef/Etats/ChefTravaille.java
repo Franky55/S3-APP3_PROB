@@ -26,5 +26,7 @@ public class ChefTravaille implements IEtatChef {
         return "";
     }
 
-    public
+    public void AjouterIngredient(PlatChoisi platChoisi){
+
+    }
 }
