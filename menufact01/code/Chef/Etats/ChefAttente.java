@@ -22,6 +22,14 @@ public class ChefAttente implements IEtatChef{
     }
 
     @Override
+    public boolean Execute() {
+        PlatChoisi prochainPlat = chefReference.GetPlatAFaire();
+        if (prochainPlat == null) return true;
+
+        return false;
+    }
+
+    @Override
     public String toString(){
         return "";
     }

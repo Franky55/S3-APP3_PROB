@@ -22,6 +22,11 @@ public class ChefTravaille implements IEtatChef {
     }
 
     @Override
+    public boolean Execute() {
+        return false;
+    }
+
+    @Override
     public String toString(){
         return "";
     }
