@@ -2,6 +2,7 @@ package menufact.facture;
 
 import menufact.Client;
 import menufact.facture.exceptions.FactureException;
+import menufact.plats.EtatsPlat;
 import menufact.plats.PlatChoisi;
 
 import java.util.ArrayList;
@@ -126,7 +127,11 @@ public class Facture {
     public void ajoutePlat(PlatChoisi p) throws FactureException
     {
         if (etat == FactureEtat.OUVERTE){
-            platchoisi.add(p);
+            for (int i = 0; i < p.getQuantite(); i++) {
+                platchoisi.add(p);
+            }
+            
+            p.setEtatsPlat(EtatsPlat.COMMANDER);
             this.Notify(p);
         }
         else
