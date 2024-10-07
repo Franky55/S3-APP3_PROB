@@ -1,4 +1,4 @@
 package menufact.facture;
 
-public class IFactureSubscriber {
+public interface IFactureSubscriber {
 }
