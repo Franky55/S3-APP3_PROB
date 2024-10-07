@@ -130,7 +130,7 @@ public class Facture {
             for (int i = 0; i < p.getQuantite(); i++) {
                 platchoisi.add(p);
             }
-            
+
             p.setEtatsPlat(EtatsPlat.COMMANDER);
             this.Notify(p);
         }
