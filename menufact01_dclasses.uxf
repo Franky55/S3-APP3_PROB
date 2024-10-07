@@ -1,16 +1,11 @@
 <diagram program="umletino" version="15.1"><zoom_level>9</zoom_level><help_text>Space for diagram notes</help_text><element><id>UMLClass</id><coordinates><x>2835</x><y>1017</y><w>243</w><h>198</h></coordinates><panel_attributes>Menu
 --
 -description:String
--courant:ing
--plat:ArrayList&lt;PlatAuMenu&gt;
+-collection: IIteratorPlatsMenu
 --
 -Menu(String)
 +GetInstance(String):Menu
-+ajoute(PlatAuMenu):void
-+position(int):void
-+platCourant():PlatAuMenu
-+positionSuivante():void
-+positionPrecedente():void
++GetCollection(): IIteratorPlatsMenu
 +toString(String)</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>2763</x><y>558</y><w>270</w><h>342</h></coordinates><panel_attributes>Facture
 --
 -date:Date
@@ -108,7 +103,7 @@ lt=&lt;.</panel_attributes><additional_attributes>210;10;10;50</additional_attri
 --
 
 --
--methodesTests</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>3024</x><y>693</y><w>144</w><h>108</h></coordinates><panel_attributes>lt=&lt;.</panel_attributes><additional_attributes>10;100;140;10</additional_attributes></element><element><id>Relation</id><coordinates><x>2592</x><y>738</y><w>261</w><h>369</h></coordinates><panel_attributes>lt=&lt;.</panel_attributes><additional_attributes>10;10;270;390</additional_attributes></element><element><id>UMLPackage</id><coordinates><x>2097</x><y>369</y><w>621</w><h>765</h></coordinates><panel_attributes>Plats</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLPackage</id><coordinates><x>2745</x><y>387</y><w>315</w><h>576</h></coordinates><panel_attributes>facture</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLPackage</id><coordinates><x>2826</x><y>981</y><w>531</w><h>252</h></coordinates><panel_attributes>menuFact</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>2205</x><y>909</y><w>243</w><h>162</h></coordinates><panel_attributes>PlatEnfant
+-methodesTests</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>3024</x><y>693</y><w>144</w><h>108</h></coordinates><panel_attributes>lt=&lt;.</panel_attributes><additional_attributes>10;100;140;10</additional_attributes></element><element><id>Relation</id><coordinates><x>2592</x><y>738</y><w>261</w><h>369</h></coordinates><panel_attributes>lt=&lt;.</panel_attributes><additional_attributes>10;10;270;390</additional_attributes></element><element><id>UMLPackage</id><coordinates><x>2097</x><y>369</y><w>621</w><h>765</h></coordinates><panel_attributes>Plats</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLPackage</id><coordinates><x>2745</x><y>387</y><w>315</w><h>576</h></coordinates><panel_attributes>facture</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLPackage</id><coordinates><x>2826</x><y>981</y><w>531</w><h>261</h></coordinates><panel_attributes>menuFact</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>2205</x><y>909</y><w>243</w><h>162</h></coordinates><panel_attributes>PlatEnfant
 --
 -proportion:double
 --
@@ -267,4 +262,19 @@ bg=BLACK</panel_attributes><additional_attributes>10;10;140;80</additional_attri
 +toString():String
 +genererFacture():String
 
-fg=GREEN</panel_attributes><additional_attributes></additional_attributes></element></diagram>
+fg=GREEN</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>2826</x><y>1260</y><w>144</w><h>117</h></coordinates><panel_attributes>PlatsCollection
+--
+-plats:ArrayList&lt;PlatAuMenu&gt;
+--
++PlatsCollection()
++ajoute(PlatAuMenu):void
++getActuel():PlatAuMenu
++Suivante():bool
++Precedente():bool</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>2826</x><y>1395</y><w>144</w><h>81</h></coordinates><panel_attributes>IIteratorPlatsMenu
+--
++ajoute(PlatAuMenu):void
++getActuel():PlatAuMenu
++Suivante():bool
++Precedente():bool</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>2961</x><y>1206</y><w>90</w><h>252</h></coordinates><panel_attributes>lt=&lt;&lt;&lt;&lt;-
+fg=BLACK
+bg=BLACK</panel_attributes><additional_attributes>80;10;80;260;10;260</additional_attributes></element><element><id>Relation</id><coordinates><x>2889</x><y>1206</y><w>27</w><h>72</h></coordinates><panel_attributes>lt=&lt;.</panel_attributes><additional_attributes>10;10;10;60</additional_attributes></element></diagram>
