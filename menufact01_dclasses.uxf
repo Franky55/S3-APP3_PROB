@@ -60,10 +60,9 @@ lt=&lt;.</panel_attributes><additional_attributes>50;40;10;10</additional_attrib
 +setPrix(double):void
 +getRecette():ArrayList&lt;IIngredient&gt;
 +setRecette(ingredients:ArrayList&lt;IIngredient&gt;):bool
-+toString():String</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>4032</x><y>516</y><w>300</w><h>72</h></coordinates><panel_attributes>lt=&lt;&lt;&lt;&lt;-</panel_attributes><additional_attributes>10;40;230;10</additional_attributes></element><element><id>Relation</id><coordinates><x>3816</x><y>384</y><w>84</w><h>108</h></coordinates><panel_attributes>lt=&lt;.</panel_attributes><additional_attributes>50;10;10;70</additional_attributes></element><element><id>UMLClass</id><coordinates><x>4248</x><y>1116</y><w>180</w><h>60</h></coordinates><panel_attributes>MenuException
++toString():String</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>4032</x><y>516</y><w>300</w><h>72</h></coordinates><panel_attributes>lt=&lt;&lt;&lt;&lt;-</panel_attributes><additional_attributes>10;40;230;10</additional_attributes></element><element><id>Relation</id><coordinates><x>3816</x><y>384</y><w>84</w><h>108</h></coordinates><panel_attributes>lt=&lt;.</panel_attributes><additional_attributes>50;10;10;70</additional_attributes></element><element><id>UMLClass</id><coordinates><x>4248</x><y>1116</y><w>180</w><h>60</h></coordinates><panel_attributes>MenuViewException
 --
---</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>4332</x><y>996</y><w>36</w><h>144</h></coordinates><panel_attributes>lt=&lt;&lt;-</panel_attributes><additional_attributes>10;10;10;100</additional_attributes></element><element><id>Relation</id><coordinates><x>4092</x><y>1164</y><w>276</w><h>84</h></coordinates><panel_attributes>&lt;&lt;throws&gt;&gt;
-lt=&lt;.</panel_attributes><additional_attributes>210;10;10;50</additional_attributes></element><element><id>Relation</id><coordinates><x>3816</x><y>912</y><w>48</w><h>192</h></coordinates><panel_attributes>lt=&lt;.</panel_attributes><additional_attributes>20;140;10;10</additional_attributes></element><element><id>UMLClass</id><coordinates><x>4140</x><y>264</y><w>324</w><h>264</h></coordinates><panel_attributes>Client
+--</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>4332</x><y>996</y><w>36</w><h>144</h></coordinates><panel_attributes>lt=&lt;&lt;-</panel_attributes><additional_attributes>10;10;10;100</additional_attributes></element><element><id>Relation</id><coordinates><x>3816</x><y>912</y><w>48</w><h>192</h></coordinates><panel_attributes>lt=&lt;.</panel_attributes><additional_attributes>20;140;10;10</additional_attributes></element><element><id>UMLClass</id><coordinates><x>4140</x><y>264</y><w>324</w><h>264</h></coordinates><panel_attributes>Client
 --
 -idClient:int
 -nom:String
@@ -335,16 +334,18 @@ view: MenuView
 +updateAffichage(): void
 </panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>4248</x><y>1392</y><w>324</w><h>132</h></coordinates><panel_attributes>MenuView
 --
--controlleur:MenuController
 -afficher: String
 --
-+MenuDisplay(controlleur: MenuControlleur)
++MenuView()
 +SetView(affichage: String): void
-+afficher(): void</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>2184</x><y>480</y><w>180</w><h>60</h></coordinates><panel_attributes>InventaireException
++affiche(): void
++toString(): String</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>2184</x><y>480</y><w>180</w><h>60</h></coordinates><panel_attributes>InventaireException
 --
 --</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>2268</x><y>420</y><w>96</w><h>84</h></coordinates><panel_attributes>&lt;&lt;throws&gt;&gt;
 lt=&lt;.</panel_attributes><additional_attributes>10;50;10;10</additional_attributes></element><element><id>Relation</id><coordinates><x>3948</x><y>1332</y><w>36</w><h>84</h></coordinates><panel_attributes>lt=&lt;&lt;&lt;&lt;-
 fg=BLACK
 bg=BLACK</panel_attributes><additional_attributes>10;10;10;50</additional_attributes></element><element><id>Relation</id><coordinates><x>4164</x><y>1452</y><w>108</w><h>36</h></coordinates><panel_attributes>lt=&lt;&lt;&lt;&lt;-
 fg=BLACK
-bg=BLACK</panel_attributes><additional_attributes>70;10;10;10</additional_attributes></element></diagram>
+bg=BLACK</panel_attributes><additional_attributes>70;10;10;10</additional_attributes></element><element><id>Relation</id><coordinates><x>4332</x><y>1164</y><w>96</w><h>252</h></coordinates><panel_attributes>lt=&lt;.
+
+&lt;&lt;throws&gt;&gt;</panel_attributes><additional_attributes>10;10;10;190</additional_attributes></element></diagram>
