@@ -94,4 +94,8 @@ public class Chef implements IFactureSubscriber {
     public boolean Execute() {
         return vraiChef.Execute();
     }
+
+    public String toString() {
+        return vraiChef.toString();
+    }
 }
