@@ -9,9 +9,17 @@ public class Menu {
     private String description;
     private int courant;
     private ArrayList<PlatAuMenu> plat = new ArrayList<PlatAuMenu>();
+    private static Menu menu;
 
-    public Menu(String description) {
+    private Menu(String description) {
         this.description = description;
+    }
+
+    public static Menu GetInstance(String description) {
+        if(menu == null)
+            menu = new Menu(description);
+
+        return menu;
     }
 
     void ajoute (PlatAuMenu p)
