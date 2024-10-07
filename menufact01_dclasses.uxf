@@ -132,7 +132,9 @@ fg=#FF8000
 +SetEtat(etat: EtatsChef):bool
 +GetPlatAFaire(): PlatChoisi
 +Execute(): bool
-+toString():String</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>2115</x><y>450</y><w>135</w><h>108</h></coordinates><panel_attributes>&lt;&lt;enum&gt;&gt;
++toString():String
+
+fg=#80fffff</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>2115</x><y>450</y><w>135</w><h>108</h></coordinates><panel_attributes>&lt;&lt;enum&gt;&gt;
 EtatsPlat
 --
 CHOISI
@@ -198,21 +200,27 @@ IEtatChef
 +SetChef(chef:Chef): bool
 +toString():String
 +Update(PlatChoisi platChoisi, int quantite): void
-+Execute(): bool</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>477</x><y>1188</y><w>180</w><h>126</h></coordinates><panel_attributes>ChefCommander
++Execute(): bool
+
+fg=#80fffff</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>477</x><y>1188</y><w>180</w><h>126</h></coordinates><panel_attributes>ChefCommander
 --
 -chef:Chef
 --
 +ChefCommander(chef:Chef)
 +SetChef(chef:Chef):bool
 +toString():String
-+Execute(): bool</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>666</x><y>1188</y><w>180</w><h>126</h></coordinates><panel_attributes>ChefTravaille
++Execute(): bool
+
+fg=#80fffff</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>666</x><y>1188</y><w>180</w><h>126</h></coordinates><panel_attributes>ChefTravaille
 --
 -chef:Chef
 --
 +ChefTravaille(chef:Chef)
 +SetChef(chef:Chef):bool
 +toString():String
-+Execute(): bool</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>585</x><y>1098</y><w>288</w><h>108</h></coordinates><panel_attributes>lt=&lt;&lt;-</panel_attributes><additional_attributes>300;10;300;60;10;60;10;100</additional_attributes></element><element><id>Relation</id><coordinates><x>774</x><y>1098</y><w>99</w><h>108</h></coordinates><panel_attributes>lt=&lt;&lt;-</panel_attributes><additional_attributes>90;10;90;60;10;60;10;100</additional_attributes></element><element><id>Relation</id><coordinates><x>666</x><y>1044</y><w>90</w><h>45</h></coordinates><panel_attributes>lt=&lt;&lt;&lt;&lt;-
++Execute(): bool
+
+fg=#80fffff</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>585</x><y>1098</y><w>288</w><h>108</h></coordinates><panel_attributes>lt=&lt;&lt;-</panel_attributes><additional_attributes>300;10;300;60;10;60;10;100</additional_attributes></element><element><id>Relation</id><coordinates><x>774</x><y>1098</y><w>99</w><h>108</h></coordinates><panel_attributes>lt=&lt;&lt;-</panel_attributes><additional_attributes>90;10;90;60;10;60;10;100</additional_attributes></element><element><id>Relation</id><coordinates><x>666</x><y>1044</y><w>90</w><h>45</h></coordinates><panel_attributes>lt=&lt;&lt;&lt;&lt;-
 fg=BLACK
 bg=BLACK</panel_attributes><additional_attributes>80;30;10;10</additional_attributes></element><element><id>UMLClass</id><coordinates><x>0</x><y>972</y><w>279</w><h>135</h></coordinates><panel_attributes>&lt;&lt;Interface&gt;&gt;
 IFactureSubscriber
@@ -227,7 +235,9 @@ IFactureSubscriber
 EtatsChef
 --
 TRAVAILLE
-ATTENTE</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>531</x><y>1134</y><w>54</w><h>72</h></coordinates><panel_attributes>lt=&lt;&lt;&lt;&lt;-
+ATTENTE
+
+fg=#80fffff</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>531</x><y>1134</y><w>54</w><h>72</h></coordinates><panel_attributes>lt=&lt;&lt;&lt;&lt;-
 fg=BLACK
 bg=BLACK</panel_attributes><additional_attributes>40;60;10;10</additional_attributes></element><element><id>Relation</id><coordinates><x>531</x><y>1134</y><w>234</w><h>72</h></coordinates><panel_attributes>lt=&lt;&lt;&lt;&lt;-
 fg=BLACK
@@ -270,11 +280,16 @@ fg=GREEN</panel_attributes><additional_attributes></additional_attributes></elem
 +ajoute(PlatAuMenu):void
 +getActuel():PlatAuMenu
 +Suivante():bool
-+Precedente():bool</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>2826</x><y>1395</y><w>144</w><h>81</h></coordinates><panel_attributes>IIteratorPlatsMenu
++Precedente():bool
+
+fg=#ff0080</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>2826</x><y>1395</y><w>144</w><h>81</h></coordinates><panel_attributes>&lt;&lt;interface&gt;&gt;
+IIteratorPlatsMenu
 --
 +ajoute(PlatAuMenu):void
 +getActuel():PlatAuMenu
 +Suivante():bool
-+Precedente():bool</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>2961</x><y>1206</y><w>90</w><h>252</h></coordinates><panel_attributes>lt=&lt;&lt;&lt;&lt;-
++Precedente():bool
+
+fg=#ff0080</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>2961</x><y>1206</y><w>90</w><h>252</h></coordinates><panel_attributes>lt=&lt;&lt;&lt;&lt;-
 fg=BLACK
 bg=BLACK</panel_attributes><additional_attributes>80;10;80;260;10;260</additional_attributes></element><element><id>Relation</id><coordinates><x>2889</x><y>1206</y><w>27</w><h>72</h></coordinates><panel_attributes>lt=&lt;.</panel_attributes><additional_attributes>10;10;10;60</additional_attributes></element></diagram>
