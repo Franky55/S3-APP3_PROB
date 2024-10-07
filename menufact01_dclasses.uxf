@@ -154,6 +154,7 @@ IMPOSSIBLE</panel_attributes><additional_attributes></additional_attributes></el
 -uniter:String
 --
 +IngredientFruits(quantite:Int, uniter:String):bool
++getTypeIngredient():TypeIngredient
 +GetQuantiteRestant():Int
 +Add(quantite:Int):bool
 +Remove(quantite:Int):bool
@@ -166,6 +167,7 @@ IMPOSSIBLE</panel_attributes><additional_attributes></additional_attributes></el
 -uniter:String
 --
 +IngredientLegumes(quantite:Int, uniter:String):bool
++getTypeIngredient():TypeIngredient
 +GetQuantiteRestant():Int
 +Add(quantite:Int):bool
 +Remove(quantite:Int):bool
@@ -178,6 +180,7 @@ IMPOSSIBLE</panel_attributes><additional_attributes></additional_attributes></el
 -uniter:String
 --
 +IngredientViande(quantite:Int, uniter:String):bool
++getTypeIngredient():TypeIngredient
 +GetQuantiteRestant():Int
 +Add(quantite:Int):bool
 +Remove(quantite:Int):bool
@@ -190,6 +193,7 @@ IMPOSSIBLE</panel_attributes><additional_attributes></additional_attributes></el
 -uniter:String
 --
 +IngredientLaitier(quantite:Int, uniter:String):bool
++getTypeIngredient():TypeIngredient
 +GetQuantiteRestant():Int
 +Add(quantite:Int):bool
 +Remove(quantite:Int):bool
@@ -202,6 +206,7 @@ IMPOSSIBLE</panel_attributes><additional_attributes></additional_attributes></el
 -uniter:String
 --
 +IngredientEpice(quantite:Int, uniter:String):bool
++getTypeIngredient():TypeIngredient
 +GetQuantiteRestant():Int
 +Add(quantite:Int):bool
 +Remove(quantite:Int):bool
