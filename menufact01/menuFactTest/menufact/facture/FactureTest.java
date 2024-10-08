@@ -1,8 +1,8 @@
+package menufact.facture;
+
 import Chef.Chef;
 import Chef.Etats.EtatsChef;
 import menufact.Client;
-import menufact.facture.Facture;
-import menufact.facture.FactureEtat;
 import menufact.facture.exceptions.FactureException;
 import menufact.plats.EtatsPlat;
 import menufact.plats.PlatAuMenu;

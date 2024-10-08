@@ -1,6 +1,5 @@
 package menufact;
 
-import menufact.MenuView;
 import menufact.exceptions.MenuViewException;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;

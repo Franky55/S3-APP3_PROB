@@ -1,9 +1,8 @@
+package menufact.plats;
+
 import ingredients.IIngredients;
 import ingredients.IngredientCreator;
 import ingredients.TypeIngredient;
-import menufact.plats.EtatsPlat;
-import menufact.plats.PlatAuMenu;
-import menufact.plats.PlatChoisi;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 

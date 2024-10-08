@@ -1,8 +1,5 @@
 package menufact;
 
-import menufact.Menu;
-import menufact.MenuController;
-import menufact.MenuView;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 

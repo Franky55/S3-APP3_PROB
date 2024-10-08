@@ -2,9 +2,7 @@ package inventaire;
 
 import ingredients.IIngredients;
 import ingredients.IngredientCreator;
-import ingredients.IngredientEpice;
 import ingredients.TypeIngredient;
-import inventaire.Inventaire;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 
