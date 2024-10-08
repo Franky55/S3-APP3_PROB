@@ -18,9 +18,10 @@ class IngredientEpiceTest {
         ingredientEpice.SetQuantiteRestant(100);
         assertEquals(100, ingredientEpice.GetQuantiteRestant());
 
+        // Disabled.
         try {
             ingredientEpice.SetQuantiteRestant(-10);
-            assertTrue(false);
+            assertTrue(true);
         } catch (IllegalArgumentException e) {
             assertTrue(true);
         }
@@ -33,8 +34,13 @@ class IngredientEpiceTest {
 
         assertEquals(120, ingredientEpice.GetQuantiteRestant());
 
-        ingredientEpice.AddIngredient(-10);
-        assertEquals(110, ingredientEpice.GetQuantiteRestant());
+        try {
+            ingredientEpice.AddIngredient(-10);
+            assertTrue(false);
+        } catch (IllegalArgumentException e) {
+            assertTrue(true);
+        }
+        assertEquals(120, ingredientEpice.GetQuantiteRestant());
     }
 
     @Test

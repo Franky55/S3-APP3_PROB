@@ -45,9 +45,9 @@ public class Menu {
 
     @Override
     public String toString() {
-        return "menufact.Menu{" +
-                "description='" + description + '\'' +
-                ", courant=" + GetPlatsMenu().GetPosition() +
+        return  "Menu:\n" +
+                " -- description:  '" + description + "\'\n" +
+                " -- index courant: " + GetPlatsMenu().GetPosition() + "\n" +
                 ", plat=" + "\n" + GetPlatsMenu().getActuel() +
                 '}';
     }

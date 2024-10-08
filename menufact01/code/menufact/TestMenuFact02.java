@@ -58,12 +58,10 @@ public class TestMenuFact02 {
 //        ArrayList<IIngredients> recettePourEnfant3 = new ArrayList<>(List.of(Objects.requireNonNull(IngredientCreator.CreateNewIngredient(TypeIngredient.FRUIT, 20, "g"))));
 //        ArrayList<IIngredients> recettePourEnfant4 = new ArrayList<>(List.of(Objects.requireNonNull(IngredientCreator.CreateNewIngredient(TypeIngredient.FRUIT, 20, "g"))));
 
-
         PlatEnfant pe1 = new PlatEnfant(5,"PlatEnfant0",10,recette,0.5);
         PlatEnfant pe2 = new PlatEnfant(6,"PlatEnfant1",20,recette, 0.8);
         PlatEnfant pe3 = new PlatEnfant(7,"PlatEnfant2",30,recette,0.5);
         PlatEnfant pe4 = new PlatEnfant(8,"PlatEnfant3",40,recette,0.5);
-
 
         Menu m1 = Menu.GetInstance("menufact.Menu 1");
         Menu m2 = Menu.GetInstance("menufact.Menu 2");
@@ -77,7 +75,6 @@ public class TestMenuFact02 {
         f1.attach(chef);
 
         Client c1 = new Client(1,"Mr Client","1234567890");
-
 
         t.test1_AffichePlatsAuMenu(trace, p1,p2,p3,p4,p5);
         t. test2_AffichePlatsSante(trace, ps1,ps2,ps3,ps4,ps5);
@@ -145,14 +142,25 @@ public class TestMenuFact02 {
             System.out.println(fe.getMessage());
         }
 
-
-
-
-
-
+        System.out.println("========================");
+        System.out.println("========================");
         System.out.println("FIN DE TOUS LES TESTS...");
-
+        System.out.println("========================");
+        System.out.println("========================");
+        System.out.println();
+        mc1.UpdateAffichage();
+        System.out.println(mv1);
+        System.out.println("========================");
+        System.out.println("========================");
+        System.out.println("========================");
+        System.out.println("========================");
         System.out.println(f1.genererFacture());
+        System.out.println("========================");
+        System.out.println("========================");
+        System.out.println("========================");
+        System.out.println("========================");
+        System.out.println(inventaire);
+        System.out.println("========================");
     }
 
     private void test1_AffichePlatsAuMenu(boolean trace, PlatAuMenu p1, PlatAuMenu p2,
@@ -309,7 +317,7 @@ public class TestMenuFact02 {
         PlatChoisi platChoisi2 = new PlatChoisi(m1.GetMenu().GetPlatsMenu().getActuel(),2);
         Gestionnaire gestionnaire = new Gestionnaire(f1, inv);
 
-        if(gestionnaire.ajoutePlatAFacture(platChoisi)) {
+        if(gestionnaire.ajoutePlatAFacture(platChoisi2)) {
             System.out.println(f1);
         }
         else {
@@ -347,23 +355,21 @@ public class TestMenuFact02 {
             throw me;
         }
 
-        PlatChoisi platChoisi = new PlatChoisi(m1.GetMenu().GetPlatsMenu().getActuel(),2);
         Gestionnaire gestionnaire = new Gestionnaire(f1, inv);
-//        try
-//        {
-//            f1.ajoutePlat(platChoisi);
-//        }
-//        catch (FactureException fe)
-//        {
-//            throw fe;
-//        }
-//        System.out.println(f1);
-        if(gestionnaire.ajoutePlatAFacture(platChoisi)) {
-            System.out.println(f1);
-        }
-        else {
-            System.out.println("Erreur votre commande n'a pas reussie a se faire ajouter a la facture");
-            System.out.println(f1);
+
+        for (int i=0; i< m1.GetMenu().GetPlatsMenu().GetSize(); i++)
+        {
+            m1.GetMenu().GetPlatsMenu().SetPosition(i);
+            PlatAuMenu bruh = m1.GetMenu().GetPlatsMenu().getActuel();
+            PlatChoisi bruh2 = new PlatChoisi(m1.GetMenu().GetPlatsMenu().getActuel(),1);
+
+            if(gestionnaire.ajoutePlatAFacture(bruh2)) {
+            }
+            else {
+                System.err.println("Erreur votre commande n'a pas reussie a se faire ajouter a la facture");
+                System.err.println(f1);
+                return;
+            }
         }
     }
 
@@ -388,7 +394,7 @@ public class TestMenuFact02 {
 
         for (int index = 0; 0 < chef.nombresDePlatsAFaire(); index++) {
             chef.Execute();
-            if(index > 10) {
+            if(index > 20) {
                 System.err.println("Le chef fait absolument rien... Bruh.");
                 return;
             }

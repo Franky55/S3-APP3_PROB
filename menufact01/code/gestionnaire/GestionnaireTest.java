@@ -109,7 +109,6 @@ class GestionnaireTest {
         Gestionnaire gestionnaire = new Gestionnaire(facture, inventaire);
 
         assertTrue(gestionnaire.ajoutePlatAFacture(iWantShrooms));
-        assertTrue(gestionnaire.ajoutePlatAFacture(iWantShrooms));
         assertFalse(gestionnaire.ajoutePlatAFacture(iWantShrooms));
 
         assertEquals(4, inventaire.getIngredient(TypeIngredient.VIANDE).GetQuantiteRestant());

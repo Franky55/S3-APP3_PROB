@@ -18,6 +18,21 @@ public class MenuController {
     }
 
     public void UpdateAffichage() {
-        view.SetView(menu.toString());
+
+        String header = "Menu:\n" +
+                " -- description:  '" + menu.getDescription() + "\'\n" +
+                " -- index courant: " + menu.GetPlatsMenu().GetPosition() + "\n" +
+                " ------------------------------ \n";
+
+        String plats = "";
+
+        for (int index = 0; index < menu.GetPlatsMenu().GetSize(); index++) {
+            menu.GetPlatsMenu().SetPosition(index);
+            String result = " -- " + index + ":\t";
+            result += menu.GetPlatsMenu().getActuel().styledString();
+            plats += result;
+        }
+
+        view.SetView(header + plats);
     }
 }

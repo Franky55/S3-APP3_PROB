@@ -29,6 +29,18 @@ public class PlatSante extends PlatAuMenu {
                 "} " + super.toString();
     }
 
+    @Override
+    public String styledString() {
+        return "PlatSante: \n" +
+                "\t\t" + "- description: " + this.getDescription() + "\n" +
+                "\t\t" + "- code:        " + this.getCode() + "\n" +
+                "\t\t" + "- prix:        " + this.getPrix() + "\n" +
+                "\t\t" + "- ingredient:  " + this.getIngredients().toString() + "\n" +
+                "\t\t" + "- kcals:       " + this.getKcal() + "\n" +
+                "\t\t" + "- chol:        " + this.getChol() + "\n" +
+                "\t\t" + "- gras:        " + this.getGras() + "\n";
+    }
+
     public double getKcal() {
         return kcal;
     }

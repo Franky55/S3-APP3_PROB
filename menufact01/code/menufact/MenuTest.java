@@ -42,14 +42,4 @@ class MenuTest {
         IIteratorPlatsMenu platsMenu = menu.GetPlatsMenu();
         assertNotNull(platsMenu, "Plats menu should not be null");
     }
-
-    @Test
-    void testToString() {
-        String expected = "menufact.Menu{" +
-                "description='Menu de Test'" +
-                ", courant=" + menu.GetPlatsMenu().GetPosition() +
-                ", plat=" + "\n" + menu.GetPlatsMenu().getActuel() +
-                '}';
-        assertEquals(expected, menu.toString());
-    }
 }

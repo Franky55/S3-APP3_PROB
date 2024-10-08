@@ -13,6 +13,11 @@ public class PlatsCollection implements IIteratorPlatsMenu{
     }
 
     @Override
+    public int GetSize() {
+        return plats.size();
+    }
+
+    @Override
     public void ajoute(PlatAuMenu plat) {
         plats.add(plat);
     }

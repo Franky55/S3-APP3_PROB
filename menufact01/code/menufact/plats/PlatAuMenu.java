@@ -29,6 +29,14 @@ public class PlatAuMenu {
                 "}\n";
     }
 
+    public String styledString() {
+        return "PlatAuMenu: \n" +
+                "\t\t" + "- description: " + description + "\n" +
+                "\t\t" + "- code:        " + code + "\n" +
+                "\t\t" + "- prix:        " + prix + "\n" +
+                "\t\t" + "- ingredient:  " + this.getIngredients().toString() + "\n";
+    }
+
     public int getCode() {
         return code;
     }

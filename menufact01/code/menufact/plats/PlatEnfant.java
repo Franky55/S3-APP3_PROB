@@ -17,6 +17,16 @@ public class PlatEnfant extends PlatAuMenu{
         this.ajusterQuantite();
     }
 
+    @Override
+    public String styledString() {
+        return "PlatEnfant: \n" +
+                "\t\t" + "- description: " + this.getDescription() + "\n" +
+                "\t\t" + "- code:        " + this.getCode() + "\n" +
+                "\t\t" + "- prix:        " + this.getPrix() + "\n" +
+                "\t\t" + "- ingredient:  " + this.getIngredients().toString() + "\n" +
+                "\t\t" + "- proportion:  " + this.getProportion() + "\n";
+    }
+
     private void ajusterQuantite() {
         ArrayList<IIngredients> ingredientsTemp = new ArrayList<IIngredients>();
         for (IIngredients ingredient : getIngredients()) {

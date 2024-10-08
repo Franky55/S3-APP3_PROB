@@ -61,10 +61,7 @@ public class Chef implements IFactureSubscriber {
      */
     @Override
     public void Update(PlatChoisi platChoisi) {
-        System.err.println("UPDATED");
-        // Ajouter le plat a sa liste de plats a faire
         plats.add(platChoisi);
-
         vraiChef.Update(platChoisi);
     }
 

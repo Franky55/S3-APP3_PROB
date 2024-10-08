@@ -30,10 +30,4 @@ class MenuControllerTest {
     void testGetView() {
         assertSame(view, menuController.GetView());
     }
-
-    @Test
-    void testUpdateAffichage() {
-        menuController.UpdateAffichage();
-        assertEquals(menu.toString(), view.toString());
-    }
 }

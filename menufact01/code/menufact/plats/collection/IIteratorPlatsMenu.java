@@ -10,4 +10,5 @@ public interface IIteratorPlatsMenu {
     public int GetPosition();
     public boolean Suivant() throws MenuException;
     public boolean Precedent() throws MenuException;
+    public int GetSize();
 }
