@@ -21,6 +21,7 @@ public class Gestionnaire {
         //Verification tous les ingredients
         for (IIngredients i : platChoisi.getIngredients()){
             if(inventaire.getIngredient(i).GetQuantiteRestant() < i.GetQuantiteRestant()) {
+                System.out.println("Inventaire insufisant");
                 platChoisi.setEtatsPlat(EtatsPlat.IMPOSSIBLE);
                 return false;
             }
