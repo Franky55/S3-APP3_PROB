@@ -1,5 +1,6 @@
 package menufact;
 
+import Chef.Chef;
 import gestionnaire.Gestionnaire;
 import ingredients.IIngredients;
 import ingredients.IngredientCreator;
@@ -72,6 +73,8 @@ public class TestMenuFact02 {
         MenuController mc2 = new MenuController(m2, mv2);
 
         Facture f1 = new Facture("Ma facture");
+        Chef chef = Chef.GetInstance();
+        f1.attach(chef);
 
         Client c1 = new Client(1,"Mr Client","1234567890");
 
@@ -114,6 +117,7 @@ public class TestMenuFact02 {
             System.out.println(me);
         }
 
+        t.test10_CuisinerLesPlats(mc1, f1, inventaire);
         t.test9_PayerFacture(f1);
 
         try {
@@ -190,7 +194,6 @@ public class TestMenuFact02 {
             System.out.println(m2);
         }
     }
-
 
     private void test4_AjoutPlatsAuMenu(boolean trace, MenuController m1,
                                         PlatAuMenu p1, PlatAuMenu p2,
@@ -298,17 +301,23 @@ public class TestMenuFact02 {
         System.out.println("\n\n\n===test7_CreerFacture");
 
         PlatChoisi platChoisi = new PlatChoisi(m1.GetMenu().GetPlatsMenu().getActuel(),5);
+        try {
+            m1.GetMenu().GetPlatsMenu().Suivant();
+        } catch (MenuException e) {
+            throw new RuntimeException(e);
+        }
+        PlatChoisi platChoisi2 = new PlatChoisi(m1.GetMenu().GetPlatsMenu().getActuel(),2);
         Gestionnaire gestionnaire = new Gestionnaire(f1, inv);
-//        try
-//        {
-//            gestionnaire.ajoutePlatAFacture(platChoisi);
-//            //f1.ajoutePlat(platChoisi);
-//        }
-//        catch (FactureException fe)
-//        {
-//            throw fe;
-//        }
+
         if(gestionnaire.ajoutePlatAFacture(platChoisi)) {
+            System.out.println(f1);
+        }
+        else {
+            System.out.println("Erreur votre commande n'a pas reussie a se faire ajouter a la facture");
+            System.out.println(f1);
+        }
+
+        if(gestionnaire.ajoutePlatAFacture(platChoisi2)) {
             System.out.println(f1);
         }
         else {
@@ -338,7 +347,7 @@ public class TestMenuFact02 {
             throw me;
         }
 
-        PlatChoisi platChoisi = new PlatChoisi(m1.GetMenu().GetPlatsMenu().getActuel(),5);
+        PlatChoisi platChoisi = new PlatChoisi(m1.GetMenu().GetPlatsMenu().getActuel(),2);
         Gestionnaire gestionnaire = new Gestionnaire(f1, inv);
 //        try
 //        {
@@ -367,5 +376,23 @@ public class TestMenuFact02 {
         f1.payer();
         System.out.println("\nApres avoir paye la facture");
         System.out.println(f1);
+    }
+
+    private void test10_CuisinerLesPlats(MenuController m1, Facture f1, Inventaire inv) {
+        Chef chef = Chef.GetInstance();
+        Gestionnaire gestionnaire = new Gestionnaire(f1, inv);
+
+        System.out.println("\n\n\n===test10_CuisinerLesPlats");
+        System.out.println("Ajout de plusieurs plats a la facture, pour en ajouter au chef.");
+        System.out.println(chef);
+
+        for (int index = 0; 0 < chef.nombresDePlatsAFaire(); index++) {
+            chef.Execute();
+            if(index > 10) {
+                System.err.println("Le chef fait absolument rien... Bruh.");
+                return;
+            }
+            System.out.println(chef);
+        }
     }
 }
