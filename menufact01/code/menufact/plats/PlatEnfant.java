@@ -13,6 +13,7 @@ public class PlatEnfant extends PlatAuMenu{
     public PlatEnfant(int code, String description, double prix, ArrayList<IIngredients> ingredientsArrayList, double proportion) {
         super(code, description, prix, ingredientsArrayList);
         this.proportion = proportion;
+        this.ajusterQuantite();
     }
 
     private void ajusterQuantite() {
