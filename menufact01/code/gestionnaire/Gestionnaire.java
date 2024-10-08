@@ -4,9 +4,8 @@ import ingredients.IIngredients;
 import inventaire.Inventaire;
 import menufact.facture.Facture;
 import menufact.facture.exceptions.FactureException;
+import menufact.plats.EtatsPlat;
 import menufact.plats.PlatChoisi;
-
-import java.util.ArrayList;
 
 public class Gestionnaire {
     private Facture facture;
@@ -19,17 +18,21 @@ public class Gestionnaire {
 
     public Boolean ajoutePlatAFacture(PlatChoisi platChoisi) {
 
-        //Verification tout les ingredients
+        //Verification tous les ingredients
         for (IIngredients i : platChoisi.getIngredients()){
-            if(inventaire.getIngredients(i).GetQuantiteRestant() < i.GetQuantiteRestant())
+            if(inventaire.getIngredient(i).GetQuantiteRestant() < i.GetQuantiteRestant()) {
+                platChoisi.setEtatsPlat(EtatsPlat.IMPOSSIBLE);
                 return false;
+            }
         }
 
         try
         {
             facture.ajoutePlat(platChoisi);
+            platChoisi.setEtatsPlat(EtatsPlat.COMMANDER);
             retraitIngredient(platChoisi);
         } catch (FactureException e) {
+            platChoisi.setEtatsPlat(EtatsPlat.IMPOSSIBLE);
             return false;
         }
 
@@ -38,7 +41,7 @@ public class Gestionnaire {
 
     private void retraitIngredient(PlatChoisi platChoisi) {
         for (IIngredients i : platChoisi.getIngredients()){
-            if(inventaire.getIngredients(i).GetQuantiteRestant() < i.GetQuantiteRestant())
+            if(inventaire.getIngredient(i).GetQuantiteRestant() < i.GetQuantiteRestant())
                 inventaire.removeIngredient(i);
         }
     }
