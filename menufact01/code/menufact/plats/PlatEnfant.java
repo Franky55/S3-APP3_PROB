@@ -15,6 +15,12 @@ public class PlatEnfant extends PlatAuMenu{
         this.proportion = proportion;
     }
 
+    private void ajusterQuantite() {
+        for (IIngredients ingredient : getIngredients()) {
+            ingredient.SetQuantiteRestant((int)(ingredient.GetQuantiteRestant() * proportion));
+        }
+    }
+
     public double getProportion() {
         return proportion;
     }

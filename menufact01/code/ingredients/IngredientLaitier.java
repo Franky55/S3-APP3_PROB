@@ -15,6 +15,10 @@ public class IngredientLaitier implements IIngredients {
         return quantiteRestant;
     }
 
+    public void SetQuantiteRestant(int quantiteRestant) {
+        this.quantiteRestant = quantiteRestant;
+    }
+
     public Boolean AddIngredient(int quantite){
         quantiteRestant += quantite;
         return true;
