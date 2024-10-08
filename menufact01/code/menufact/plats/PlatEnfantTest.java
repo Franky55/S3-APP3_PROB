@@ -21,7 +21,7 @@ class PlatEnfantTest {
         ingredients.add(IngredientCreator.CreateNewIngredient(TypeIngredient.LAITIER, 20, "ml"));
         ingredients.add(IngredientCreator.CreateNewIngredient(TypeIngredient.LEGUME, 20, "g"));
         ingredients.add(IngredientCreator.CreateNewIngredient(TypeIngredient.EPICE, 20, "g"));
-        platEnfant = new PlatEnfant(1, "Plat Enfant Test", 10.00, ingredients, 0.5);
+        platEnfant = new PlatEnfant(1, "Plat Enfant Test", 10.00, ingredients, 1);
     }
 
     @Test
@@ -56,6 +56,7 @@ class PlatEnfantTest {
         ingredientsAvecProportion.add(IngredientCreator.CreateNewIngredient(TypeIngredient.LEGUME, 10, "g"));
         ingredientsAvecProportion.add(IngredientCreator.CreateNewIngredient(TypeIngredient.EPICE, 10, "g"));
 
+        System.out.println(platEnfant.getIngredients().toString());
         assertEquals(ingredientsAvecProportion.toString(), platEnfant.getIngredients().toString());
     }
 }

@@ -210,7 +210,7 @@ public class Facture {
      * @param platChoisi
      * @return
      */
-    private Boolean notify(PlatChoisi platChoisi){
+    public Boolean notify(PlatChoisi platChoisi){
         for (IFactureSubscriber subscriber : subscribers){
             subscriber.Update(platChoisi);
         }
