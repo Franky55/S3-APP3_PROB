@@ -19,7 +19,11 @@ public class PlatsCollection implements IIteratorPlatsMenu{
 
     @Override
     public PlatAuMenu getActuel() {
-        return plats.get(0);
+        if(plats.size()==0)
+           return null;
+        if(position > plats.size()-1)
+            return null;
+        return plats.get(position);
     }
 
     @Override

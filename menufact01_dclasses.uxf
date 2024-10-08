@@ -329,7 +329,7 @@ menu: Menu
 view: MenuView
 --
 +MenuControlleur(menu:Menu, menuView:MenuView)
-+Model(): Menu
++GetMenu(): Menu
 +View(): MenuView
 +updateAffichage(): void
 </panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>4248</x><y>1392</y><w>324</w><h>132</h></coordinates><panel_attributes>MenuView
