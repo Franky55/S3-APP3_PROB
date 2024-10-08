@@ -89,7 +89,7 @@ public class TestMenuFact02 {
         t.test8_AjouterClientFacture(f1, c1);
 
         try {
-            t.test8_AjouterPlatsFacture(f1, mc1,1);
+            t.test8_AjouterPlatsFacture(f1, mc1,1, inventaire);
         } catch (FactureException fe)
         {
             System.out.println(fe.getMessage());
@@ -102,7 +102,7 @@ public class TestMenuFact02 {
         t.test9_PayerFacture(f1);
 
         try {
-            t.test8_AjouterPlatsFacture(f1, mc1,1);
+            t.test8_AjouterPlatsFacture(f1, mc1,1, inventaire);
         } catch (FactureException fe)
         {
             System.out.println(fe.getMessage());
@@ -117,6 +117,17 @@ public class TestMenuFact02 {
         } catch (FactureException fe)
         {
             System.out.println(fe.getMessage());
+        }
+
+        try {
+            t.test8_AjouterPlatsFacture(f1, mc1,1, inventaire);
+        } catch (FactureException fe)
+        {
+            System.out.println(fe.getMessage());
+        }
+        catch (MenuException me)
+        {
+            System.out.println(me);
         }
 
 
@@ -295,7 +306,8 @@ public class TestMenuFact02 {
         f1.associerClient(c1);
         System.out.println(f1);
     }
-    private void test8_AjouterPlatsFacture(Facture f1, MenuController m1, int pos) throws MenuException,FactureException
+
+    private void test8_AjouterPlatsFacture(Facture f1, MenuController m1, int pos, Inventaire inv) throws MenuException,FactureException
     {
         System.out.println("\n\n\n===test8_AjouterPlatsFacture");
 
@@ -309,15 +321,23 @@ public class TestMenuFact02 {
         }
 
         PlatChoisi platChoisi = new PlatChoisi(m1.GetMenu().GetPlatsMenu().getActuel(),5);
-        try
-        {
-            f1.ajoutePlat(platChoisi);
+        Gestionnaire gestionnaire = new Gestionnaire(f1, inv);
+//        try
+//        {
+//            f1.ajoutePlat(platChoisi);
+//        }
+//        catch (FactureException fe)
+//        {
+//            throw fe;
+//        }
+//        System.out.println(f1);
+        if(gestionnaire.ajoutePlatAFacture(platChoisi)) {
+            System.out.println(f1);
         }
-        catch (FactureException fe)
-        {
-            throw fe;
+        else {
+            System.out.println("Erreur votre commande n'a pas reussie a se faire ajouter a la facture");
+            System.out.println(f1);
         }
-        System.out.println(f1);
     }
 
     private void test9_PayerFacture(Facture f1)
