@@ -279,8 +279,14 @@ public class TestMenuFact02 {
 //        {
 //            throw fe;
 //        }
-        gestionnaire.ajoutePlatAFacture(platChoisi);
-        System.out.println(f1);
+        if(gestionnaire.ajoutePlatAFacture(platChoisi)) {
+            System.out.println(f1);
+        }
+        else {
+            System.out.println("Erreur votre commande n'a pas reussie a se faire ajouter a la facture");
+            System.out.println(f1);
+        }
+
     }
 
 

@@ -41,7 +41,6 @@ public class Gestionnaire {
 
     private void retraitIngredient(PlatChoisi platChoisi) {
         for (IIngredients i : platChoisi.getIngredients()){
-            if(inventaire.getIngredient(i).GetQuantiteRestant() < i.GetQuantiteRestant())
                 inventaire.removeIngredient(i);
         }
     }
