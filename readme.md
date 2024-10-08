@@ -23,3 +23,7 @@ Hello, il y a une extension dans vscode pour UMLet. Le document .uxf.
 ## - Menu
 - Ajouter plats au menu avec code, description ou prix
 - Afficher menu complet, et les attributs
+
+
+## A faire
+    Il faut que les tests de ajoutFacture passe par le gestionnaire. Partout dans menufact02.
