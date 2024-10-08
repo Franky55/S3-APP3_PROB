@@ -1,0 +1,13 @@
+[Ingredient: VIANDE Quantite: 10g, Ingredient: LAITIER Quantite: 10ml, Ingredient: LEGUME Quantite: 10g, Ingredient: EPICE Quantite: 10g]
+Inventaire insufisant
+Inventaire insufisant
+Inventaire insufisant
+40.0
+45.99
+2.0
+3.99
+PlatAuMenu0
+PlatAuMenu1
+PlatAuMenu2
+PlatAuMenu3
+PlatAuMenu4

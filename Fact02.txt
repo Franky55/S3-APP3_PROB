@@ -1,0 +1,484 @@
+=== test1_AffichePlatsAuMenu
+menufact.plats.PlatAuMenu{code=0, description='PlatAuMenu0', prix=10.0}
+menufact.plats.PlatAuMenu{code=1, description='PlatAuMenu1', prix=20.0}
+menufact.plats.PlatAuMenu{code=2, description='PlatAuMenu2', prix=30.0}
+menufact.plats.PlatAuMenu{code=3, description='PlatAuMenu3', prix=40.0}
+menufact.plats.PlatAuMenu{code=4, description='PlatAuMenu4', prix=50.0}
+
+
+
+=== test2_AffichePlatsSante
+menufact.plats.PlatSante{kcal=11.0, chol=11.0, gras=11.0} menufact.plats.PlatAuMenu{code=10, description='PlatSante0', prix=10.0}
+menufact.plats.PlatSante{kcal=11.0, chol=11.0, gras=11.0} menufact.plats.PlatAuMenu{code=11, description='PlatSante1', prix=20.0}
+menufact.plats.PlatSante{kcal=11.0, chol=11.0, gras=11.0} menufact.plats.PlatAuMenu{code=12, description='PlatSante2', prix=30.0}
+menufact.plats.PlatSante{kcal=11.0, chol=11.0, gras=11.0} menufact.plats.PlatAuMenu{code=13, description='PlatSante3', prix=40.0}
+menufact.plats.PlatSante{kcal=11.0, chol=11.0, gras=11.0} menufact.plats.PlatAuMenu{code=14, description='PlatSante4', prix=50.0}
+
+
+
+=== test4_AjoutPlatsAuMenu
+=== Ajout de plats au menu 1
+
+=== Ajout de plats au menu 2
+
+=== Ajout de platsEnfant au menu 2
+Menu:
+ -- description:  'menufact.Menu 1'
+ -- index courant: 0
+ ------------------------------ 
+ -- 0:	PlatAuMenu: 
+		- description: PlatAuMenu0
+		- code:        0
+		- prix:        10.0
+		- ingredient:  [Ingredient: FRUIT Quantite: 20g, Ingredient: VIANDE Quantite: 200g, Ingredient: LAITIER Quantite: 200ml, Ingredient: LEGUME Quantite: 100g, Ingredient: EPICE Quantite: 1g]
+ -- 1:	PlatAuMenu: 
+		- description: PlatAuMenu1
+		- code:        1
+		- prix:        20.0
+		- ingredient:  [Ingredient: FRUIT Quantite: 20g, Ingredient: VIANDE Quantite: 200g, Ingredient: LAITIER Quantite: 200ml, Ingredient: LEGUME Quantite: 100g, Ingredient: EPICE Quantite: 1g]
+ -- 2:	PlatSante: 
+		- description: PlatSante0
+		- code:        10
+		- prix:        10.0
+		- ingredient:  [Ingredient: FRUIT Quantite: 20g, Ingredient: VIANDE Quantite: 200g, Ingredient: LAITIER Quantite: 200ml, Ingredient: LEGUME Quantite: 100g, Ingredient: EPICE Quantite: 1g]
+		- kcals:       11.0
+		- chol:        11.0
+		- gras:        11.0
+ -- 3:	PlatSante: 
+		- description: PlatSante1
+		- code:        11
+		- prix:        20.0
+		- ingredient:  [Ingredient: FRUIT Quantite: 20g, Ingredient: VIANDE Quantite: 200g, Ingredient: LAITIER Quantite: 200ml, Ingredient: LEGUME Quantite: 100g, Ingredient: EPICE Quantite: 1g]
+		- kcals:       11.0
+		- chol:        11.0
+		- gras:        11.0
+ -- 4:	PlatAuMenu: 
+		- description: PlatAuMenu2
+		- code:        2
+		- prix:        30.0
+		- ingredient:  [Ingredient: FRUIT Quantite: 20g, Ingredient: VIANDE Quantite: 200g, Ingredient: LAITIER Quantite: 200ml, Ingredient: LEGUME Quantite: 100g, Ingredient: EPICE Quantite: 1g]
+ -- 5:	PlatAuMenu: 
+		- description: PlatAuMenu3
+		- code:        3
+		- prix:        40.0
+		- ingredient:  [Ingredient: FRUIT Quantite: 20g, Ingredient: VIANDE Quantite: 200g, Ingredient: LAITIER Quantite: 200ml, Ingredient: LEGUME Quantite: 100g, Ingredient: EPICE Quantite: 1g]
+ -- 6:	PlatSante: 
+		- description: PlatSante2
+		- code:        12
+		- prix:        30.0
+		- ingredient:  [Ingredient: FRUIT Quantite: 20g, Ingredient: VIANDE Quantite: 200g, Ingredient: LAITIER Quantite: 200ml, Ingredient: LEGUME Quantite: 100g, Ingredient: EPICE Quantite: 1g]
+		- kcals:       11.0
+		- chol:        11.0
+		- gras:        11.0
+ -- 7:	PlatSante: 
+		- description: PlatSante3
+		- code:        13
+		- prix:        40.0
+		- ingredient:  [Ingredient: FRUIT Quantite: 20g, Ingredient: VIANDE Quantite: 200g, Ingredient: LAITIER Quantite: 200ml, Ingredient: LEGUME Quantite: 100g, Ingredient: EPICE Quantite: 1g]
+		- kcals:       11.0
+		- chol:        11.0
+		- gras:        11.0
+ -- 8:	PlatEnfant: 
+		- description: PlatEnfant0
+		- code:        5
+		- prix:        10.0
+		- ingredient:  [Ingredient: FRUIT Quantite: 10g, Ingredient: VIANDE Quantite: 100g, Ingredient: LAITIER Quantite: 100ml, Ingredient: LEGUME Quantite: 50g, Ingredient: EPICE Quantite: 0g]
+		- proportion:  0.5
+ -- 9:	PlatEnfant: 
+		- description: PlatEnfant1
+		- code:        6
+		- prix:        20.0
+		- ingredient:  [Ingredient: FRUIT Quantite: 16g, Ingredient: VIANDE Quantite: 160g, Ingredient: LAITIER Quantite: 160ml, Ingredient: LEGUME Quantite: 80g, Ingredient: EPICE Quantite: 0g]
+		- proportion:  0.8
+ -- 10:	PlatEnfant: 
+		- description: PlatEnfant2
+		- code:        7
+		- prix:        30.0
+		- ingredient:  [Ingredient: FRUIT Quantite: 10g, Ingredient: VIANDE Quantite: 100g, Ingredient: LAITIER Quantite: 100ml, Ingredient: LEGUME Quantite: 50g, Ingredient: EPICE Quantite: 0g]
+		- proportion:  0.5
+ -- 11:	PlatEnfant: 
+		- description: PlatEnfant3
+		- code:        8
+		- prix:        40.0
+		- ingredient:  [Ingredient: FRUIT Quantite: 10g, Ingredient: VIANDE Quantite: 100g, Ingredient: LAITIER Quantite: 100ml, Ingredient: LEGUME Quantite: 50g, Ingredient: EPICE Quantite: 0g]
+		- proportion:  0.5
+
+Menu:
+ -- description:  'menufact.Menu 1'
+ -- index courant: 11
+ ------------------------------ 
+ -- 0:	PlatAuMenu: 
+		- description: PlatAuMenu0
+		- code:        0
+		- prix:        10.0
+		- ingredient:  [Ingredient: FRUIT Quantite: 20g, Ingredient: VIANDE Quantite: 200g, Ingredient: LAITIER Quantite: 200ml, Ingredient: LEGUME Quantite: 100g, Ingredient: EPICE Quantite: 1g]
+ -- 1:	PlatAuMenu: 
+		- description: PlatAuMenu1
+		- code:        1
+		- prix:        20.0
+		- ingredient:  [Ingredient: FRUIT Quantite: 20g, Ingredient: VIANDE Quantite: 200g, Ingredient: LAITIER Quantite: 200ml, Ingredient: LEGUME Quantite: 100g, Ingredient: EPICE Quantite: 1g]
+ -- 2:	PlatSante: 
+		- description: PlatSante0
+		- code:        10
+		- prix:        10.0
+		- ingredient:  [Ingredient: FRUIT Quantite: 20g, Ingredient: VIANDE Quantite: 200g, Ingredient: LAITIER Quantite: 200ml, Ingredient: LEGUME Quantite: 100g, Ingredient: EPICE Quantite: 1g]
+		- kcals:       11.0
+		- chol:        11.0
+		- gras:        11.0
+ -- 3:	PlatSante: 
+		- description: PlatSante1
+		- code:        11
+		- prix:        20.0
+		- ingredient:  [Ingredient: FRUIT Quantite: 20g, Ingredient: VIANDE Quantite: 200g, Ingredient: LAITIER Quantite: 200ml, Ingredient: LEGUME Quantite: 100g, Ingredient: EPICE Quantite: 1g]
+		- kcals:       11.0
+		- chol:        11.0
+		- gras:        11.0
+ -- 4:	PlatAuMenu: 
+		- description: PlatAuMenu2
+		- code:        2
+		- prix:        30.0
+		- ingredient:  [Ingredient: FRUIT Quantite: 20g, Ingredient: VIANDE Quantite: 200g, Ingredient: LAITIER Quantite: 200ml, Ingredient: LEGUME Quantite: 100g, Ingredient: EPICE Quantite: 1g]
+ -- 5:	PlatAuMenu: 
+		- description: PlatAuMenu3
+		- code:        3
+		- prix:        40.0
+		- ingredient:  [Ingredient: FRUIT Quantite: 20g, Ingredient: VIANDE Quantite: 200g, Ingredient: LAITIER Quantite: 200ml, Ingredient: LEGUME Quantite: 100g, Ingredient: EPICE Quantite: 1g]
+ -- 6:	PlatSante: 
+		- description: PlatSante2
+		- code:        12
+		- prix:        30.0
+		- ingredient:  [Ingredient: FRUIT Quantite: 20g, Ingredient: VIANDE Quantite: 200g, Ingredient: LAITIER Quantite: 200ml, Ingredient: LEGUME Quantite: 100g, Ingredient: EPICE Quantite: 1g]
+		- kcals:       11.0
+		- chol:        11.0
+		- gras:        11.0
+ -- 7:	PlatSante: 
+		- description: PlatSante3
+		- code:        13
+		- prix:        40.0
+		- ingredient:  [Ingredient: FRUIT Quantite: 20g, Ingredient: VIANDE Quantite: 200g, Ingredient: LAITIER Quantite: 200ml, Ingredient: LEGUME Quantite: 100g, Ingredient: EPICE Quantite: 1g]
+		- kcals:       11.0
+		- chol:        11.0
+		- gras:        11.0
+ -- 8:	PlatEnfant: 
+		- description: PlatEnfant0
+		- code:        5
+		- prix:        10.0
+		- ingredient:  [Ingredient: FRUIT Quantite: 10g, Ingredient: VIANDE Quantite: 100g, Ingredient: LAITIER Quantite: 100ml, Ingredient: LEGUME Quantite: 50g, Ingredient: EPICE Quantite: 0g]
+		- proportion:  0.5
+ -- 9:	PlatEnfant: 
+		- description: PlatEnfant1
+		- code:        6
+		- prix:        20.0
+		- ingredient:  [Ingredient: FRUIT Quantite: 16g, Ingredient: VIANDE Quantite: 160g, Ingredient: LAITIER Quantite: 160ml, Ingredient: LEGUME Quantite: 80g, Ingredient: EPICE Quantite: 0g]
+		- proportion:  0.8
+ -- 10:	PlatEnfant: 
+		- description: PlatEnfant2
+		- code:        7
+		- prix:        30.0
+		- ingredient:  [Ingredient: FRUIT Quantite: 10g, Ingredient: VIANDE Quantite: 100g, Ingredient: LAITIER Quantite: 100ml, Ingredient: LEGUME Quantite: 50g, Ingredient: EPICE Quantite: 0g]
+		- proportion:  0.5
+ -- 11:	PlatEnfant: 
+		- description: PlatEnfant3
+		- code:        8
+		- prix:        40.0
+		- ingredient:  [Ingredient: FRUIT Quantite: 10g, Ingredient: VIANDE Quantite: 100g, Ingredient: LAITIER Quantite: 100ml, Ingredient: LEGUME Quantite: 50g, Ingredient: EPICE Quantite: 0g]
+		- proportion:  0.5
+
+
+
+
+=== test5_DeplacementMenuAvancer
+===Selectionner un plat du menu 0
+
+=== Afficher le plat courant
+menufact.plats.PlatAuMenu{code=0, description='PlatAuMenu0', prix=10.0}
+
+
+=== Avancer le plat courant
+1.
+menufact.plats.PlatAuMenu{code=0, description='PlatAuMenu0', prix=10.0}
+2.
+menufact.plats.PlatAuMenu{code=1, description='PlatAuMenu1', prix=20.0}
+3.
+menufact.plats.PlatSante{kcal=11.0, chol=11.0, gras=11.0} menufact.plats.PlatAuMenu{code=10, description='PlatSante0', prix=10.0}
+4.
+menufact.plats.PlatSante{kcal=11.0, chol=11.0, gras=11.0} menufact.plats.PlatAuMenu{code=11, description='PlatSante1', prix=20.0}
+5.
+menufact.plats.PlatAuMenu{code=2, description='PlatAuMenu2', prix=30.0}
+
+
+
+===test6_DeplacementMenuReculer
+===Selectionner un plat du menu 3
+
+=== Afficher le plat courant
+menufact.plats.PlatSante{kcal=11.0, chol=11.0, gras=11.0} menufact.plats.PlatAuMenu{code=11, description='PlatSante1', prix=20.0}
+
+
+=== Reculer le plat courant
+2.
+1.
+0.
+-1.
+MenuException: On depasse le nombre minimale de plats
+
+
+
+===test7_CreerFacture
+menufact.facture.Facture{date=Tue Oct 08 15:53:42 EDT 2024, description='Ma facture', etat=OUVERTE, platchoisi=[menufact.plats.PlatChoisi{quantite=2, plat=menufact.plats.PlatAuMenu{code=1, description='PlatAuMenu1', prix=20.0}
+}], courant=-1, client=null, TPS=0.05, TVQ=0.095}
+menufact.facture.Facture{date=Tue Oct 08 15:53:42 EDT 2024, description='Ma facture', etat=OUVERTE, platchoisi=[menufact.plats.PlatChoisi{quantite=2, plat=menufact.plats.PlatAuMenu{code=1, description='PlatAuMenu1', prix=20.0}
+}, menufact.plats.PlatChoisi{quantite=2, plat=menufact.plats.PlatAuMenu{code=1, description='PlatAuMenu1', prix=20.0}
+}], courant=-1, client=null, TPS=0.05, TVQ=0.095}
+
+
+
+===test8_AjouterClientFacture
+menufact.facture.Facture{date=Tue Oct 08 15:53:42 EDT 2024, description='Ma facture', etat=OUVERTE, platchoisi=[menufact.plats.PlatChoisi{quantite=2, plat=menufact.plats.PlatAuMenu{code=1, description='PlatAuMenu1', prix=20.0}
+}, menufact.plats.PlatChoisi{quantite=2, plat=menufact.plats.PlatAuMenu{code=1, description='PlatAuMenu1', prix=20.0}
+}], courant=-1, client=menufact.Client{idClient=1, nom='Mr Client', numeroCarteCredit='1234567890'}, TPS=0.05, TVQ=0.095}
+
+
+
+===test8_AjouterPlatsFacture
+
+
+
+===test10_CuisinerLesPlats
+Ajout de plusieurs plats a la facture, pour en ajouter au chef.
+Chef en attente et a 14 plats a faire
+Chef en travaille. et a 14 plats a faire
+Chef en travaille. et a 13 plats a faire
+Chef en travaille. et a 12 plats a faire
+Chef en travaille. et a 11 plats a faire
+Chef en travaille. et a 10 plats a faire
+Chef en travaille. et a 9 plats a faire
+Chef en travaille. et a 8 plats a faire
+Chef en travaille. et a 7 plats a faire
+Chef en travaille. et a 6 plats a faire
+Chef en travaille. et a 5 plats a faire
+Chef en travaille. et a 4 plats a faire
+Chef en travaille. et a 3 plats a faire
+Chef en travaille. et a 2 plats a faire
+Chef en travaille. et a 1 plats a faire
+Chef en attente et a 0 plats a faire
+
+
+
+===test9_PayerFacture
+Avant payer la facture
+menufact.facture.Facture{date=Tue Oct 08 15:53:42 EDT 2024, description='Ma facture', etat=OUVERTE, platchoisi=[menufact.plats.PlatChoisi{quantite=2, plat=menufact.plats.PlatAuMenu{code=1, description='PlatAuMenu1', prix=20.0}
+}, menufact.plats.PlatChoisi{quantite=2, plat=menufact.plats.PlatAuMenu{code=1, description='PlatAuMenu1', prix=20.0}
+}, menufact.plats.PlatChoisi{quantite=1, plat=menufact.plats.PlatAuMenu{code=0, description='PlatAuMenu0', prix=10.0}
+}, menufact.plats.PlatChoisi{quantite=1, plat=menufact.plats.PlatAuMenu{code=1, description='PlatAuMenu1', prix=20.0}
+}, menufact.plats.PlatChoisi{quantite=1, plat=menufact.plats.PlatSante{kcal=11.0, chol=11.0, gras=11.0} menufact.plats.PlatAuMenu{code=10, description='PlatSante0', prix=10.0}
+}, menufact.plats.PlatChoisi{quantite=1, plat=menufact.plats.PlatSante{kcal=11.0, chol=11.0, gras=11.0} menufact.plats.PlatAuMenu{code=11, description='PlatSante1', prix=20.0}
+}, menufact.plats.PlatChoisi{quantite=1, plat=menufact.plats.PlatAuMenu{code=2, description='PlatAuMenu2', prix=30.0}
+}, menufact.plats.PlatChoisi{quantite=1, plat=menufact.plats.PlatAuMenu{code=3, description='PlatAuMenu3', prix=40.0}
+}, menufact.plats.PlatChoisi{quantite=1, plat=menufact.plats.PlatSante{kcal=11.0, chol=11.0, gras=11.0} menufact.plats.PlatAuMenu{code=12, description='PlatSante2', prix=30.0}
+}, menufact.plats.PlatChoisi{quantite=1, plat=menufact.plats.PlatSante{kcal=11.0, chol=11.0, gras=11.0} menufact.plats.PlatAuMenu{code=13, description='PlatSante3', prix=40.0}
+}, menufact.plats.PlatChoisi{quantite=1, plat=PlatEnfant{proportion=0.5} menufact.plats.PlatAuMenu{code=5, description='PlatEnfant0', prix=10.0}
+}, menufact.plats.PlatChoisi{quantite=1, plat=PlatEnfant{proportion=0.8} menufact.plats.PlatAuMenu{code=6, description='PlatEnfant1', prix=20.0}
+}, menufact.plats.PlatChoisi{quantite=1, plat=PlatEnfant{proportion=0.5} menufact.plats.PlatAuMenu{code=7, description='PlatEnfant2', prix=30.0}
+}, menufact.plats.PlatChoisi{quantite=1, plat=PlatEnfant{proportion=0.5} menufact.plats.PlatAuMenu{code=8, description='PlatEnfant3', prix=40.0}
+}], courant=-1, client=menufact.Client{idClient=1, nom='Mr Client', numeroCarteCredit='1234567890'}, TPS=0.05, TVQ=0.095}
+
+Apres avoir paye la facture
+menufact.facture.Facture{date=Tue Oct 08 15:53:42 EDT 2024, description='Ma facture', etat=PAYEE, platchoisi=[menufact.plats.PlatChoisi{quantite=2, plat=menufact.plats.PlatAuMenu{code=1, description='PlatAuMenu1', prix=20.0}
+}, menufact.plats.PlatChoisi{quantite=2, plat=menufact.plats.PlatAuMenu{code=1, description='PlatAuMenu1', prix=20.0}
+}, menufact.plats.PlatChoisi{quantite=1, plat=menufact.plats.PlatAuMenu{code=0, description='PlatAuMenu0', prix=10.0}
+}, menufact.plats.PlatChoisi{quantite=1, plat=menufact.plats.PlatAuMenu{code=1, description='PlatAuMenu1', prix=20.0}
+}, menufact.plats.PlatChoisi{quantite=1, plat=menufact.plats.PlatSante{kcal=11.0, chol=11.0, gras=11.0} menufact.plats.PlatAuMenu{code=10, description='PlatSante0', prix=10.0}
+}, menufact.plats.PlatChoisi{quantite=1, plat=menufact.plats.PlatSante{kcal=11.0, chol=11.0, gras=11.0} menufact.plats.PlatAuMenu{code=11, description='PlatSante1', prix=20.0}
+}, menufact.plats.PlatChoisi{quantite=1, plat=menufact.plats.PlatAuMenu{code=2, description='PlatAuMenu2', prix=30.0}
+}, menufact.plats.PlatChoisi{quantite=1, plat=menufact.plats.PlatAuMenu{code=3, description='PlatAuMenu3', prix=40.0}
+}, menufact.plats.PlatChoisi{quantite=1, plat=menufact.plats.PlatSante{kcal=11.0, chol=11.0, gras=11.0} menufact.plats.PlatAuMenu{code=12, description='PlatSante2', prix=30.0}
+}, menufact.plats.PlatChoisi{quantite=1, plat=menufact.plats.PlatSante{kcal=11.0, chol=11.0, gras=11.0} menufact.plats.PlatAuMenu{code=13, description='PlatSante3', prix=40.0}
+}, menufact.plats.PlatChoisi{quantite=1, plat=PlatEnfant{proportion=0.5} menufact.plats.PlatAuMenu{code=5, description='PlatEnfant0', prix=10.0}
+}, menufact.plats.PlatChoisi{quantite=1, plat=PlatEnfant{proportion=0.8} menufact.plats.PlatAuMenu{code=6, description='PlatEnfant1', prix=20.0}
+}, menufact.plats.PlatChoisi{quantite=1, plat=PlatEnfant{proportion=0.5} menufact.plats.PlatAuMenu{code=7, description='PlatEnfant2', prix=30.0}
+}, menufact.plats.PlatChoisi{quantite=1, plat=PlatEnfant{proportion=0.5} menufact.plats.PlatAuMenu{code=8, description='PlatEnfant3', prix=40.0}
+}], courant=-1, client=menufact.Client{idClient=1, nom='Mr Client', numeroCarteCredit='1234567890'}, TPS=0.05, TVQ=0.095}
+
+
+
+===test8_AjouterPlatsFacture
+Erreur votre commande n'a pas reussie a se faire ajouter a la facture
+menufact.facture.Facture{date=Tue Oct 08 15:53:42 EDT 2024, description='Ma facture', etat=PAYEE, platchoisi=[menufact.plats.PlatChoisi{quantite=2, plat=menufact.plats.PlatAuMenu{code=1, description='PlatAuMenu1', prix=20.0}
+}, menufact.plats.PlatChoisi{quantite=2, plat=menufact.plats.PlatAuMenu{code=1, description='PlatAuMenu1', prix=20.0}
+}, menufact.plats.PlatChoisi{quantite=1, plat=menufact.plats.PlatAuMenu{code=0, description='PlatAuMenu0', prix=10.0}
+}, menufact.plats.PlatChoisi{quantite=1, plat=menufact.plats.PlatAuMenu{code=1, description='PlatAuMenu1', prix=20.0}
+}, menufact.plats.PlatChoisi{quantite=1, plat=menufact.plats.PlatSante{kcal=11.0, chol=11.0, gras=11.0} menufact.plats.PlatAuMenu{code=10, description='PlatSante0', prix=10.0}
+}, menufact.plats.PlatChoisi{quantite=1, plat=menufact.plats.PlatSante{kcal=11.0, chol=11.0, gras=11.0} menufact.plats.PlatAuMenu{code=11, description='PlatSante1', prix=20.0}
+FactureException: La facture ne peut pas être reouverte.
+
+
+
+===test7_CreerFacture
+}, menufact.plats.PlatChoisi{quantite=1, plat=menufact.plats.PlatAuMenu{code=2, description='PlatAuMenu2', prix=30.0}
+Erreur votre commande n'a pas reussie a se faire ajouter a la facture
+}, menufact.plats.PlatChoisi{quantite=1, plat=menufact.plats.PlatAuMenu{code=3, description='PlatAuMenu3', prix=40.0}
+}, menufact.plats.PlatChoisi{quantite=1, plat=menufact.plats.PlatSante{kcal=11.0, chol=11.0, gras=11.0} menufact.plats.PlatAuMenu{code=12, description='PlatSante2', prix=30.0}
+}, menufact.plats.PlatChoisi{quantite=1, plat=menufact.plats.PlatSante{kcal=11.0, chol=11.0, gras=11.0} menufact.plats.PlatAuMenu{code=13, description='PlatSante3', prix=40.0}
+}, menufact.plats.PlatChoisi{quantite=1, plat=PlatEnfant{proportion=0.5} menufact.plats.PlatAuMenu{code=5, description='PlatEnfant0', prix=10.0}
+}, menufact.plats.PlatChoisi{quantite=1, plat=PlatEnfant{proportion=0.8} menufact.plats.PlatAuMenu{code=6, description='PlatEnfant1', prix=20.0}
+}, menufact.plats.PlatChoisi{quantite=1, plat=PlatEnfant{proportion=0.5} menufact.plats.PlatAuMenu{code=7, description='PlatEnfant2', prix=30.0}
+}, menufact.plats.PlatChoisi{quantite=1, plat=PlatEnfant{proportion=0.5} menufact.plats.PlatAuMenu{code=8, description='PlatEnfant3', prix=40.0}
+}], courant=-1, client=menufact.Client{idClient=1, nom='Mr Client', numeroCarteCredit='1234567890'}, TPS=0.05, TVQ=0.095}
+menufact.facture.Facture{date=Tue Oct 08 15:53:42 EDT 2024, description='Ma facture', etat=PAYEE, platchoisi=[menufact.plats.PlatChoisi{quantite=2, plat=menufact.plats.PlatAuMenu{code=1, description='PlatAuMenu1', prix=20.0}
+}, menufact.plats.PlatChoisi{quantite=2, plat=menufact.plats.PlatAuMenu{code=1, description='PlatAuMenu1', prix=20.0}
+}, menufact.plats.PlatChoisi{quantite=1, plat=menufact.plats.PlatAuMenu{code=0, description='PlatAuMenu0', prix=10.0}
+}, menufact.plats.PlatChoisi{quantite=1, plat=menufact.plats.PlatAuMenu{code=1, description='PlatAuMenu1', prix=20.0}
+}, menufact.plats.PlatChoisi{quantite=1, plat=menufact.plats.PlatSante{kcal=11.0, chol=11.0, gras=11.0} menufact.plats.PlatAuMenu{code=10, description='PlatSante0', prix=10.0}
+}, menufact.plats.PlatChoisi{quantite=1, plat=menufact.plats.PlatSante{kcal=11.0, chol=11.0, gras=11.0} menufact.plats.PlatAuMenu{code=11, description='PlatSante1', prix=20.0}
+}, menufact.plats.PlatChoisi{quantite=1, plat=menufact.plats.PlatAuMenu{code=2, description='PlatAuMenu2', prix=30.0}
+}, menufact.plats.PlatChoisi{quantite=1, plat=menufact.plats.PlatAuMenu{code=3, description='PlatAuMenu3', prix=40.0}
+}, menufact.plats.PlatChoisi{quantite=1, plat=menufact.plats.PlatSante{kcal=11.0, chol=11.0, gras=11.0} menufact.plats.PlatAuMenu{code=12, description='PlatSante2', prix=30.0}
+}, menufact.plats.PlatChoisi{quantite=1, plat=menufact.plats.PlatSante{kcal=11.0, chol=11.0, gras=11.0} menufact.plats.PlatAuMenu{code=13, description='PlatSante3', prix=40.0}
+}, menufact.plats.PlatChoisi{quantite=1, plat=PlatEnfant{proportion=0.5} menufact.plats.PlatAuMenu{code=5, description='PlatEnfant0', prix=10.0}
+}, menufact.plats.PlatChoisi{quantite=1, plat=PlatEnfant{proportion=0.8} menufact.plats.PlatAuMenu{code=6, description='PlatEnfant1', prix=20.0}
+}, menufact.plats.PlatChoisi{quantite=1, plat=PlatEnfant{proportion=0.5} menufact.plats.PlatAuMenu{code=7, description='PlatEnfant2', prix=30.0}
+}, menufact.plats.PlatChoisi{quantite=1, plat=PlatEnfant{proportion=0.5} menufact.plats.PlatAuMenu{code=8, description='PlatEnfant3', prix=40.0}
+}], courant=-1, client=menufact.Client{idClient=1, nom='Mr Client', numeroCarteCredit='1234567890'}, TPS=0.05, TVQ=0.095}
+Erreur votre commande n'a pas reussie a se faire ajouter a la facture
+menufact.facture.Facture{date=Tue Oct 08 15:53:42 EDT 2024, description='Ma facture', etat=PAYEE, platchoisi=[menufact.plats.PlatChoisi{quantite=2, plat=menufact.plats.PlatAuMenu{code=1, description='PlatAuMenu1', prix=20.0}
+}, menufact.plats.PlatChoisi{quantite=2, plat=menufact.plats.PlatAuMenu{code=1, description='PlatAuMenu1', prix=20.0}
+}, menufact.plats.PlatChoisi{quantite=1, plat=menufact.plats.PlatAuMenu{code=0, description='PlatAuMenu0', prix=10.0}
+}, menufact.plats.PlatChoisi{quantite=1, plat=menufact.plats.PlatAuMenu{code=1, description='PlatAuMenu1', prix=20.0}
+}, menufact.plats.PlatChoisi{quantite=1, plat=menufact.plats.PlatSante{kcal=11.0, chol=11.0, gras=11.0} menufact.plats.PlatAuMenu{code=10, description='PlatSante0', prix=10.0}
+}, menufact.plats.PlatChoisi{quantite=1, plat=menufact.plats.PlatSante{kcal=11.0, chol=11.0, gras=11.0} menufact.plats.PlatAuMenu{code=11, description='PlatSante1', prix=20.0}
+}, menufact.plats.PlatChoisi{quantite=1, plat=menufact.plats.PlatAuMenu{code=2, description='PlatAuMenu2', prix=30.0}
+}, menufact.plats.PlatChoisi{quantite=1, plat=menufact.plats.PlatAuMenu{code=3, description='PlatAuMenu3', prix=40.0}
+}, menufact.plats.PlatChoisi{quantite=1, plat=menufact.plats.PlatSante{kcal=11.0, chol=11.0, gras=11.0} menufact.plats.PlatAuMenu{code=12, description='PlatSante2', prix=30.0}
+}, menufact.plats.PlatChoisi{quantite=1, plat=menufact.plats.PlatSante{kcal=11.0, chol=11.0, gras=11.0} menufact.plats.PlatAuMenu{code=13, description='PlatSante3', prix=40.0}
+}, menufact.plats.PlatChoisi{quantite=1, plat=PlatEnfant{proportion=0.5} menufact.plats.PlatAuMenu{code=5, description='PlatEnfant0', prix=10.0}
+}, menufact.plats.PlatChoisi{quantite=1, plat=PlatEnfant{proportion=0.8} menufact.plats.PlatAuMenu{code=6, description='PlatEnfant1', prix=20.0}
+}, menufact.plats.PlatChoisi{quantite=1, plat=PlatEnfant{proportion=0.5} menufact.plats.PlatAuMenu{code=7, description='PlatEnfant2', prix=30.0}
+}, menufact.plats.PlatChoisi{quantite=1, plat=PlatEnfant{proportion=0.5} menufact.plats.PlatAuMenu{code=8, description='PlatEnfant3', prix=40.0}
+}], courant=-1, client=menufact.Client{idClient=1, nom='Mr Client', numeroCarteCredit='1234567890'}, TPS=0.05, TVQ=0.095}
+========================
+========================
+FIN DE TOUS LES TESTS...
+========================
+========================
+
+Menu:
+ -- description:  'menufact.Menu 1'
+ -- index courant: 1
+ ------------------------------ 
+ -- 0:	PlatAuMenu: 
+		- description: PlatAuMenu0
+		- code:        0
+		- prix:        10.0
+		- ingredient:  [Ingredient: FRUIT Quantite: 20g, Ingredient: VIANDE Quantite: 200g, Ingredient: LAITIER Quantite: 200ml, Ingredient: LEGUME Quantite: 100g, Ingredient: EPICE Quantite: 1g]
+ -- 1:	PlatAuMenu: 
+		- description: PlatAuMenu1
+		- code:        1
+		- prix:        20.0
+		- ingredient:  [Ingredient: FRUIT Quantite: 20g, Ingredient: VIANDE Quantite: 200g, Ingredient: LAITIER Quantite: 200ml, Ingredient: LEGUME Quantite: 100g, Ingredient: EPICE Quantite: 1g]
+ -- 2:	PlatSante: 
+		- description: PlatSante0
+		- code:        10
+		- prix:        10.0
+		- ingredient:  [Ingredient: FRUIT Quantite: 20g, Ingredient: VIANDE Quantite: 200g, Ingredient: LAITIER Quantite: 200ml, Ingredient: LEGUME Quantite: 100g, Ingredient: EPICE Quantite: 1g]
+		- kcals:       11.0
+		- chol:        11.0
+		- gras:        11.0
+ -- 3:	PlatSante: 
+		- description: PlatSante1
+		- code:        11
+		- prix:        20.0
+		- ingredient:  [Ingredient: FRUIT Quantite: 20g, Ingredient: VIANDE Quantite: 200g, Ingredient: LAITIER Quantite: 200ml, Ingredient: LEGUME Quantite: 100g, Ingredient: EPICE Quantite: 1g]
+		- kcals:       11.0
+		- chol:        11.0
+		- gras:        11.0
+ -- 4:	PlatAuMenu: 
+		- description: PlatAuMenu2
+		- code:        2
+		- prix:        30.0
+		- ingredient:  [Ingredient: FRUIT Quantite: 20g, Ingredient: VIANDE Quantite: 200g, Ingredient: LAITIER Quantite: 200ml, Ingredient: LEGUME Quantite: 100g, Ingredient: EPICE Quantite: 1g]
+ -- 5:	PlatAuMenu: 
+		- description: PlatAuMenu3
+		- code:        3
+		- prix:        40.0
+		- ingredient:  [Ingredient: FRUIT Quantite: 20g, Ingredient: VIANDE Quantite: 200g, Ingredient: LAITIER Quantite: 200ml, Ingredient: LEGUME Quantite: 100g, Ingredient: EPICE Quantite: 1g]
+ -- 6:	PlatSante: 
+		- description: PlatSante2
+		- code:        12
+		- prix:        30.0
+		- ingredient:  [Ingredient: FRUIT Quantite: 20g, Ingredient: VIANDE Quantite: 200g, Ingredient: LAITIER Quantite: 200ml, Ingredient: LEGUME Quantite: 100g, Ingredient: EPICE Quantite: 1g]
+		- kcals:       11.0
+		- chol:        11.0
+		- gras:        11.0
+ -- 7:	PlatSante: 
+		- description: PlatSante3
+		- code:        13
+		- prix:        40.0
+		- ingredient:  [Ingredient: FRUIT Quantite: 20g, Ingredient: VIANDE Quantite: 200g, Ingredient: LAITIER Quantite: 200ml, Ingredient: LEGUME Quantite: 100g, Ingredient: EPICE Quantite: 1g]
+		- kcals:       11.0
+		- chol:        11.0
+		- gras:        11.0
+ -- 8:	PlatEnfant: 
+		- description: PlatEnfant0
+		- code:        5
+		- prix:        10.0
+		- ingredient:  [Ingredient: FRUIT Quantite: 10g, Ingredient: VIANDE Quantite: 100g, Ingredient: LAITIER Quantite: 100ml, Ingredient: LEGUME Quantite: 50g, Ingredient: EPICE Quantite: 0g]
+		- proportion:  0.5
+ -- 9:	PlatEnfant: 
+		- description: PlatEnfant1
+		- code:        6
+		- prix:        20.0
+		- ingredient:  [Ingredient: FRUIT Quantite: 16g, Ingredient: VIANDE Quantite: 160g, Ingredient: LAITIER Quantite: 160ml, Ingredient: LEGUME Quantite: 80g, Ingredient: EPICE Quantite: 0g]
+		- proportion:  0.8
+ -- 10:	PlatEnfant: 
+		- description: PlatEnfant2
+		- code:        7
+		- prix:        30.0
+		- ingredient:  [Ingredient: FRUIT Quantite: 10g, Ingredient: VIANDE Quantite: 100g, Ingredient: LAITIER Quantite: 100ml, Ingredient: LEGUME Quantite: 50g, Ingredient: EPICE Quantite: 0g]
+		- proportion:  0.5
+ -- 11:	PlatEnfant: 
+		- description: PlatEnfant3
+		- code:        8
+		- prix:        40.0
+		- ingredient:  [Ingredient: FRUIT Quantite: 10g, Ingredient: VIANDE Quantite: 100g, Ingredient: LAITIER Quantite: 100ml, Ingredient: LEGUME Quantite: 50g, Ingredient: EPICE Quantite: 0g]
+		- proportion:  0.5
+
+========================
+========================
+========================
+========================
+Facture generee.
+Date:Tue Oct 08 15:53:42 EDT 2024
+Description: Ma facture
+Client:Mr Client
+Les plats commandes:
+Seq   Plat         Prix   Quantite
+1     PlatAuMenu1  20.0      2
+2     PlatAuMenu1  20.0      2
+3     PlatAuMenu0  10.0      1
+4     PlatAuMenu1  20.0      1
+5     PlatSante0  10.0      1
+6     PlatSante1  20.0      1
+7     PlatAuMenu2  30.0      1
+8     PlatAuMenu3  40.0      1
+9     PlatSante2  30.0      1
+10     PlatSante3  40.0      1
+11     PlatEnfant0  10.0      1
+12     PlatEnfant1  20.0      1
+13     PlatEnfant2  30.0      1
+14     PlatEnfant3  40.0      1
+          TPS:               19.0
+          TVQ:               37.905
+          Le total est de:   436.905
+
+========================
+========================
+========================
+========================
+Ingredient: FRUIT Quantite: 9754g
+Ingredient: EPICE Quantite: 9990g
+Ingredient: LAITIER Quantite: 7540ml
+Ingredient: LEGUME Quantite: 8770g
+Ingredient: VIANDE Quantite: 7540g
+
+========================
