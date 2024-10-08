@@ -8,13 +8,13 @@ public class PlatAuMenu {
     private int code;
     private String description;
     private double prix;
-    private ArrayList<IIngredients> ingredientsArrayList;
+    private ArrayList<IIngredients> ingredients;
 
-    public PlatAuMenu(int code, String description, double prix, ArrayList<IIngredients> ingredientsArrayList) {
+    public PlatAuMenu(int code, String description, double prix, ArrayList<IIngredients> ingredients) {
         this.code = code;
         this.description = description;
         this.prix = prix;
-        this.ingredientsArrayList = ingredientsArrayList;
+        this.ingredients = ingredients;
     }
 
     public PlatAuMenu() {
@@ -54,10 +54,10 @@ public class PlatAuMenu {
     }
 
     public ArrayList<IIngredients> getIngredients() {
-        return ingredientsArrayList;
+        return ingredients;
     }
 
     public void setIngredients(ArrayList<IIngredients> ingredientsArrayList) {
-        this.ingredientsArrayList = ingredientsArrayList;
+        this.ingredients = ingredientsArrayList;
     }
 }

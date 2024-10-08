@@ -17,7 +17,7 @@ public class Inventaire {
         return inventaire;
     }
 
-    public IIngredients getIngredients(IIngredients ingredient){
+    public IIngredients getIngredient(IIngredients ingredient){
         for(IIngredients i : ingredients){
             if(i.getTypeIngredient() == ingredient.getTypeIngredient()){
                 return i;

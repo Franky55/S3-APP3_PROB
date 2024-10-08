@@ -132,7 +132,7 @@ public class Facture {
             }
 
             p.setEtatsPlat(EtatsPlat.COMMANDER);
-            this.Notify(p);
+            this.notify(p);
         }
         else
             throw new FactureException("On peut ajouter un plat seulement sur une facture OUVERTE.");
@@ -188,17 +188,17 @@ public class Facture {
         return factureGenere;
     }
 
-    public Boolean Attach(IFactureSubscriber subscriber){
+    public Boolean attach(IFactureSubscriber subscriber){
         subscribers.add(subscriber);
         return true;
     }
 
-    public Boolean Detach(IFactureSubscriber subscriber){
+    public Boolean detach(IFactureSubscriber subscriber){
         subscribers.remove(subscriber);
         return true;
     }
 
-    private Boolean Notify(PlatChoisi platChoisi){
+    private Boolean notify(PlatChoisi platChoisi){
         for (IFactureSubscriber subscriber : subscribers){
             subscriber.Update(platChoisi);
         }
