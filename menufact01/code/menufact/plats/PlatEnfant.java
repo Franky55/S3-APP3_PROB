@@ -8,7 +8,6 @@ import java.util.ArrayList;
 
 public class PlatEnfant extends PlatAuMenu{
     private double proportion;
-    private ArrayList<IIngredients> ingredientsTemp;
     public PlatEnfant() {
     }
 
@@ -19,7 +18,7 @@ public class PlatEnfant extends PlatAuMenu{
     }
 
     private void ajusterQuantite() {
-        ingredientsTemp = new ArrayList<IIngredients>();
+        ArrayList<IIngredients> ingredientsTemp = new ArrayList<IIngredients>();
         for (IIngredients ingredient : getIngredients()) {
             ingredientsTemp.add(IngredientCreator.CreateNewIngredient(ingredient.getTypeIngredient(), (int)(ingredient.GetQuantiteRestant() * proportion), ingredient.getUniter()));
             //ingredient.SetQuantiteRestant((int)(ingredient.GetQuantiteRestant() * proportion));
