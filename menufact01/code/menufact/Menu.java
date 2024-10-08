@@ -39,6 +39,10 @@ public class Menu {
         return platsMenu;
     }
 
+    public String getDescription() {
+        return description;
+    }
+
     @Override
     public String toString() {
         return "menufact.Menu{" +
