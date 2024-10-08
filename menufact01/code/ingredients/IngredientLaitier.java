@@ -16,6 +16,9 @@ public class IngredientLaitier implements IIngredients {
     }
 
     public void SetQuantiteRestant(int quantiteRestant) {
+        if (quantiteRestant < 0) {
+            throw new IllegalArgumentException("Quantite cannot be negative");
+        }
         this.quantiteRestant = quantiteRestant;
     }
 
