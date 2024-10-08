@@ -1,12 +1,14 @@
 package menufact.plats;
 
 import ingredients.IIngredients;
+import ingredients.IngredientCreator;
+import ingredients.TypeIngredient;
 
 import java.util.ArrayList;
 
 public class PlatEnfant extends PlatAuMenu{
     private double proportion;
-
+    private ArrayList<IIngredients> ingredientsTemp;
     public PlatEnfant() {
     }
 
@@ -17,9 +19,12 @@ public class PlatEnfant extends PlatAuMenu{
     }
 
     private void ajusterQuantite() {
+        ingredientsTemp = new ArrayList<IIngredients>();
         for (IIngredients ingredient : getIngredients()) {
-            ingredient.SetQuantiteRestant((int)(ingredient.GetQuantiteRestant() * proportion));
+            ingredientsTemp.add(IngredientCreator.CreateNewIngredient(ingredient.getTypeIngredient(), (int)(ingredient.GetQuantiteRestant() * proportion), ingredient.getUniter()));
+            //ingredient.SetQuantiteRestant((int)(ingredient.GetQuantiteRestant() * proportion));
         }
+        setIngredients(ingredientsTemp);
     }
 
     public double getProportion() {

@@ -10,6 +10,7 @@ import menufact.exceptions.MenuException;
 import menufact.facture.Facture;
 import menufact.plats.PlatAuMenu;
 import menufact.plats.PlatChoisi;
+import menufact.plats.PlatEnfant;
 import menufact.plats.PlatSante;
 
 import java.util.ArrayList;
@@ -48,6 +49,20 @@ public class TestMenuFact02 {
         PlatSante ps4 = new PlatSante(13,"PlatSante3",40,recette,11,11,11);
         PlatSante ps5 = new PlatSante(14,"PlatSante4",50,recette,11,11,11);
 
+//        ArrayList<IIngredients> recettePourEnfant1 = new ArrayList<>(List.of(Objects.requireNonNull(IngredientCreator.CreateNewIngredient(TypeIngredient.FRUIT, 20, "g"))));
+//
+//        ArrayList<IIngredients> recettePourEnfant2 = new ArrayList<>(List.of(Objects.requireNonNull(IngredientCreator.CreateNewIngredient(TypeIngredient.FRUIT, 20, "g"))));
+//        recettePourEnfant2.add(IngredientCreator.CreateNewIngredient(TypeIngredient.VIANDE, 200, "g"));
+//
+//        ArrayList<IIngredients> recettePourEnfant3 = new ArrayList<>(List.of(Objects.requireNonNull(IngredientCreator.CreateNewIngredient(TypeIngredient.FRUIT, 20, "g"))));
+//        ArrayList<IIngredients> recettePourEnfant4 = new ArrayList<>(List.of(Objects.requireNonNull(IngredientCreator.CreateNewIngredient(TypeIngredient.FRUIT, 20, "g"))));
+
+
+        PlatEnfant pe1 = new PlatEnfant(5,"PlatEnfant0",10,recette,0.5);
+        PlatEnfant pe2 = new PlatEnfant(6,"PlatEnfant1",20,recette, 0.8);
+        PlatEnfant pe3 = new PlatEnfant(7,"PlatEnfant2",30,recette,0.5);
+        PlatEnfant pe4 = new PlatEnfant(8,"PlatEnfant3",40,recette,0.5);
+
 
         Menu m1 = Menu.GetInstance("menufact.Menu 1");
         Menu m2 = Menu.GetInstance("menufact.Menu 2");
@@ -64,7 +79,7 @@ public class TestMenuFact02 {
         t.test1_AffichePlatsAuMenu(trace, p1,p2,p3,p4,p5);
         t. test2_AffichePlatsSante(trace, ps1,ps2,ps3,ps4,ps5);
 
-        t.test4_AjoutPlatsAuMenu(trace, mc1, p1, p2, ps1, ps2, mc2, p3, p4, ps3, ps4, mv1, mv2);
+        t.test4_AjoutPlatsAuMenu(trace, mc1, p1, p2, ps1, ps2, mc2, p3, p4, ps3, ps4, pe1, pe2, pe3, pe4, mv1, mv2);
 
 
         try {
@@ -120,14 +135,10 @@ public class TestMenuFact02 {
         }
 
         try {
-            t.test8_AjouterPlatsFacture(f1, mc1,1, inventaire);
+            t.test7_CreerFacture(f1, mc1, inventaire);
         } catch (FactureException fe)
         {
             System.out.println(fe.getMessage());
-        }
-        catch (MenuException me)
-        {
-            System.out.println(me);
         }
 
 
@@ -170,7 +181,6 @@ public class TestMenuFact02 {
         }
     }
 
-
     private static void test3_AjoutMenu(boolean trace, Menu m1, Menu m2)
     {
         System.out.println("\n\n\n=== test3_AjoutMenu");
@@ -187,7 +197,9 @@ public class TestMenuFact02 {
                                         PlatSante ps1, PlatSante ps2,
                                         MenuController m2,
                                         PlatAuMenu p3, PlatAuMenu p4,
-                                        PlatSante ps3, PlatSante ps4, MenuView menuView1, MenuView menuView2)
+                                        PlatSante ps3, PlatSante ps4,
+                                        PlatEnfant pe1, PlatEnfant pe2,
+                                        PlatEnfant pe3, PlatEnfant pe4,MenuView menuView1, MenuView menuView2)
     {
         System.out.println("\n\n\n=== test4_AjoutPlatsAuMenu");
         System.out.println("=== Ajout de plats au menu 1");
@@ -202,6 +214,12 @@ public class TestMenuFact02 {
         m2.GetMenu().GetPlatsMenu().ajoute(p4);
         m2.GetMenu().GetPlatsMenu().ajoute(ps3);
         m2.GetMenu().GetPlatsMenu().ajoute(ps4);
+
+        System.out.println("\n=== Ajout de platsEnfant au menu 2");
+        m2.GetMenu().GetPlatsMenu().ajoute(pe1);
+        m2.GetMenu().GetPlatsMenu().ajoute(pe2);
+        m2.GetMenu().GetPlatsMenu().ajoute(pe3);
+        m2.GetMenu().GetPlatsMenu().ajoute(pe4);
 
         if(trace) {
             m1.UpdateAffichage();
