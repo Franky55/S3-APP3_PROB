@@ -188,16 +188,31 @@ public class Facture {
         return factureGenere;
     }
 
+    /**
+     * Attach le subscriber pour recevoir les notifications
+     * @param subscriber
+     * @return
+     */
     public Boolean attach(IFactureSubscriber subscriber){
         subscribers.add(subscriber);
         return true;
     }
 
+    /**
+     * Detach le subscriber des notifications
+     * @param subscriber
+     * @return
+     */
     public Boolean detach(IFactureSubscriber subscriber){
         subscribers.remove(subscriber);
         return true;
     }
 
+    /**
+     * Va notifier tous les subscribers du plat choisi
+     * @param platChoisi
+     * @return
+     */
     private Boolean notify(PlatChoisi platChoisi){
         for (IFactureSubscriber subscriber : subscribers){
             subscriber.Update(platChoisi);
