@@ -18,6 +18,10 @@ public class Inventaire {
         return inventaire;
     }
 
+    public static void reset() {
+        inventaire = new Inventaire();
+    }
+
     public IIngredients getIngredient(IIngredients ingredient){
         for(IIngredients i : ingredients){
             if(i.getTypeIngredient() == ingredient.getTypeIngredient()){
@@ -66,5 +70,4 @@ public class Inventaire {
 
         return str.toString();
     }
-
 }
