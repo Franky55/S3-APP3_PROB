@@ -60,7 +60,7 @@ public class Facture {
      *
      * @return la valeur de la TPS
      */
-    private double tps(){
+    public double tps(){
         return TPS*sousTotal();
     }
 
@@ -68,7 +68,7 @@ public class Facture {
      *
      * @return la valeur de la TVQ
      */
-    private  double tvq(){
+    public double tvq(){
         return TVQ*(TPS+1)*sousTotal();
     }
 
@@ -127,10 +127,7 @@ public class Facture {
     public void ajoutePlat(PlatChoisi p) throws FactureException
     {
         if (etat == FactureEtat.OUVERTE){
-            for (int i = 0; i < p.getQuantite(); i++) {
-                platchoisi.add(p);
-            }
-
+            platchoisi.add(p);
             p.setEtatsPlat(EtatsPlat.COMMANDER);
             this.notify(p);
         }
