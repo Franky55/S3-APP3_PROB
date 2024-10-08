@@ -1,8 +1,10 @@
 package menufact;
 
+import gestionnaire.Gestionnaire;
 import ingredients.IIngredients;
 import ingredients.IngredientCreator;
 import ingredients.TypeIngredient;
+import inventaire.Inventaire;
 import menufact.facture.exceptions.FactureException;
 import menufact.exceptions.MenuException;
 import menufact.facture.Facture;
@@ -20,6 +22,12 @@ public class TestMenuFact02 {
         boolean trace = true;
 
         TestMenuFact02 t = new TestMenuFact02();
+        Inventaire inventaire = Inventaire.getInstance();
+        inventaire.addIngredient(IngredientCreator.CreateNewIngredient(TypeIngredient.FRUIT, 10000, "g"));
+        inventaire.addIngredient(IngredientCreator.CreateNewIngredient(TypeIngredient.EPICE, 10000, "g"));
+        inventaire.addIngredient(IngredientCreator.CreateNewIngredient(TypeIngredient.LAITIER, 10000, "ml"));
+        inventaire.addIngredient(IngredientCreator.CreateNewIngredient(TypeIngredient.LEGUME, 10000, "g"));
+        inventaire.addIngredient(IngredientCreator.CreateNewIngredient(TypeIngredient.VIANDE, 10000, "g"));
 
         ArrayList<IIngredients> recette = new ArrayList<>(List.of(Objects.requireNonNull(IngredientCreator.CreateNewIngredient(TypeIngredient.FRUIT, 20, "g"))));
 
@@ -72,7 +80,7 @@ public class TestMenuFact02 {
         }
 
         try {
-            t.test7_CreerFacture(f1, mc1);
+            t.test7_CreerFacture(f1, mc1, inventaire);
         } catch (FactureException e) {
             System.out.println(e.getMessage());
         }
@@ -256,19 +264,22 @@ public class TestMenuFact02 {
         }
     }
 
-    private void test7_CreerFacture(Facture f1, MenuController m1) throws FactureException
+    private void test7_CreerFacture(Facture f1, MenuController m1, Inventaire inv) throws FactureException
     {
         System.out.println("\n\n\n===test7_CreerFacture");
 
         PlatChoisi platChoisi = new PlatChoisi(m1.GetMenu().GetPlatsMenu().getActuel(),5);
-        try
-        {
-            f1.ajoutePlat(platChoisi);
-        }
-        catch (FactureException fe)
-        {
-            throw fe;
-        }
+        Gestionnaire gestionnaire = new Gestionnaire(f1, inv);
+//        try
+//        {
+//            gestionnaire.ajoutePlatAFacture(platChoisi);
+//            //f1.ajoutePlat(platChoisi);
+//        }
+//        catch (FactureException fe)
+//        {
+//            throw fe;
+//        }
+        gestionnaire.ajoutePlatAFacture(platChoisi);
         System.out.println(f1);
     }
 
