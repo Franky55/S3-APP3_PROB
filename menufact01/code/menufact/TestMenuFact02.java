@@ -34,11 +34,11 @@ public class TestMenuFact02 {
         PlatAuMenu p5 = new PlatAuMenu(4,"PlatAuMenu4",50, recette);
 
 
-        PlatSante ps1 = new PlatSante(10,"PlatSante0",10,11,11,11);
-        PlatSante ps2 = new PlatSante(11,"PlatSante1",20,11,11,11);
-        PlatSante ps3 = new PlatSante(12,"PlatSante2",30,11,11,11);
-        PlatSante ps4 = new PlatSante(13,"PlatSante3",40,11,11,11);
-        PlatSante ps5 = new PlatSante(14,"PlatSante4",50,11,11,11);
+        PlatSante ps1 = new PlatSante(10,"PlatSante0",10,recette,11,11,11);
+        PlatSante ps2 = new PlatSante(11,"PlatSante1",20,recette, 11,11,11);
+        PlatSante ps3 = new PlatSante(12,"PlatSante2",30,recette,11,11,11);
+        PlatSante ps4 = new PlatSante(13,"PlatSante3",40,recette,11,11,11);
+        PlatSante ps5 = new PlatSante(14,"PlatSante4",50,recette,11,11,11);
 
 
         Menu m1 = Menu.GetInstance("menufact.Menu 1");

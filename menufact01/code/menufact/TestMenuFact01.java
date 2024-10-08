@@ -28,11 +28,11 @@ public class TestMenuFact01 {
             System.out.println(p2);
 
             System.out.println("===menufact.plats.PlatSante Constructeur 5 arguments");
-            PlatSante ps1 = new PlatSante(2, "Salade", 5.25, 100, 10, 1);
+            PlatSante ps1 = new PlatSante(2, "Salade", 5.25, recette2, 100, 10, 1);
             System.out.println(ps1);
 
             System.out.println("===menufact.plats.PlatSante Constructeur 5 arguments");
-            PlatSante ps2 = new PlatSante(3, "Salade Cesar", 8.25, 100, 10, 1);
+            PlatSante ps2 = new PlatSante(3, "Salade Cesar", 8.25, recette2, 100, 10, 1);
             System.out.println(ps2);
 
             System.out.println("===menufact.Menu ajout avec 4 plats");

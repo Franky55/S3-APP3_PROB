@@ -1,6 +1,9 @@
 package Chef;
 
 import Chef.Etats.EtatsChef;
+import ingredients.IIngredients;
+import ingredients.IngredientCreator;
+import ingredients.TypeIngredient;
 import jdk.jfr.Description;
 import menufact.plats.PlatAuMenu;
 import menufact.plats.PlatChoisi;
@@ -8,10 +11,16 @@ import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
 
+import java.util.ArrayList;
+import java.util.List;
+import java.util.Objects;
+
 import static org.junit.jupiter.api.Assertions.*;
 
 class ChefTest {
     public Chef chef;
+    public ArrayList<IIngredients> recette = new ArrayList<>(List.of(Objects.requireNonNull(IngredientCreator.CreateNewIngredient(TypeIngredient.FRUIT, 20, "g"))));
+
 
     @BeforeEach
     void setUp() {
@@ -71,7 +80,7 @@ class ChefTest {
         boolean result = chef.PlatFini();
         assertEquals(false, result);
 
-        PlatAuMenu platAuMenu = new PlatAuMenu(0, "Bruh", 20);
+        PlatAuMenu platAuMenu = new PlatAuMenu(0, "Bruh", 20, recette);
         PlatChoisi plat = new PlatChoisi(platAuMenu, 2);
         chef.Update(plat);
 
@@ -86,7 +95,7 @@ class ChefTest {
     @DisplayName("GetPlatAFaire - un plat")
     void GetPlatAFaireApresAjout() {
         Chef chef = Chef.GetInstance();
-        PlatAuMenu platAuMenu = new PlatAuMenu(0, "Bruh", 20);
+        PlatAuMenu platAuMenu = new PlatAuMenu(0, "Bruh", 20, recette);
         PlatChoisi plat = new PlatChoisi(platAuMenu, 2);
         chef.Update(plat);
 
@@ -117,7 +126,7 @@ class ChefTest {
         Chef chef = Chef.GetInstance();
         assertEquals(EtatsChef.ATTENTE, chef.GetEtat());
 
-        PlatAuMenu platAuMenu = new PlatAuMenu(0, "Bruh", 20);
+        PlatAuMenu platAuMenu = new PlatAuMenu(0, "Bruh", 20, recette);
         PlatChoisi plat = new PlatChoisi(platAuMenu, 2);
         chef.Update(plat);
         chef.Execute();
@@ -132,7 +141,7 @@ class ChefTest {
         Chef chef = Chef.GetInstance();
         assertEquals(EtatsChef.ATTENTE, chef.GetEtat());
 
-        PlatAuMenu platAuMenu = new PlatAuMenu(0, "Bruh", 20);
+        PlatAuMenu platAuMenu = new PlatAuMenu(0, "Bruh", 20, recette);
         PlatChoisi plat = new PlatChoisi(platAuMenu, 2);
         chef.Update(plat);
         chef.Execute();
