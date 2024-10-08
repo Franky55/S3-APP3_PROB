@@ -1,0 +1,82 @@
+===menufact.plats.PlatAuMenu Constructeur 3 arguments
+menufact.plats.PlatAuMenu{code=0, description='Frites sauce', prix=11.5}
+
+===menufact.plats.PlatAuMenu Constructeur 3 arguments
+menufact.plats.PlatAuMenu{code=1, description='Frites', prix=10.25}
+
+===menufact.plats.PlatSante Constructeur 5 arguments
+menufact.plats.PlatSante{kcal=100.0, chol=10.0, gras=1.0} menufact.plats.PlatAuMenu{code=2, description='Salade', prix=5.25}
+
+===menufact.plats.PlatSante Constructeur 5 arguments
+menufact.plats.PlatSante{kcal=100.0, chol=10.0, gras=1.0} menufact.plats.PlatAuMenu{code=3, description='Salade Cesar', prix=8.25}
+
+===menufact.Menu ajout avec 4 plats
+Menu:
+ -- description:  'Menu1'
+ -- index courant: 0
+ ------------------------------ 
+ -- 0:	PlatAuMenu: 
+		- description: Frites sauce
+		- code:        0
+		- prix:        11.5
+		- ingredient:  [Ingredient: LEGUME Quantite: 20g, Ingredient: EPICE Quantite: 1g]
+ -- 1:	PlatAuMenu: 
+		- description: Frites
+		- code:        1
+		- prix:        10.25
+		- ingredient:  [Ingredient: LEGUME Quantite: 20g]
+ -- 2:	PlatSante: 
+		- description: Salade
+		- code:        2
+		- prix:        5.25
+		- ingredient:  [Ingredient: LEGUME Quantite: 20g]
+		- kcals:       100.0
+		- chol:        10.0
+		- gras:        1.0
+ -- 3:	PlatSante: 
+		- description: Salade Cesar
+		- code:        3
+		- prix:        8.25
+		- ingredient:  [Ingredient: LEGUME Quantite: 20g]
+		- kcals:       100.0
+		- chol:        10.0
+		- gras:        1.0
+
+===menufact.Menu position 1, plat à la position 0
+menufact.plats.PlatSante{kcal=100.0, chol=10.0, gras=1.0} menufact.plats.PlatAuMenu{code=3, description='Salade Cesar', prix=8.25}
+
+===menufact.Menu position 1, plat à la position suivante 1
+menufact.plats.PlatSante{kcal=100.0, chol=10.0, gras=1.0} menufact.plats.PlatAuMenu{code=3, description='Salade Cesar', prix=8.25}
+
+== Plat choisi
+menufact.plats.PlatChoisi{quantite=5, plat=menufact.plats.PlatAuMenu{code=0, description='Frites sauce', prix=11.5}
+}
+== New menufact.facture.Facture
+menufact.facture.Facture{date=Tue Oct 08 17:35:43 EDT 2024, description='Ma facture', etat=OUVERTE, platchoisi=[], courant=-1, client=null, TPS=0.05, TVQ=0.095}
+== Ajout d'un plat choisie à la facture
+menufact.facture.Facture{date=Tue Oct 08 17:35:43 EDT 2024, description='Ma facture', etat=OUVERTE, platchoisi=[menufact.plats.PlatChoisi{quantite=5, plat=menufact.plats.PlatAuMenu{code=0, description='Frites sauce', prix=11.5}
+}], courant=-1, client=null, TPS=0.05, TVQ=0.095}
+57.5
+== Ajout d'un plat choisie à la facture
+menufact.facture.Facture{date=Tue Oct 08 17:35:43 EDT 2024, description='Ma facture', etat=OUVERTE, platchoisi=[menufact.plats.PlatChoisi{quantite=5, plat=menufact.plats.PlatAuMenu{code=0, description='Frites sauce', prix=11.5}
+}, menufact.plats.PlatChoisi{quantite=10, plat=menufact.plats.PlatAuMenu{code=1, description='Frites', prix=10.25}
+}], courant=-1, client=null, TPS=0.05, TVQ=0.095}
+160.0
+183.96
+menufact.facture.Facture{date=Tue Oct 08 17:35:43 EDT 2024, description='Ma facture', etat=OUVERTE, platchoisi=[menufact.plats.PlatChoisi{quantite=5, plat=menufact.plats.PlatAuMenu{code=0, description='Frites sauce', prix=11.5}
+}, menufact.plats.PlatChoisi{quantite=10, plat=menufact.plats.PlatAuMenu{code=1, description='Frites', prix=10.25}
+}], courant=-1, client=null, TPS=0.05, TVQ=0.095}
+Etat = OUVERTE
+menufact.facture.Facture{date=Tue Oct 08 17:35:43 EDT 2024, description='Ma facture', etat=FERMEE, platchoisi=[menufact.plats.PlatChoisi{quantite=5, plat=menufact.plats.PlatAuMenu{code=0, description='Frites sauce', prix=11.5}
+}, menufact.plats.PlatChoisi{quantite=10, plat=menufact.plats.PlatAuMenu{code=1, description='Frites', prix=10.25}
+}], courant=-1, client=null, TPS=0.05, TVQ=0.095}
+Etat = FERMEE
+menufact.facture.Facture{date=Tue Oct 08 17:35:43 EDT 2024, description='Ma facture', etat=OUVERTE, platchoisi=[menufact.plats.PlatChoisi{quantite=5, plat=menufact.plats.PlatAuMenu{code=0, description='Frites sauce', prix=11.5}
+}, menufact.plats.PlatChoisi{quantite=10, plat=menufact.plats.PlatAuMenu{code=1, description='Frites', prix=10.25}
+}], courant=-1, client=null, TPS=0.05, TVQ=0.095}
+Etat = OUVERTE
+menufact.facture.Facture{date=Tue Oct 08 17:35:43 EDT 2024, description='Ma facture', etat=PAYEE, platchoisi=[menufact.plats.PlatChoisi{quantite=5, plat=menufact.plats.PlatAuMenu{code=0, description='Frites sauce', prix=11.5}
+}, menufact.plats.PlatChoisi{quantite=10, plat=menufact.plats.PlatAuMenu{code=1, description='Frites', prix=10.25}
+}], courant=-1, client=null, TPS=0.05, TVQ=0.095}
+Etat = PAYEE
+FactureException: La facture ne peut pas être reouverte.
