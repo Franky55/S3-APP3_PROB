@@ -52,6 +52,12 @@ public class IngredientFruits implements IIngredients {
         return uniter;
     }
 
+    /**
+     * Définit l'unité de mesure de l'ingrédient.
+     *
+     * @param uniter la nouvelle unité de mesure.
+     * @return true si la définition a réussi.
+     */
     public Boolean setUniter(String uniter) {
         this.uniter = uniter;
         return true;
