@@ -1,6 +1,7 @@
 package inventaire;
 
 import ingredients.IIngredients;
+import ingredients.TypeIngredient;
 
 import java.util.ArrayList;
 
@@ -20,6 +21,15 @@ public class Inventaire {
     public IIngredients getIngredient(IIngredients ingredient){
         for(IIngredients i : ingredients){
             if(i.getTypeIngredient() == ingredient.getTypeIngredient()){
+                return i;
+            }
+        }
+        return null;
+    }
+
+    public IIngredients getIngredient(TypeIngredient typeIngredient){
+        for(IIngredients i : ingredients){
+            if(i.getTypeIngredient() == typeIngredient){
                 return i;
             }
         }
