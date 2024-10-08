@@ -7,6 +7,7 @@ import Chef.Etats.IEtatChef;
 import menufact.facture.IFactureSubscriber;
 import menufact.plats.PlatChoisi;
 
+import java.awt.*;
 import java.util.ArrayList;
 
 public class Chef implements IFactureSubscriber {
@@ -20,6 +21,14 @@ public class Chef implements IFactureSubscriber {
      */
     private Chef() {
         this.SetEtat(EtatsChef.ATTENTE);
+    }
+
+    /**
+     * Combien de plats le chef doit-t'il faire?
+     * @return
+     */
+    public int nombresDePlatsAFaire() {
+        return this.plats.size();
     }
 
     /**
@@ -52,7 +61,7 @@ public class Chef implements IFactureSubscriber {
      */
     @Override
     public void Update(PlatChoisi platChoisi) {
-
+        System.err.println("UPDATED");
         // Ajouter le plat a sa liste de plats a faire
         plats.add(platChoisi);
 
@@ -115,6 +124,6 @@ public class Chef implements IFactureSubscriber {
     }
 
     public String toString() {
-        return vraiChef.toString();
+        return vraiChef.toString() + " et a " + nombresDePlatsAFaire() + " plats a faire";
     }
 }
