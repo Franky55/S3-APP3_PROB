@@ -1,11 +1,18 @@
 package menufact;
 
+import ingredients.IIngredients;
+import ingredients.IngredientCreator;
+import ingredients.TypeIngredient;
 import menufact.facture.exceptions.FactureException;
 import menufact.exceptions.MenuException;
 import menufact.facture.Facture;
 import menufact.plats.PlatAuMenu;
 import menufact.plats.PlatChoisi;
 import menufact.plats.PlatSante;
+
+import java.util.ArrayList;
+import java.util.List;
+import java.util.Objects;
 
 public class TestMenuFact02 {
 
@@ -14,11 +21,17 @@ public class TestMenuFact02 {
 
         TestMenuFact02 t = new TestMenuFact02();
 
-        PlatAuMenu p1 = new PlatAuMenu(0,"PlatAuMenu0",10);
-        PlatAuMenu p2 = new PlatAuMenu(1,"PlatAuMenu1",20);
-        PlatAuMenu p3 = new PlatAuMenu(2,"PlatAuMenu2",30);
-        PlatAuMenu p4 = new PlatAuMenu(3,"PlatAuMenu3",40);
-        PlatAuMenu p5 = new PlatAuMenu(4,"PlatAuMenu4",50);
+        ArrayList<IIngredients> recette = new ArrayList<>(List.of(Objects.requireNonNull(IngredientCreator.CreateNewIngredient(TypeIngredient.FRUIT, 20, "g"))));
+
+        PlatAuMenu p1 = new PlatAuMenu(0,"PlatAuMenu0",10, recette);
+        recette.add(IngredientCreator.CreateNewIngredient(TypeIngredient.VIANDE, 200, "g"));
+        PlatAuMenu p2 = new PlatAuMenu(1,"PlatAuMenu1",20,recette);
+        recette.add(IngredientCreator.CreateNewIngredient(TypeIngredient.LAITIER, 200, "ml"));
+        PlatAuMenu p3 = new PlatAuMenu(2,"PlatAuMenu2",30,recette);
+        recette.add(IngredientCreator.CreateNewIngredient(TypeIngredient.LEGUME, 100, "g"));
+        PlatAuMenu p4 = new PlatAuMenu(3,"PlatAuMenu3",40, recette);
+        recette.add(IngredientCreator.CreateNewIngredient(TypeIngredient.EPICE, 1, "g"));
+        PlatAuMenu p5 = new PlatAuMenu(4,"PlatAuMenu4",50, recette);
 
 
         PlatSante ps1 = new PlatSante(10,"PlatSante0",10,11,11,11);

@@ -24,7 +24,7 @@ public class Gestionnaire {
             if(inventaire.getIngredients(i).GetQuantiteRestant() < i.GetQuantiteRestant())
                 return false;
         }
-        
+
         try
         {
             facture.ajoutePlat(platChoisi);

@@ -10,10 +10,11 @@ public class PlatAuMenu {
     private double prix;
     private ArrayList<IIngredients> ingredientsArrayList;
 
-    public PlatAuMenu(int code, String description, double prix) {
+    public PlatAuMenu(int code, String description, double prix, ArrayList<IIngredients> ingredientsArrayList) {
         this.code = code;
         this.description = description;
         this.prix = prix;
+        this.ingredientsArrayList = ingredientsArrayList;
     }
 
     public PlatAuMenu() {

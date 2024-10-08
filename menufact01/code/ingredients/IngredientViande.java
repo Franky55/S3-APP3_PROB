@@ -2,8 +2,14 @@ package ingredients;
 
 public class IngredientViande implements IIngredients {
     private TypeIngredient typeIngredient = TypeIngredient.VIANDE;
-    private int quantiteRestant = 0;
+    private int quantiteRestant;
     private String uniter;
+
+    IngredientViande(int quantite, String uniter) {
+        typeIngredient = TypeIngredient.VIANDE;
+        this.quantiteRestant = quantite;
+        this.uniter = uniter;
+    }
 
     public int GetQuantiteRestant() {
         return quantiteRestant;

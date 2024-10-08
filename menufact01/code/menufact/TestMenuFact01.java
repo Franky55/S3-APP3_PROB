@@ -1,20 +1,30 @@
 package menufact;
 
+import ingredients.IIngredients;
+import ingredients.IngredientCreator;
+import ingredients.TypeIngredient;
 import menufact.facture.Facture;
 import menufact.plats.PlatAuMenu;
 import menufact.plats.PlatChoisi;
 import menufact.plats.PlatSante;
+
+import java.util.ArrayList;
+import java.util.List;
+import java.util.Objects;
 
 public class TestMenuFact01 {
     public static void main(String[] args) {
 
         try {
             System.out.println("===menufact.plats.PlatAuMenu Constructeur 3 arguments");
-            PlatAuMenu p1 = new PlatAuMenu(0, "Frites sauce", 11.50);
+            ArrayList<IIngredients> recette1 = new ArrayList<>(List.of(Objects.requireNonNull(IngredientCreator.CreateNewIngredient(TypeIngredient.LEGUME, 20, "g"))));
+            recette1.add(IngredientCreator.CreateNewIngredient(TypeIngredient.EPICE, 1, "g"));
+            PlatAuMenu p1 = new PlatAuMenu(0, "Frites sauce", 11.50, recette1);
             System.out.println(p1);
 
             System.out.println("===menufact.plats.PlatAuMenu Constructeur 3 arguments");
-            PlatAuMenu p2 = new PlatAuMenu(1, "Frites", 10.25);
+            ArrayList<IIngredients> recette2 = new ArrayList<>(List.of(Objects.requireNonNull(IngredientCreator.CreateNewIngredient(TypeIngredient.LEGUME, 20, "g"))));
+            PlatAuMenu p2 = new PlatAuMenu(1, "Frites", 10.25, recette2);
             System.out.println(p2);
 
             System.out.println("===menufact.plats.PlatSante Constructeur 5 arguments");

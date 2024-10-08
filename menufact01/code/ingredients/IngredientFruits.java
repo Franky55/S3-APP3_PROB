@@ -1,9 +1,15 @@
 package ingredients;
 
 public class IngredientFruits implements IIngredients {
-    private TypeIngredient typeIngredient = TypeIngredient.FRUIT;
-    private int quantiteRestant = 0;
+    private TypeIngredient typeIngredient;
+    private int quantiteRestant;
     private String uniter;
+
+    IngredientFruits(int quantite, String uniter) {
+        typeIngredient = TypeIngredient.FRUIT;
+        this.quantiteRestant = quantite;
+        this.uniter = uniter;
+    }
 
     public int GetQuantiteRestant() {
         return quantiteRestant;
