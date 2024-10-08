@@ -39,31 +39,6 @@ public class Menu {
         return platsMenu;
     }
 
-    //void ajoute (PlatAuMenu p) {
-    //    GetPlatsMenu().ajoute(p);
-    //}
-
-    //public void position(int i) {
-    //    GetPlatsMenu().SetPosition(i);
-    //}
-
-    //public PlatAuMenu platCourant()
-    //{
-    //    //return GetPlatsMenu().getActuel();
-    //}
-
-    //public void positionSuivante() throws MenuException
-    //{
-    //   if (GetPlatsMenu().Suivant() == false)
-    //        throw new MenuException("On depasse le nombre maximale de plats.");
-    //}
-
-    //public void positionPrecedente() throws MenuException
-    //{
-    //    if (GetPlatsMenu().Precedent() == false)
-    //        throw new MenuException("On depasse le nombre minimale de plats");
-    //}
-
     @Override
     public String toString() {
         return "menufact.Menu{" +
