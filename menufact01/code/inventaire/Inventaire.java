@@ -17,6 +17,15 @@ public class Inventaire {
         return inventaire;
     }
 
+    public IIngredients getIngredients(IIngredients ingredient){
+        for(IIngredients i : ingredients){
+            if(i.getTypeIngredient() == ingredient.getTypeIngredient()){
+                return i;
+            }
+        }
+        return null;
+    }
+
     public void addIngredient(IIngredients ingredient){
         for (IIngredients i : ingredients) {
             if(i.getTypeIngredient() == ingredient.getTypeIngredient()){

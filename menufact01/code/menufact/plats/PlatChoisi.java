@@ -1,6 +1,9 @@
 package menufact.plats;
 
+import ingredients.IIngredients;
 import menufact.plats.PlatAuMenu;
+
+import java.util.ArrayList;
 
 public class PlatChoisi {
     private PlatAuMenu plat;
@@ -38,5 +41,9 @@ public class PlatChoisi {
 
     public void setEtatsPlat(EtatsPlat etatsPlat) {
         this.etatsPlat = etatsPlat;
+    }
+
+    public ArrayList<IIngredients> getIngredients() {
+        return plat.getIngredients();
     }
 }
