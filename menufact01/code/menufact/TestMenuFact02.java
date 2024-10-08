@@ -206,14 +206,19 @@ public class TestMenuFact02 {
         try {
             System.out.println("\n=== Avancer le plat courant");
             System.out.println("1.");
+            System.out.print(m1.GetMenu().GetPlatsMenu().getActuel().toString());
             m1.GetMenu().GetPlatsMenu().Suivant();
             System.out.println("2.");
+            System.out.print(m1.GetMenu().GetPlatsMenu().getActuel().toString());
             m1.GetMenu().GetPlatsMenu().Suivant();
             System.out.println("3.");
+            System.out.print(m1.GetMenu().GetPlatsMenu().getActuel().toString());
             m1.GetMenu().GetPlatsMenu().Suivant();
             System.out.println("4.");
+            System.out.print(m1.GetMenu().GetPlatsMenu().getActuel().toString());
             m1.GetMenu().GetPlatsMenu().Suivant();
             System.out.println("5.");
+            System.out.print(m1.GetMenu().GetPlatsMenu().getActuel().toString());
             m1.GetMenu().GetPlatsMenu().Suivant();
         }
         catch (MenuException me)

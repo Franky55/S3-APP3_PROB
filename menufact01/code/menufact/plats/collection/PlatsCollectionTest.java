@@ -194,14 +194,39 @@ class PlatsCollectionTest {
         PlatAuMenu actuel = platsCollection.getActuel();
         assertEquals(p1, actuel);
 
-        try {
-            boolean result = platsCollection.Suivant();
+        assertTrue(platsCollection.SetPosition(0));
+        assertEquals(0, platsCollection.GetPosition());
+        actuel = platsCollection.getActuel();
+        System.out.println(actuel.getDescription());
+        assertEquals(p1, actuel);
+
+        try{
+            assertTrue(platsCollection.Suivant());
+            assertEquals(1, platsCollection.GetPosition());
+            actuel = platsCollection.getActuel();
+            System.out.println(actuel.getDescription());
+            assertEquals(p2, actuel);
         } catch (MenuException e) {
-            e.printStackTrace();
+            assertTrue(false);
         }
 
+        assertTrue(platsCollection.SetPosition(2));
+        assertEquals(2, platsCollection.GetPosition());
         actuel = platsCollection.getActuel();
-        assertEquals(p2, actuel);
+        System.out.println(actuel.getDescription());
+        assertEquals(p3, actuel);
+
+        assertTrue(platsCollection.SetPosition(3));
+        assertEquals(3, platsCollection.GetPosition());
+        actuel = platsCollection.getActuel();
+        System.out.println(actuel.getDescription());
+        assertEquals(p4, actuel);
+
+        assertTrue(platsCollection.SetPosition(4));
+        assertEquals(4, platsCollection.GetPosition());
+        actuel = platsCollection.getActuel();
+        System.out.println(actuel.getDescription());
+        assertEquals(p5, actuel);
     }
 
     @Test
